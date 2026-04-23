@@ -328,6 +328,37 @@
     .section-divider.claude-section { color: #fcd34d; }
     .section-divider.general-section { color: var(--muted); }
     .tag-orange { background: rgba(245,158,11,.18); color: #fcd34d; }
+    .tag-red    { background: rgba(239,68,68,.18);   color: #fca5a5; }
+
+    .filter-btn.youtube-btn { border-color: rgba(239,68,68,.4); color: #fca5a5; }
+    .filter-btn.youtube-btn:hover,
+    .filter-btn.youtube-btn.active {
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      border-color: #dc2626;
+      color: #fff;
+    }
+
+    .card.youtube-card {
+      border-color: rgba(239,68,68,.35);
+      background: linear-gradient(160deg, #1a1212 0%, var(--surface) 60%);
+    }
+    .card.youtube-card:hover {
+      border-color: #ef4444;
+      box-shadow: 0 12px 32px rgba(239,68,68,.2);
+    }
+    .card.youtube-card .card-highlight { border-left-color: #ef4444; }
+    .card.youtube-card .card-highlight strong { color: #fca5a5; }
+    .card.youtube-card .read-link {
+      background: rgba(239,68,68,.12);
+      border-color: rgba(239,68,68,.3);
+      color: #fca5a5;
+    }
+    .card.youtube-card .read-link:hover {
+      background: rgba(239,68,68,.25);
+      border-color: rgba(239,68,68,.6);
+    }
+    .card.youtube-card .source-name::before { color: #ef4444; }
+    .section-divider.youtube-section { color: #fca5a5; }
   </style>
 </head>
 <body>
@@ -339,8 +370,8 @@
 </header>
 
 <div class="stats">
-  <div class="stat"><span class="dot"></span><strong>18</strong>&nbsp;Artikel</div>
-  <div class="stat">&#x1F310;&nbsp;<strong>14</strong>&nbsp;Quellen</div>
+  <div class="stat"><span class="dot"></span><strong>27</strong>&nbsp;Artikel</div>
+  <div class="stat">&#x1F310;&nbsp;<strong>18</strong>&nbsp;Quellen</div>
   <div class="stat">&#x1F4CA;&nbsp;<strong>88 %</strong>&nbsp;der Unternehmen setzen KI ein</div>
   <div class="stat">&#x1F680;&nbsp;<strong>47 % CAGR</strong>&nbsp;Physical AI bis 2032</div>
   <div class="stat">&#x1F916;&nbsp;<strong>2026</strong>&nbsp;= Jahr der Massenproduktion</div>
@@ -354,6 +385,7 @@
   <button class="filter-btn" onclick="filterCards('arbeit', this)">Arbeitswelt</button>
   <button class="filter-btn" onclick="filterCards('forschung', this)">Forschung</button>
   <button class="filter-btn claude-btn" onclick="filterCards('claude', this)">&#x1F916; Claude & Anthropic</button>
+  <button class="filter-btn youtube-btn" onclick="filterCards('youtube', this)">&#x25B6;&#xFE0F; YouTube</button>
 </div>
 
 <div class="grid" id="grid">
@@ -510,6 +542,56 @@
     <div class="card-footer">
       <span class="source-name">Anthropic Release Notes</span>
       <a class="read-link" href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- ant CLI -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F41C;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">ant CLI</span>
+        <span class="tag tag-cyan">Dev Tools</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>ant CLI: Anthropics neues Kommandozeilen-Tool für die Claude API</h2>
+      <p>Anthropic hat das <strong>ant CLI</strong> eingeführt – ein Command-Line-Client für die Claude API. Es bietet schnellere API-Interaktion direkt aus dem Terminal, native Integration mit Claude Code und Versionierung aller API-Ressourcen in YAML-Dateien. Ideal für DevOps-Teams und Entwickler, die API-Konfigurationen in Git pflegen wollen.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Integration:</strong> Native Claude Code Anbindung + YAML-basiertes Resource-Versioning für GitOps-Workflows.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Claude API Docs</span>
+      <a class="read-link" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude for Excel & PowerPoint -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4CA;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Office-Integration</span>
+        <span class="tag tag-green">Microsoft</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude für Excel &amp; PowerPoint: Vollständige Kontext-Synchronisation</h2>
+      <p>Die Claude-Add-ins für Excel und PowerPoint teilen jetzt den <strong>vollständigen Gesprächskontext</strong> zwischen beiden Apps – was in Excel passiert, informiert automatisch Claude in PowerPoint. Neu: Skills-Support innerhalb der Add-ins sowie Verbindung über LLM-Gateways von <strong>Amazon Bedrock, Google Vertex AI und Microsoft Foundry</strong> für Enterprise-Nutzer.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Cross-App:</strong> Excel-Daten fließen nahtlos in PowerPoint-Präsentationen – Claude kennt den vollen Kontext.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Releasebot / Anthropic</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">
         Lesen
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       </a>
@@ -823,11 +905,197 @@
     </div>
   </article>
 
+
+  <!-- Multi-Model Release April 2026 -->
+  <article class="card featured" data-cat="modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4A5;</div>
+      <div class="card-meta">
+        <span class="tag tag-violet">KI-Modelle</span>
+        <span class="tag tag-indigo">April-Welle</span>
+        <span class="tag tag-rose">OpenAI · Google · xAI</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>April-Modellwelle: GPT-5.4, Gemini 3.1 Ultra &amp; Grok 4.20 – KI-Wettbewerb auf Höchststand</h2>
+      <p>Drei Frontier-Modelle in einem Monat: <strong>GPT-5.4</strong> von OpenAI (Standard, Thinking, Pro-Varianten), <strong>Gemini 3.1 Ultra</strong> von Google DeepMind mit nativem multimodalem Reasoning, und <strong>Grok 4.20</strong> von xAI mit verbessertem Echtzeit-Webzugriff. Hinzu kommt Anthropics inoffiziell genanntes "Claude Mythos 5" als erstes Modell mit 10 Billionen Parametern für High-Stakes-Anwendungen (Cybersecurity, Forschung, Coding). Der Leistungsabstand zwischen US- und chinesischen Modellen liegt nur noch bei 2,7 %.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Trend:</strong> Der Abstand zwischen führenden Modellen sinkt drastisch – Differenzierung verlagert sich auf Features, Preis und Ökosystem.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">LLM Stats / devFlokers</span>
+      <a class="read-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- IQiyi AI Filmproduktion -->
+  <article class="card" data-cat="industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F3AC;</div>
+      <div class="card-meta">
+        <span class="tag tag-violet">Medien</span>
+        <span class="tag tag-cyan">Generative KI</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Netflix-Rivale iQiyi produziert Filme fast vollständig per KI – Tool Nadou</h2>
+      <p>Der chinesische Streaming-Gigant <strong>iQiyi</strong> setzt sein KI-Tool <em>Nadou</em> ein, um Filme und Serien nahezu vollständig automatisiert zu produzieren – von Drehbuch über Storyboard bis hin zum Schnitt. Bloomberg berichtet, dass Nadou weite Teile der Produktionskette übernimmt und die Produktionskosten dramatisch senkt. Ein Warnsignal für die traditionelle Filmbranche weltweit.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Impact:</strong> KI-generierte Inhalte könnten den Streaming-Wettbewerb grundlegend neu definieren – mit minimalen Produktionskosten.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Bloomberg</span>
+      <a class="read-link" href="https://www.bloomberg.com/news/articles/2026-04-20/netflix-rivale-produziert-filme-fast-komplett-per-ki-iqiyi-nutzt-tool-nadou" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- OpenAI Workspace Agents -->
+  <article class="card" data-cat="industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4BC;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">OpenAI</span>
+        <span class="tag tag-green">Workspace Agents</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>OpenAI Workspace Agents: Codex automatisiert komplexe Team-Workflows rund um die Uhr</h2>
+      <p>OpenAI rollt <em>Workspace Agents</em> in ChatGPT aus – eine Evolution der Custom GPTs, angetrieben von <strong>Codex</strong>. Die Agents automatisieren mehrstufige Team-Workflows und laufen kontinuierlich im Hintergrund, auch ohne aktive Nutzerinteraktion. Einsatzbereiche: Projektmanagement, Code-Reviews, Datenanalyse und Kundenkommunikation.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Differenz zu GPTs:</strong> Workspace Agents sind persistent, aufgabenbewusst und koordinieren sich mit anderen Team-Tools.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">MarketingProfs / TechCrunch</span>
+      <a class="read-link" href="https://www.marketingprofs.com/opinions/2026/54556/ai-update-april-17-2026-ai-news-and-views-from-the-past-week" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- BCG AI Jobs -->
+  <article class="card" data-cat="arbeit">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4C8;</div>
+      <div class="card-meta">
+        <span class="tag tag-rose">Arbeitswelt</span>
+        <span class="tag tag-amber">BCG-Studie</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>BCG: KI verändert mehr Jobs als sie vernichtet – Umschulung ist die Priorität</h2>
+      <p>Die neue BCG-Studie <em>"AI Will Reshape More Jobs Than It Replaces"</em> analysiert den globalen Arbeitsmarkteffekt von KI. Kernaussage: KI automatisiert <strong>Aufgaben innerhalb von Berufen</strong>, eliminiert aber nur selten ganze Berufsbilder. Für Unternehmen ist Investition in Umschulung wirtschaftlich deutlich sinnvoller als Entlassungen – und schützt zudem vor Fachkräftemangel.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Empfehlung:</strong> Unternehmen, die heute in Reskilling investieren, sichern sich 2027+ den entscheidenden Wettbewerbsvorteil.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">BCG</span>
+      <a class="read-link" href="https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- ═══ YOUTUBE SECTION ═══ -->
+  <div class="section-divider youtube-section" style="grid-column:1/-1">
+    <span class="line"></span>
+    <span>&#x25B6;&#xFE0F; YouTube – KI-Videos auf Deutsch</span>
+    <span class="line"></span>
+  </div>
+
+  <!-- YouTube: n8n Automatisierung -->
+  <article class="card youtube-card" data-cat="youtube">
+    <div class="card-header">
+      <div class="card-icon">&#x1F534;</div>
+      <div class="card-meta">
+        <span class="tag tag-red">YouTube</span>
+        <span class="tag tag-cyan">n8n</span>
+        <span class="tag tag-green">Tutorial</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Automatisiere ALLES mit n8n in 2026! (Das einzige Video, das du brauchst)</h2>
+      <p>Ein umfassendes Tutorial-Video zum Thema KI-gestützte Workflow-Automatisierung mit <strong>n8n</strong> – dem Open-Source-Pendant zu Zapier. Das Video deckt ab: KI-Nodes, LLM-Integration, Webhooks, HTTP-Anfragen und komplexe Multi-Step-Workflows. Ideal für Einsteiger und Fortgeschrittene, die ihre Prozesse automatisieren wollen.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Ideal für:</strong> Freelancer, Agenturen und KMUs, die Routineaufgaben ohne Coding automatisieren wollen.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">YouTube</span>
+      <a class="read-link" href="https://www.youtube.com/watch?v=eDAhMbVqwC0" target="_blank" rel="noopener">
+        Ansehen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- YouTube: KI-WELT -->
+  <article class="card youtube-card" data-cat="youtube">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4FA;</div>
+      <div class="card-meta">
+        <span class="tag tag-red">YouTube</span>
+        <span class="tag tag-indigo">WELT</span>
+        <span class="tag tag-violet">KI-Sendung</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>KI-WELT: Deutschlands erste KI-Nachrichtensendung mit Avatar-Moderator</h2>
+      <p><strong>WELT</strong> hat Deutschlands erste vollständig KI-produzierte Nachrichtensendung gestartet: KI-WELT. Ein Avatar-Moderator präsentiert täglich aktuelle Nachrichten – vollständig automatisiert generiert. Das Format gilt als Meilenstein für KI im deutschen Journalismus und zeigt, wie weit Generative AI in der Medienproduktion angekommen ist.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Premiere:</strong> Erste deutsche Nachrichtensendung mit KI-Avatar-Moderator – vollautomatisierte Produktion.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">WELT / YouTube</span>
+      <a class="read-link" href="https://www.youtube.com/watch?v=eoCoHXtmjTo" target="_blank" rel="noopener">
+        Ansehen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- YouTube: 10 KI-Tools -->
+  <article class="card youtube-card" data-cat="youtube">
+    <div class="card-header">
+      <div class="card-icon">&#x1F9F0;</div>
+      <div class="card-meta">
+        <span class="tag tag-red">YouTube</span>
+        <span class="tag tag-amber">Top-Tools</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Vergiss ChatGPT: Diese 10 KI-Tools machen dich 2026 zur Ein-Mann-Armee</h2>
+      <p>Ein praxisorientiertes Video, das <strong>10 KI-Tools</strong> vorstellt, die in 2026 produktive Einzelpersonen und kleine Teams befähigen, wie große Unternehmen zu operieren. Themen: KI-Recherche, Content-Erstellung, Video-Produktion, Code-Generierung, Automatisierung und Kundenbetreuung – alles mit konkreten Workflow-Beispielen.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Zielgruppe:</strong> Solopreneure, Freelancer und Startup-Teams, die mit minimalem Aufwand maximale Wirkung erzielen wollen.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">YouTube</span>
+      <a class="read-link" href="https://www.youtube.com/watch?v=wtatHM0DjZk" target="_blank" rel="noopener">
+        Ansehen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
 </div>
 
 <footer>
   Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 23. April 2026 &nbsp;|&nbsp;
-  Quellen: Anthropic, TechCrunch, SiliconANGLE, Releasebot, The Decoder, Handelsblatt, ad-hoc-news, GlobeNewswire, MIT Technology Review, produktion.de, ManpowerGroup, Workday &nbsp;|&nbsp;
+  Quellen: Anthropic, TechCrunch, SiliconANGLE, Releasebot, The Decoder, Bloomberg, BCG, LLM Stats, ad-hoc-news, GlobeNewswire, MIT Technology Review, produktion.de, NVIDIA Blog, BusinessWire, MarketingProfs, ManpowerGroup, Workday, YouTube &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
