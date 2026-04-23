@@ -276,6 +276,58 @@
       border-top: 1px solid var(--border);
     }
     footer a { color: var(--accent); text-decoration: none; }
+
+    .filter-btn.claude-btn { border-color: rgba(245,158,11,.4); color: #fcd34d; }
+    .filter-btn.claude-btn:hover,
+    .filter-btn.claude-btn.active {
+      background: linear-gradient(135deg, #d97706, #b45309);
+      border-color: #d97706;
+      color: #fff;
+    }
+
+    .card.claude-card {
+      border-color: rgba(245,158,11,.35);
+      background: linear-gradient(160deg, #1a1710 0%, var(--surface) 60%);
+    }
+    .card.claude-card:hover {
+      border-color: #f59e0b;
+      box-shadow: 0 12px 32px rgba(245,158,11,.2);
+    }
+    .card.claude-card .card-highlight {
+      border-left-color: #f59e0b;
+    }
+    .card.claude-card .card-highlight strong { color: #fcd34d; }
+    .card.claude-card .read-link {
+      background: rgba(245,158,11,.12);
+      border-color: rgba(245,158,11,.3);
+      color: #fcd34d;
+    }
+    .card.claude-card .read-link:hover {
+      background: rgba(245,158,11,.25);
+      border-color: rgba(245,158,11,.6);
+    }
+    .card.claude-card .source-name::before { color: #f59e0b; }
+
+    .section-divider {
+      max-width: 1400px;
+      margin: 1rem 2rem 0;
+      padding: .5rem .75rem;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-size: .82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .section-divider .line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-divider.claude-section { color: #fcd34d; }
+    .section-divider.general-section { color: var(--muted); }
+    .tag-orange { background: rgba(245,158,11,.18); color: #fcd34d; }
   </style>
 </head>
 <body>
@@ -283,12 +335,12 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 22. April 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 23. April 2026</div>
 </header>
 
 <div class="stats">
-  <div class="stat"><span class="dot"></span><strong>12</strong>&nbsp;Artikel</div>
-  <div class="stat">&#x1F310;&nbsp;<strong>8</strong>&nbsp;Quellen</div>
+  <div class="stat"><span class="dot"></span><strong>18</strong>&nbsp;Artikel</div>
+  <div class="stat">&#x1F310;&nbsp;<strong>14</strong>&nbsp;Quellen</div>
   <div class="stat">&#x1F4CA;&nbsp;<strong>88 %</strong>&nbsp;der Unternehmen setzen KI ein</div>
   <div class="stat">&#x1F680;&nbsp;<strong>47 % CAGR</strong>&nbsp;Physical AI bis 2032</div>
   <div class="stat">&#x1F916;&nbsp;<strong>2026</strong>&nbsp;= Jahr der Massenproduktion</div>
@@ -301,9 +353,175 @@
   <button class="filter-btn" onclick="filterCards('robotik', this)">Robotik</button>
   <button class="filter-btn" onclick="filterCards('arbeit', this)">Arbeitswelt</button>
   <button class="filter-btn" onclick="filterCards('forschung', this)">Forschung</button>
+  <button class="filter-btn claude-btn" onclick="filterCards('claude', this)">&#x1F916; Claude & Anthropic</button>
 </div>
 
 <div class="grid" id="grid">
+
+  <!-- ═══ CLAUDE SECTION ═══ -->
+  <div class="section-divider claude-section" style="grid-column:1/-1">
+    <span class="line"></span>
+    <span>&#x2728; Claude &amp; Anthropic – Neueste Features</span>
+    <span class="line"></span>
+  </div>
+
+  <!-- FEATURED: Claude Managed Agents -->
+  <article class="card claude-card featured" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F916;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Anthropic</span>
+        <span class="tag tag-violet">Agenten</span>
+        <span class="tag tag-green">Public Beta</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Managed Agents: Produktion 10× schneller – Anthropics neues Agent-Framework</h2>
+      <p>Am <strong>8. April 2026</strong> startete Anthropic <em>Claude Managed Agents</em> in der Public Beta – eine Suite komponierbarer APIs für cloud-gehostete Agenten. Das Framework übernimmt die gesamte Infrastruktur: Sandboxing, Checkpointing, Credential-Management, Permissions und End-to-End-Tracing. Was bisher Monate Infrastrukturarbeit kostete, ist jetzt in Tagen deploybar. Frühe Kunden: <strong>Notion, Rakuten, Asana</strong>.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Preis:</strong> 0,08 USD pro Agent-Laufzeitstunde + Modellkosten &nbsp;|&nbsp; <strong>Header:</strong> <code>managed-agents-2026-04-01</code>
+    </div>
+    <div class="card-footer">
+      <span class="source-name">SiliconANGLE / Anthropic</span>
+      <a class="read-link" href="https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude Design -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F3A8;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Design</span>
+        <span class="tag tag-violet">Opus 4.7</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Design: KI-generierte Prototypen, Slides &amp; Mockups</h2>
+      <p>Anthropic Labs veröffentlichte am <strong>17. April 2026</strong> Claude Design – ein neues Werkzeug für visuelle Kreativarbeit. Nutzer co-designen mit Claude Opus 4.7 Prototypen, Präsentationen, Pitch Decks und One-Pager. Das Tool richtet sich an Produktteams und Designer, die schnell iterieren wollen, ohne tiefe Design-Kenntnisse zu benötigen.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Powered by:</strong> Claude Opus 4.7 mit verbesserter Vision &amp; höherer Bildauflösung.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">TechCrunch</span>
+      <a class="read-link" href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude Opus 4.7 -->
+  <article class="card claude-card" data-cat="claude modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x26A1;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Opus 4.7</span>
+        <span class="tag tag-indigo">Modell</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Opus 4.7 GA: Stärkstes Coding, bessere Vision, neue Agenten-Skills</h2>
+      <p>Claude Opus 4.7 ist jetzt allgemein verfügbar und bringt deutliche Verbesserungen: Stärkere Software-Engineering-Fähigkeiten, höhere Bildauflösung in der Vision-Pipeline, schärfere Befehlsausführung und zuverlässigere langfristige Agenten-Tasks. Neu: <em>Effort-Control</em>, <em>Task Budgets</em> und <em>Claude Code Review Tools</em>.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Neu:</strong> Effort-Control-Mechanismen + Task-Budgets für präzise Steuerung langer Agentenläufe.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Releasebot / Anthropic</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude Code Major Update -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F6E0;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Code</span>
+        <span class="tag tag-cyan">Dev Tools</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Code April-Update: Parallele Agenten, /tui, Mobile Push-Notifications</h2>
+      <p>Der April-2026-Release von Claude Code enthält: Desktop-Redesign für <strong>parallele Agenten</strong> (14. Apr.), <em>Routinen</em> als wiederverwendbare Workflows (9. Apr.), <strong>/resume bis 67 % schneller</strong> auf großen Sessions, /tui Fullscreen-Modus, Mobile Push Notifications und smarte Slash-Command-Suche. MCP-Startup ist ebenfalls spürbar schneller.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Highlight:</strong> Parallele Agenten im Desktop-Client – mehrere Tasks gleichzeitig, sichtbar im Split-View.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">AF.net / GitHub Releases</span>
+      <a class="read-link" href="https://af.net/realtime/anthropic-announces-major-enhancements-to-claude-code-in-april-2026-update/" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude Cowork -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4C5;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Cowork</span>
+        <span class="tag tag-green">GA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Cowork: Kollaborative KI-Arbeitsfläche jetzt allgemein verfügbar</h2>
+      <p>Claude Cowork ist jetzt für alle auf macOS und Windows verfügbar. Enterprise-Features: OpenTelemetry-Unterstützung, rollenbasierte Zugriffskontrolle (RBAC) und erweitertes Analytics-Dashboard. Admins können Nutzer in Gruppen organisieren und jeder Gruppe individuelle Claude-Fähigkeiten zuweisen. Persistente Agenten-Threads für Pro &amp; Max.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Enterprise:</strong> RBAC + OpenTelemetry + Gruppen-Management – ready für große Orgs.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Releasebot / Anthropic</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Claude Memory + Mobile Interactive Apps -->
+  <article class="card claude-card" data-cat="claude">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4F1;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Memory</span>
+        <span class="tag tag-violet">Mobile</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Memory für alle + interaktive Apps auf iOS &amp; Android</h2>
+      <p>Zwei neue Nutzer-Features: <strong>Speicher aus dem Chat-Verlauf</strong> ist jetzt für alle Claude-Konten kostenlos verfügbar – Claude erinnert sich kontextübergreifend an Präferenzen und Projekte. Außerdem können Claude-Mobilapps jetzt <em>vollständig interaktive Apps</em> rendern: Live-Charts, Diagramme und teilbare visuelle Inhalte direkt im Gespräch.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Free Tier:</strong> Langzeitgedächtnis ab sofort auch ohne Bezahlplan – kein Upgrade nötig.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Anthropic Release Notes</span>
+      <a class="read-link" href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank" rel="noopener">
+        Lesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- ═══ GENERAL NEWS SECTION ═══ -->
+  <div class="section-divider general-section" style="grid-column:1/-1">
+    <span class="line"></span>
+    <span>KI &amp; Automatisierung – Markt, Industrie &amp; Gesellschaft</span>
+    <span class="line"></span>
+  </div>
 
   <!-- FEATURED: Stanford AI Index -->
   <article class="card featured" data-cat="forschung">
@@ -608,8 +826,9 @@
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Quellen: Trend Report, ad-hoc-news, GlobeNewswire, Trending Topics, Manila Times, MIT Technology Review, produktion.de, The Decoder &nbsp;|&nbsp;
-  <a href="https://trendreport.de" target="_blank" rel="noopener">trendreport.de</a>
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 23. April 2026 &nbsp;|&nbsp;
+  Quellen: Anthropic, TechCrunch, SiliconANGLE, Releasebot, The Decoder, Handelsblatt, ad-hoc-news, GlobeNewswire, MIT Technology Review, produktion.de, ManpowerGroup, Workday &nbsp;|&nbsp;
+  <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
 <script>
@@ -618,11 +837,16 @@
     btn.classList.add('active');
 
     document.querySelectorAll('.card').forEach(card => {
-      if (cat === 'all' || card.dataset.cat === cat) {
+      const cats = (card.dataset.cat || '').split(' ');
+      if (cat === 'all' || cats.includes(cat)) {
         card.style.display = '';
       } else {
         card.style.display = 'none';
       }
+    });
+
+    document.querySelectorAll('.section-divider').forEach(div => {
+      div.style.display = cat === 'all' ? '' : 'none';
     });
   }
 </script>
