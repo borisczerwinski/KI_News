@@ -1,14 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "hooks": {
-    "Stop": [
+    "PostToolUse": [
       {
+        "matcher": "Bash",
         "hooks": [
           {
             "type": "command",
+            "if": "Bash(git commit *)",
             "command": "/home/user/KI_News/.claude/auto-deploy.sh",
             "timeout": 60,
-            "statusMessage": "Deploying to GitHub Pages..."
+            "statusMessage": "Deploying index.html to gh-pages..."
           }
         ]
       }
