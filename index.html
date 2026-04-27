@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI & Automatisierung – News 26. April 2026</title>
+  <title>KI & Automatisierung – News 27. April 2026</title>
   <style>
     :root {
       --bg:        #0d1117;
@@ -335,15 +335,15 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 26. April 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 27. April 2026</div>
 </header>
 
 <div class="stats">
-  <div class="stat"><span class="dot"></span><strong>10</strong>&nbsp;aktuelle Artikel</div>
-  <div class="stat">&#x1F310;&nbsp;<strong>10</strong>&nbsp;Quellen</div>
-  <div class="stat">&#x1F6E1;&#xFE0F;&nbsp;<strong>Claude Mythos</strong>&nbsp;– neue Security-KI</div>
-  <div class="stat">&#x1F4B0;&nbsp;<strong>40 Mrd. USD</strong>&nbsp;Google investiert in Anthropic</div>
-  <div class="stat">&#x1F916;&nbsp;<strong>DeepSeek V4</strong>&nbsp;1 Billion Parameter – Open Weights</div>
+  <div class="stat"><span class="dot"></span><strong>12</strong>&nbsp;aktuelle Artikel</div>
+  <div class="stat">&#x1F310;&nbsp;<strong>12</strong>&nbsp;Quellen</div>
+  <div class="stat">&#x1F6E1;&#xFE0F;&nbsp;<strong>Claude Mythos</strong>&nbsp;– zu gefährlich für die Öffentlichkeit</div>
+  <div class="stat">&#x1F680;&nbsp;<strong>GPT-5.5</strong>&nbsp;– OpenAIs neues Flaggschiff live</div>
+  <div class="stat">&#x1F527;&nbsp;<strong>Claude Code</strong>&nbsp;Bugs behoben nach Nutzer-Backlash</div>
 </div>
 
 <div class="filters">
@@ -365,30 +365,52 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: Claude Mythos Preview -->
+  <!-- FEATURED: Claude Mythos – zu gefährlich für Public Release -->
   <article class="card claude-card featured" data-cat="claude modelle">
     <div class="card-header">
       <div class="card-icon">&#x1F6E1;&#xFE0F;</div>
       <div class="card-meta">
-        <span class="tag tag-orange">Neues Modell</span>
         <span class="tag tag-rose">Security AI</span>
-        <span class="tag tag-amber">Breaking – heute</span>
+        <span class="tag tag-orange">Kein Public Release</span>
+        <span class="tag tag-amber">Breaking</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Anthropic enthüllt Claude Mythos Preview – ein Modell speziell für Cybersecurity und Project Glasswing</h2>
-      <p>Anthropic hat <strong>Claude Mythos Preview</strong> vorgestellt: ein allgemeines Sprachmodell, das über alle Benchmarks hinweg stark abschneidet, aber außerordentlich fähig bei Computer-Security-Aufgaben ist. Mythos wurde auf einem umfangreichen Datensatz an Sicherheitscode, Exploit-Analysen und Schwachstellenberichten trainiert. Gleichzeitig startet Anthropic <strong>Project Glasswing</strong> – eine Initiative, mit der Claude Mythos genutzt werden soll, um kritische Open-Source-Software weltweit zu sichern. Das Modell kann Codebasen auf Sicherheitslücken prüfen, Patches vorschlagen und komplexe CVE-Ketten analysieren. Die Preview ist aktuell nur für ausgewählte Sicherheitsforschende zugänglich.</p>
+      <h2>Anthropics neues KI-Modell „Mythos Preview" gilt als zu gefährlich für eine öffentliche Veröffentlichung</h2>
+      <p>Anthropic hat <strong>Claude Mythos Preview</strong> vorgestellt – ein allgemeines Sprachmodell, das über alle Benchmarks hinweg stark abschneidet, jedoch außergewöhnliche Fähigkeiten bei Computer-Security-Aufgaben besitzt. Wegen des Dual-Use-Risikos hat Anthropic entschieden, das Modell <strong>nicht öffentlich verfügbar</strong> zu machen. Stattdessen erhalten nur ausgewählte Cybersecurity-Partner Zugang, um damit weltweit kritische Software-Schwachstellen zu schließen. ABC News und YouTube berichteten ausführlich – das Modell übertrifft bei Sicherheits-Benchmarks alle bekannten Frontiersysteme. Anthropic bezeichnete es als „stärkste Cybersecurity-KI, die je entwickelt wurde".</p>
     </div>
     <div class="card-highlight">
-      <strong>Vision:</strong> Anthropic positioniert Mythos als KI-Verteidigungslinie für kritische Infrastruktur – ein gezielter Schritt weg vom reinen Produktivitäts-KI-Markt.
+      <strong>Begründung:</strong> Anthropic warnt, Mythos könne in falschen Händen schwerwiegende Angriffe auf kritische Infrastruktur ermöglichen – und priorisiert defensive Nutzung vor kommerziellem Zugang.
     </div>
     <div class="card-footer">
-      <span class="source-name">red.anthropic.com</span>
-      <a class="read-link" href="https://red.anthropic.com/2026/mythos-preview/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">red.anthropic.com / ABC News / YouTube</span>
+      <a class="read-link" href="https://www.youtube.com/watch?v=PLg2EUkIC78" target="_blank" rel="noopener">Video ansehen &rarr;</a>
     </div>
   </article>
 
-  <!-- Claude Opus 4.7 xhigh + Claude Design -->
+  <!-- Claude Code Bugs behoben -->
+  <article class="card claude-card" data-cat="claude modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F527;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Code</span>
+        <span class="tag tag-green">Bug Fix</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Anthropic gibt zu: Engineering-Fehler haben Claude Code wochenlang verschlechtert – Postmortem veröffentlicht</h2>
+      <p>Nach wochenlangem Nutzer-Backlash hat Anthropic ein detailliertes Postmortem veröffentlicht: <strong>Drei separate technische Fehler</strong> verschlechterten Claude Code zwischen März und April 2026: (1) eine absichtliche, aber schlecht kommunizierte Reduktion des Reasoning-Aufwands zur Latenzkontrolle, (2) ein Session-Clearing-Bug mit Gedächtnisverlust und Wiederholungsverhalten, und (3) eine System-Prompt-Änderung gegen Verbosity, die die Coding-Qualität ruinierte. Alle drei wurden per Update v2.1.116 (20. April) behoben. Die Nutzerlimits wurden zudem für betroffene Abonnenten zurückgesetzt.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Konsequenz:</strong> Anthropic entfernte den Claude-Code-Zugang aus dem $20/Monat Pro-Plan – er ist künftig nur noch im Max-Plan enthalten.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Fortune / AIToolly / wheresyoured.at</span>
+      <a class="read-link" href="https://fortune.com/2026/04/24/anthropic-engineering-missteps-claude-code-performance-decline-user-backlash/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Claude Opus 4.7 + Claude Design -->
   <article class="card claude-card" data-cat="claude modelle">
     <div class="card-header">
       <div class="card-icon">&#x1F3A8;</div>
@@ -398,41 +420,19 @@
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Opus 4.7: 3× höhere Vision-Auflösung, neuer „xhigh"-Effort und Claude Design</h2>
-      <p>Claude Opus 4.7 (veröffentlicht 16. April) bringt entscheidende Verbesserungen: <strong>3-fach höhere Vision-Auflösung</strong>, ein neues <strong>„xhigh"-Reasoning-Level</strong> zwischen „high" und „max" sowie feinere Kontrolle über den Reasoning/Latency-Tradeoff – es gibt jetzt 5 Stufen: low / medium / high / xhigh / max. Zusätzlich launcht Anthropic <strong>Claude Design</strong>: Ein experimentelles Tool, das Gründer und Product Manager ohne Design-Hintergrund dabei unterstützt, Prototypen, Slides, One-Pager und Design-Systeme direkt aus Prompts zu generieren.</p>
+      <h2>Claude Opus 4.7: 3× Vision-Auflösung, neuer „xhigh"-Effort-Level und experimentelles Claude Design</h2>
+      <p>Claude Opus 4.7 (veröffentlicht 16. April) bringt entscheidende Upgrades: <strong>3-fach höhere Bildauflösung</strong>, ein neues <strong>„xhigh"-Reasoning-Level</strong> zwischen „high" und „max" sowie 5 Effort-Stufen (low / medium / high / xhigh / max). Parallel launcht Anthropic <strong>Claude Design</strong>: Ein experimentelles Tool, das Gründerinnen und Product Manager ohne Design-Background bei der Erstellung von Prototypen, Slides und One-Pagern unterstützt – inklusive automatischer Integration des unternehmenseigenen Design-Systems aus dem Codebase.</p>
     </div>
     <div class="card-highlight">
-      <strong>Pricing:</strong> Opus 4.7 behält die Preise von Opus 4.6 – $5 / $25 pro MTok Input/Output.
+      <strong>Neu:</strong> Claude in Chrome ist jetzt in der Beta für alle bezahlten Pläne (Pro, Team, Enterprise) verfügbar – KI direkt im Browser ohne Tab-Wechsel.
     </div>
     <div class="card-footer">
-      <span class="source-name">TechCrunch / releasebot.io</span>
+      <span class="source-name">TechCrunch / platform.claude.com</span>
       <a class="read-link" href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Google $40B Anthropic Investment -->
-  <article class="card claude-card" data-cat="claude industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4B0;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Anthropic</span>
-        <span class="tag tag-cyan">Google Cloud</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Google investiert bis zu 40 Mrd. USD in Anthropic – 5 GW Cloud-Compute inklusive</h2>
-      <p>Google sichert sich eine tiefe strategische Partnerschaft mit Anthropic: <strong>10 Mrd. USD sofort</strong> bei einer Bewertung von 350 Mrd. USD, plus bis zu <strong>30 Mrd. USD an leistungsgebundenen Meilensteinen</strong>. Dazu stellt Google Cloud <strong>5 Gigawatt Rechenleistung</strong> über fünf Jahre bereit – beginnend 2027. Diese Kapazität soll das Training und Deployment der nächsten Claude-Generationen sicherstellen. Parallel sichert sich Anthropic auch 3,5 GW Broadcom-TPU-Kapazität für 2027 – insgesamt eine der größten Compute-Commitments in der KI-Geschichte.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Kontext:</strong> Anthropic führt die KI-Modell-Rankings laut Marktbeobachtern an – Google und Amazon sichern sich beide als Hauptinvestoren und Cloud-Partner.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">fazm.ai / Anthropic April 2026</span>
-      <a class="read-link" href="https://fazm.ai/blog/anthropic-april-2026-announcement" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude Memory + Ant CLI -->
+  <!-- Managed Agents + ant CLI -->
   <article class="card claude-card" data-cat="claude modelle">
     <div class="card-header">
       <div class="card-icon">&#x1F9E0;</div>
@@ -442,14 +442,14 @@
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Memory für Managed Agents jetzt in Public Beta – plus neues „ant" CLI für die API</h2>
-      <p>Anthropic öffnet zwei wichtige Features für alle Entwickler: <strong>Memory für Managed Agents</strong> ist nun in der Public Beta verfügbar – abgerufen über den Header <code>managed-agents-2026-04-01</code>. Agenten können damit Kontexte und Lernfortschritte sitzungsübergreifend speichern. Zusätzlich launcht Anthropic das <strong>Ant CLI</strong> – ein Kommandozeilen-Client für die Claude API mit nativer Claude-Code-Integration, schnellerer API-Interaktion und YAML-basiertem Versioning von API-Ressourcen.</p>
+      <h2>Memory für Managed Agents in Public Beta – Anthropic launcht das „ant" CLI für die Claude API</h2>
+      <p>Anthropic öffnet zwei wichtige Entwickler-Features: <strong>Memory für Managed Agents</strong> ist nun in der Public Beta (Header: <code>managed-agents-2026-04-01</code>) – Agenten speichern Kontext und Lernfortschritte sitzungsübergreifend. Zusätzlich erscheint das <strong>ant CLI</strong>: ein Kommandozeilen-Client für die Claude API mit nativer Claude-Code-Integration, schnellerer API-Interaktion und YAML-basiertem Versioning von API-Ressourcen. Claude Desktop erhält außerdem einen neuen „Customize"-Bereich, der Skills, Plugins und Konnektoren bündelt.</p>
     </div>
     <div class="card-highlight">
-      <strong>Claude Cowork:</strong> Die kollaborative Echtzeit-Arbeitsumgebung ist nun allgemein verfügbar auf macOS und Windows via Claude Desktop App.
+      <strong>Roadmap:</strong> Wiederkehrende und On-Demand-Aufgaben können jetzt in Cowork geplant und terminiert werden – Claude als persönlicher Scheduler.
     </div>
     <div class="card-footer">
-      <span class="source-name">platform.claude.com / releasebot.io</span>
+      <span class="source-name">releasebot.io / platform.claude.com</span>
       <a class="read-link" href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
@@ -461,145 +461,189 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: DeepSeek V4 -->
-  <article class="card featured" data-cat="modelle forschung">
+  <!-- FEATURED: GPT-5.5 Release -->
+  <article class="card featured" data-cat="modelle industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F30A;</div>
+      <div class="card-icon">&#x1F680;</div>
       <div class="card-meta">
-        <span class="tag tag-indigo">DeepSeek</span>
-        <span class="tag tag-violet">Open Weights</span>
-        <span class="tag tag-cyan">1 Billion Parameter</span>
+        <span class="tag tag-indigo">OpenAI</span>
+        <span class="tag tag-violet">GPT-5.5</span>
+        <span class="tag tag-cyan">Neues Modell</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>DeepSeek V4: 1 Billion Parameter, Open Weights, $5,2 Mio. Trainingskosten – und konkurrenzfähig mit US-Frontier-Modellen</h2>
-      <p>China schlägt erneut mit einem Paukenschlag zurück: DeepSeek hat <strong>V4 veröffentlicht</strong> – ein Mixture-of-Experts-Modell mit <strong>einer Billion Parametern</strong> und vollständig offenen Gewichten. Das Modell erreicht laut ersten Benchmarks eine Performance, die mit US-Frontier-Modellen wie Claude Opus 4.6 mithalten kann – bei geschätzten <strong>Trainingskosten von nur 5,2 Millionen USD</strong>. Die Open-Weights-Strategie macht das Modell sofort frei nutzbar für alle. Besonders brisant: DeepSeek V4 übertrifft frühere chinesische Modelle deutlich und schließt den Abstand zu westlichen Laboren weiter – was Fragen über westliche Exportkontrollen und den Sinn von Chip-Embargos aufwirft. Bis Ende April soll ein Finetuning-Paket folgen.</p>
+      <h2>OpenAI veröffentlicht GPT-5.5 – „smartestes und intuitivstes Modell" bringt starke Agenten-Fähigkeiten</h2>
+      <p>OpenAI hat am 23. April <strong>GPT-5.5 und GPT-5.5 Pro</strong> über die API und ChatGPT für Plus-, Pro-, Business- und Enterprise-Nutzer freigeschaltet. Das Unternehmen bezeichnet es als sein „smartestes und intuitivstes Modell" – mit besonders starken Leistungssteigerungen in <strong>Agentic Coding, Computer Use, wissenschaftlicher Recherche und Wissensarbeit</strong>. GPT-5.5 kommt nur sechs Wochen nach GPT-5.4 – ein Hinweis auf das rasante Entwicklungstempo im KI-Wettbewerb. Trotz höherem Preis als GPT-5.4 ist es deutlich token-effizienter und damit in der Gesamtrechnung oft günstiger. Parallel hat OpenAI am 21. April <strong>ChatGPT Images 2.0</strong> gestartet – mit nativem Reasoning vor dem Zeichnen, 2K-Auflösung und Multi-Image-Konsistenz.</p>
     </div>
     <div class="card-highlight">
-      <strong>Geopolitik:</strong> Der Leistungsabstand zwischen US- und chinesischen Modellen ist laut Stanford AI Index von 17–31 % (2023) auf unter 3 % gesunken.
+      <strong>Rennen:</strong> Die sechs Wochen zwischen GPT-5.4 und 5.5 unterstreichen, wie hart Frontier-Labs um Enterprise-Kunden kämpfen – OpenAI, Anthropic und Google erhöhen das Tempo.
     </div>
     <div class="card-footer">
-      <span class="source-name">devflokers.com / asanify.com</span>
-      <a class="read-link" href="https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">TechCrunch / CNBC / Fortune</span>
+      <a class="read-link" href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Snap Layoffs AI Code -->
+  <!-- GSA Million Hours Challenge -->
   <article class="card" data-cat="arbeit industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F4F8;</div>
+      <div class="card-icon">&#x1F1FA;&#x1F1F8;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">Snap</span>
-        <span class="tag tag-amber">Arbeitswelt</span>
+        <span class="tag tag-indigo">US-Behörden</span>
+        <span class="tag tag-amber">Automatisierung</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Snap entlässt 1.000 Mitarbeiter: KI schreibt 65 % des Codes – und spart 500 Mio. USD jährlich</h2>
-      <p>Snap-CEO Evan Spiegel hat angekündigt, rund <strong>1.000 Mitarbeitende zu entlassen</strong> und über 300 offene Stellen zu streichen – direkt mit dem Wachstum der KI-generierten Codeentwicklung begründet. KI produziert inzwischen <strong>mehr als 65 % des gesamten neuen Codes</strong> bei Snap. Die Restrukturierung soll in der zweiten Jahreshälfte 2026 <strong>über 500 Millionen USD jährlich</strong> einsparen. Snap ist damit eines der ersten großen Social-Media-Unternehmen, das explizit KI-Automatisierung als Begründung für Massenentlassungen nennt – ein Signal für die gesamte Tech-Branche.</p>
+      <h2>US-Behörde GSA will eine Million Arbeitsstunden per KI automatisieren – nach 40 % Stellenabbau</h2>
+      <p>Die General Services Administration (GSA) hat nach dem Verlust von fast <strong>40 % ihrer Belegschaft</strong> eine „Million Hours Challenge" für ihr internes KI-Tool <strong>USAi</strong> gestartet. Das Ziel: einen Teil der Arbeit von Bundesangestellten und Auftragnehmern zu automatisieren – entsprechend einer Million Arbeitsstunden. Die Initiative kommt, da die Behörde mit deutlich reduziertem Personal dieselben Aufgaben erfüllen soll. Kritiker sehen darin ein Zeichen dafür, dass KI-Automatisierung bei Behörden nicht nur Effizienz steigern, sondern aktiv Stellenabbau kompensieren soll.</p>
     </div>
     <div class="card-highlight">
-      <strong>Trend:</strong> Immer mehr Tech-CEOs rechtfertigen Stellenabbau offen mit KI-Produktivitätssteigerungen – die Debatte um KI und Jobs eskaliert.
+      <strong>Signal:</strong> Erstmals nennt eine US-Bundesbehörde KI-Automatisierung offen als Ersatz für weggefallene Mitarbeitende – ein Präzedenzfall mit politischer Sprengkraft.
     </div>
     <div class="card-footer">
-      <span class="source-name">asanify.com / AI News Digest 25. April</span>
-      <a class="read-link" href="https://asanify.com/blog/news/open-source-frontier-ai-april-25-2026/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">Federal News Network</span>
+      <a class="read-link" href="https://federalnewsnetwork.com/artificial-intelligence/2026/04/gsa-looks-to-automate-a-million-work-hours-after-losing-nearly-40-of-its-workforce/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- YouTube Deepfake Detection Celebrities -->
-  <article class="card" data-cat="modelle arbeit">
-    <div class="card-header">
-      <div class="card-icon">&#x1F3A5;</div>
-      <div class="card-meta">
-        <span class="tag tag-rose">YouTube</span>
-        <span class="tag tag-violet">Deepfake</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>YouTube weitet KI-Deepfake-Erkennung auf Celebrities aus – bald auch Audio</h2>
-      <p>YouTube expandiert sein KI-basiertes <strong>Likeness-Detection-System</strong> auf Prominente weltweit: Schauspielerinnen, Musiker und andere öffentliche Persönlichkeiten sowie deren Management erhalten damit die Möglichkeit, KI-generierte Deepfake-Videos automatisiert aufzuspüren und zu entfernen. Die Technologie funktioniert ähnlich wie das bestehende Content-ID-System für Urheberrechte – wendet die Erkennung aber auf simulierte Gesichter an. <strong>Audio-Deepfakes</strong> sollen in Kürze ebenfalls erkannt werden. Parallel dazu klagt eine Gruppe von YouTube-Creators gegen Amazon, weil ihre Videos angeblich ohne Erlaubnis zum Training des KI-Videomodells „Nova Reel" genutzt wurden.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Kontext:</strong> Alibabas anonymes Videomodell stieg im April auf Platz 1 der AI Video Arena – mit dem größten Abstand zum Zweitplatzierten in der Leaderboard-Geschichte.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">TechCrunch / Hollywood Reporter</span>
-      <a class="read-link" href="https://techcrunch.com/2026/04/21/youtube-expands-its-ai-likeness-detection-technology-to-celebrities/" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Physical AI NVIDIA Robotics -->
-  <article class="card" data-cat="robotik industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F916;</div>
-      <div class="card-meta">
-        <span class="tag tag-green">Physical AI</span>
-        <span class="tag tag-cyan">Robotik</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>NVIDIA-CEO: „Der ChatGPT-Moment für Physical AI ist jetzt" – Robotik vor dem Durchbruch</h2>
-      <p>NVIDIA-CEO Jensen Huang erklärt 2026 zum entscheidenden Wendejahr für <strong>Physical AI</strong>: Humanoide Roboter, autonome Fahrzeuge und Industrieroboter erleben laut Huang ihren eigenen „ChatGPT-Moment". Auf der Hannover Messe 2026 zeigten deutsche Unternehmen humanoide Roboter, die künftig in Fabriken eingesetzt werden sollen. Gartner hat seine IT-Ausgabenprognose für 2026 nach oben korrigiert – <strong>Rechenzentren und KI-optimierte Systeme</strong> wachsen deutlich stärker als klassische IT-Segmente. Der CVPR 2026 Conference zeigt, wie Computer Vision und KI die nächste Robotikgeneration antreibt.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Inflektionspunkt:</strong> Physical AI gilt als nächste große Automatisierungswelle – nach Software-KI kommt jetzt die physische Welt dran.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">manufacturingdive.com / roboticstomorrow.com</span>
-      <a class="read-link" href="https://www.manufacturingdive.com/news/physical-ai-craze-2026-automation-trends-to-watch/810860/" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- ZDF Doku KI Arbeitswelt -->
-  <article class="card" data-cat="arbeit industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4FA;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">ZDF</span>
-        <span class="tag tag-green">Heute im TV</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Heute im ZDF: „Digitale Kollegen im Einsatz" – Doku zeigt KI in Robben-Zählung, OP und Gleisbau</h2>
-      <p>Heute, Sonntag 26. April, um <strong>15:30 Uhr im ZDF</strong>: Die „plan b"-Dokumentation „Digitale Kollegen im Einsatz – Wie KI und Robotik unsere Jobs verbessern" zeigt vier konkrete Anwendungsfälle: <strong>KI-gestützte Robbenzählung</strong> an der Ostsee aus Drohnenbildern, <strong>körperliche Entlastung von Chirurgen</strong> im OP durch Roboterassistenz, ein <strong>autonomer Gleisroboter</strong> für die Bahninstandhaltung sowie <strong>Medikamenten-Drohnen</strong> für Lieferungen in abgelegene Regionen. Der Film zeigt KI als unterstützendes Werkzeug – kein Jobkiller, sondern Entlaster.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Tipp:</strong> Auch in der ZDF-Mediathek verfügbar – empfehlenswert für alle, die KI-Einsatz in der realen Praxis sehen möchten.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Presseportal / ZDF</span>
-      <a class="read-link" href="https://www.presseportal.de/pm/7840/6261184" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Google AI Agents Cloud Conference -->
+  <!-- Microsoft AI Agents Windows 11 -->
   <article class="card" data-cat="modelle industrie">
     <div class="card-header">
-      <div class="card-icon">&#x2601;&#xFE0F;</div>
+      <div class="card-icon">&#x1FA9F;</div>
       <div class="card-meta">
-        <span class="tag tag-cyan">Google Cloud</span>
-        <span class="tag tag-indigo">AI Agents</span>
+        <span class="tag tag-cyan">Microsoft</span>
+        <span class="tag tag-indigo">Windows 11</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Google launcht neue AI-Agent-Suite auf Cloud-Konferenz – Herausforderung für OpenAI und Anthropic</h2>
-      <p>Auf ihrer Jahreskonferenz in Las Vegas hat Googles Cloud-Sparte eine neue <strong>KI-Agent-Suite</strong> vorgestellt: Tools, mit denen Unternehmen ohne Programmierkenntnisse eigene KI-Agenten erstellen, verwalten und deren Arbeit nachverfolgen können. Die Suite soll Automatisierungen ermöglichen, die bisher teure Entwicklerressourcen benötigten. Bloomberg berichtet, dass Google damit gezielt <strong>OpenAI Operator und Anthropic Claude</strong> angreift. Parallel hat OpenAI <strong>Workspace Agents</strong> für Teams veröffentlicht – gemeinsame KI-Helfer ohne Coding-Aufwand.</p>
+      <h2>Ab Mai: KI-Agenten ziehen nativ in die Windows-11-Taskleiste und Suchleiste ein</h2>
+      <p>Microsoft integriert ab Mai 2026 <strong>KI-Agenten direkt in Windows 11</strong> – in Taskleiste und Suchfunktion. Nutzer können damit Aufgaben delegieren, ohne eine separate App zu öffnen. Parallel hat Adobe auf seinem Summit einen „<strong>CX Enterprise Coworker</strong>" vorgestellt, der Workflows basierend auf Geschäftszielen orchestriert und Systeme von AWS, Microsoft, Google, OpenAI und Anthropic integriert. Beide Entwicklungen zeigen: KI-Agenten wandern 2026 aus spezialisierten Apps in die Betriebssystem-Ebene – das Betriebssystem wird zur Agenten-Schnittstelle.</p>
     </div>
     <div class="card-highlight">
-      <strong>Markt:</strong> Der Wettbewerb um die Unternehmensautomatisierung verschiebt sich vom Modell-Benchmark zum praktischen Agenten-Tooling.
+      <strong>Prognose:</strong> KI-Agenten werden laut Analysten bis Ende 2026 in 80 % der Enterprise-Workplace-Anwendungen eingebettet sein und bis zu 15 % der Arbeitsentscheidungen autonom treffen.
     </div>
     <div class="card-footer">
-      <span class="source-name">Bloomberg / theaimarketers.ai</span>
-      <a class="read-link" href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">it-daily.net / das-ki-magazin.de</span>
+      <a class="read-link" href="https://www.it-daily.net/it-management/digitalisierung/ki-automatisierung-2026" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
+  <!-- KI Arbeitsmarkt ManpowerGroup -->
+  <article class="card" data-cat="arbeit forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4CA;</div>
+      <div class="card-meta">
+        <span class="tag tag-amber">Arbeitswelt</span>
+        <span class="tag tag-rose">Studie</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>ManpowerGroup Trendreport 2026: KI schürt Unsicherheit – 61 % der Firmen erhöhen Automatisierungsinvestitionen</h2>
+      <p>Der neue Global Workforce Trendreport 2026 der ManpowerGroup zeigt: <strong>Über die Hälfte der Generation Z</strong> befürchtet, durch KI-Automatisierung innerhalb der nächsten zwei Jahre den Job zu verlieren. Gleichzeitig planen <strong>61 % der Unternehmen weltweit</strong>, ihre Automatisierungsinvestitionen weiter zu erhöhen. Ein Drittel der Arbeitgeber hält ethisches Urteilsvermögen für kaum automatisierbar – menschliche Kompetenzen bleiben gefragt. PwC ergänzt: Drei Viertel der wirtschaftlichen KI-Gewinne fließen aktuell in nur <strong>20 % der Unternehmen</strong>, die auf Wachstum statt reine Effizienz setzen.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Fazit:</strong> KI-Automatisierung schafft tiefe Unsicherheit am Arbeitsmarkt – und gleichzeitig eine Investitionswelle, die die Ungleichheit zwischen Unternehmen verstärkt.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">finanznachrichten.de / PwC</span>
+      <a class="read-link" href="https://www.finanznachrichten.de/nachrichten-2026-04/68251178-ki-schuert-unsicherheit-am-arbeitsmarkt-der-faktor-mensch-manpowergroup-global-workforce-trendreport-2026-veroeffentlicht-007.htm" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Rockwell Automation Hannover Messe -->
+  <article class="card" data-cat="robotik industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F3ED;</div>
+      <div class="card-meta">
+        <span class="tag tag-green">Hannover Messe</span>
+        <span class="tag tag-cyan">Industrie 4.0</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Hannover Messe 2026: Rockwell Automation zeigt KI-basiertes Fabrik-Design – Multiagent-Systeme im Fokus</h2>
+      <p>Auf der Hannover Messe 2026 demonstriert <strong>Rockwell Automation</strong> einen neuen Ansatz für das Engineering industrieller Automatisierung: KI-Systeme, die Fabrikdesign und Produktionsprozesse eigenständig optimieren. Im Mittelpunkt stehen <strong>Multiagent Systems (MAS)</strong> – verteilte KI-Agenten, die als autonome Einheiten zusammenarbeiten und industrielle Abläufe in Echtzeit steuern. Die CVPR 2026 (April) zeigt parallel, wie Computer Vision und KI die nächste Robotikgeneration antreiben und was „Physical AI" in der Praxis bedeutet.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Trend:</strong> KI-Automatisierung in der Industrie wechselt von experimentellen Pilotprojekten zu produktiven, messbaren Lösungen – Multiagenten-Koordination ist die neue Schlüsseltechnologie.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">deutsche-boerse.com / roboticstomorrow.com</span>
+      <a class="read-link" href="https://live.deutsche-boerse.com/nachrichten/EQS-News-Rockwell-Automation-demonstriert-KI-basiertes-Fabrik-Design-auf-der-Hannover-Messe-2026-deutsch-5e0da0f6-a726-4de1-a9a2-258c2c55555f" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Snowflake & OpenAI $200M Agentic AI -->
+  <article class="card" data-cat="modelle industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F91D;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">Snowflake</span>
+        <span class="tag tag-violet">OpenAI</span>
+        <span class="tag tag-green">Enterprise</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Snowflake &amp; OpenAI: 200-Mio.-USD-Deal für Agentic AI in der Enterprise Data Cloud</h2>
+      <p>Snowflake und OpenAI haben eine <strong>strategische Partnerschaft im Wert von 200 Millionen USD</strong> geschlossen, um Agentic AI direkt in die Snowflake Data Cloud zu integrieren. OpenAIs fortgeschrittene Modelle werden nativ in Snowflakes Plattform eingebettet – Unternehmen können damit KI-Agenten auf ihren eigenen Datensätzen betreiben, ohne Daten in externe Systeme zu übertragen. Snowflake positioniert sich damit als zentraler Ort, an dem Unternehmens-KI-Agenten arbeiten, lernen und Entscheidungen treffen. Experten sehen dies als Teil einer größeren Konsolidierungswelle: <strong>Daten-Plattformen werden zur neuen KI-Infrastruktur</strong>.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Marktbewegung:</strong> Die Preismodelle für Enterprise-KI verschieben sich von per-User-Lizenzen zu kredit- oder ausführungsbasierten Modellen – passend zu unberechenbaren Agenten-Workloads.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">crescendo.ai / MIT Technology Review</span>
+      <a class="read-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- MIT Technology Review: 10 Things That Matter in AI -->
+  <article class="card" data-cat="forschung modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F9EA;</div>
+      <div class="card-meta">
+        <span class="tag tag-violet">MIT Tech Review</span>
+        <span class="tag tag-indigo">Forschung</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>MIT Technology Review: 10 Dinge, die KI 2026 wirklich ausmachen – von Agenten bis zum Energie-Problem</h2>
+      <p>Das MIT Technology Review veröffentlicht seine jährliche Liste „10 Things That Matter in AI Right Now" (April 2026). Highlights: <strong>Agentic AI</strong> bewegt sich von Chatbots zu autonomen Ausführungssystemen, <strong>Physische AI</strong> und Robotik treten in ihre Massenmarkt-Phase, und der <strong>Energiebedarf</strong> von KI-Rechenzentren hat sich zum kritischen Engpass entwickelt. Dazu: Der Wettbewerb verlagert sich von Modell-Benchmarks zu Infrastruktur und Deployment. Drei Viertel der wirtschaftlichen KI-Gewinne landen laut PwC bei nur 20 % der Unternehmen – dem Viertel, das auf Wachstum und nicht auf bloße Effizienz setzt.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Kernthese:</strong> KI 2026 ist kein Experimentierfeld mehr – es geht um messbaren Wirtschaftswert, und die Schere zwischen KI-Gewinnern und -Verlierern wächst rapide.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">MIT Technology Review / PwC</span>
+      <a class="read-link" href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- ChatGPT Images 2.0 -->
+  <article class="card" data-cat="modelle forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x1F5BC;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">OpenAI</span>
+        <span class="tag tag-cyan">Bildgenerierung</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>ChatGPT Images 2.0: OpenAI lässt die KI erst „denken", bevor sie zeichnet – 2K-Auflösung und Multi-Image</h2>
+      <p>OpenAI hat am 21. April <strong>ChatGPT Images 2.0</strong> mit dem neuen Modell <code>gpt-image-2</code> gestartet. Das Besondere: Die KI <strong>denkt vor dem Zeichnen nach</strong> – Reasoning wird auf die Bildgenerierung angewendet, was deutlich präzisere und konsistentere Ergebnisse liefert. Weitere Features: native <strong>2K-Auflösung</strong> und <strong>Multi-Image-Konsistenz</strong>, sodass Charaktere und Szenen über mehrere Bilder hinweg einheitlich bleiben. Auch GPT-Rosalind für Biowissenschaften wurde im April veröffentlicht – ein spezialisiertes Modell für Life-Sciences-Forschung.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Wettbewerb:</strong> Alibabas anonymes Videomodell führt die AI Video Arena an – KI-Bildgenerierung entwickelt sich zum intensiven Wettbewerbsfeld zwischen US- und asiatischen Anbietern.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">The New Stack / OpenAI</span>
+      <a class="read-link" href="https://thenewstack.io/chatgpt-images-20-openai/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
 
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 26. April 2026 &nbsp;|&nbsp;
-  Quellen: red.anthropic.com, TechCrunch, releasebot.io, fazm.ai, devflokers.com, asanify.com, Bloomberg, manufacturingdive.com, Presseportal/ZDF, Hollywood Reporter &nbsp;|&nbsp;
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 27. April 2026 &nbsp;|&nbsp;
+  Quellen: red.anthropic.com, TechCrunch, CNBC, Fortune, Federal News Network, releasebot.io, MIT Technology Review, PwC, finanznachrichten.de, The New Stack, deutsche-boerse.com, roboticstomorrow.com &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
