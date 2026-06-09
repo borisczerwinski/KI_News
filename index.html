@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI & Automatisierung – News 8. Juni 2026</title>
+  <title>KI & Automatisierung – News 9. Juni 2026</title>
   <style>
     :root {
       --bg:        #0d1117;
@@ -335,14 +335,14 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 8. Juni 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 9. Juni 2026</div>
 </header>
 
 <div class="stats">
   <div class="stat"><span class="dot"></span><strong>10</strong>&nbsp;aktuelle Artikel</div>
-  <div class="stat">&#x1F310;&nbsp;<strong>12+</strong>&nbsp;Quellen</div>
-  <div class="stat">&#x1F916;&nbsp;<strong>Claude:</strong>&nbsp;Managed Agents 4 neue Features (Dreaming, Multiagent, Outcomes, Sandbox); Claude Code Ultracode + Agent View; Legal MCP 20+ Connectors; Code w/ Claude Tokyo jetzt auf YouTube</div>
-  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt:</strong>&nbsp;ChatGPT Superapp morgen 9. Juni; Microsoft Project Polaris; OpenAI kauft TBPN; Shadow AI umgeht 81&nbsp;% Bot-Erkennung; Boston Dynamics + Gemini Robotics; Pentagon 9,69 Mrd. USD</div>
+  <div class="stat">&#x1F310;&nbsp;<strong>14+</strong>&nbsp;Quellen</div>
+  <div class="stat">&#x1F916;&nbsp;<strong>Claude:</strong>&nbsp;Anthropic ruft zu globalem KI-Stopp auf (80&nbsp;% Code von Claude); Opus 4.8 – Dynamic Workflows &amp; USAMO 96,7&nbsp;%; Project Glasswing 10.000+ Sicherheitslücken in 15+ Ländern</div>
+  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt:</strong>&nbsp;ChatGPT Superapp ab heute live; Suleyman: Bürojobs in 18 Mon. automatisiert; YouTube KI-Labels automatisch; MiniMax M3 (1/20 Rechenkosten, 1M Token); Google + SpaceX 110k GPUs; NVIDIA Cosmos 3 Omnimodel</div>
 </div>
 
 <div class="filters">
@@ -364,96 +364,73 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: Claude Managed Agents – 4 neue KI-Fähigkeiten -->
+  <!-- FEATURED: Anthropic ruft zum globalen KI-Pause auf -->
   <article class="card claude-card featured" data-cat="claude modelle forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x26A0;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-rose">&#x1F534;&nbsp;Breaking</span>
+        <span class="tag tag-orange">KI-Sicherheit</span>
+        <span class="tag tag-amber">Selbstverbesserung</span>
+        <span class="tag tag-violet">Globale Politik</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Anthropic ruft zu globalem KI-Entwicklungsstopp auf &ndash; Claude schreibt bereits &gt;80&nbsp;% seines eigenen Codes</h2>
+      <p>Anthropic hat einen Appell an alle f&uuml;hrenden KI-Labore ver&ouml;ffentlicht, einen <strong>koordinierten, tempor&auml;ren Entwicklungsstopp</strong> f&uuml;r die leistungsf&auml;higsten KI-Systeme einzuf&uuml;hren. Hintergrund: Mehr als <strong>80&nbsp;% des in Anthropics Codebase eingepflegten Codes wird inzwischen von Claude selbst geschrieben</strong> &ndash; im Februar 2025 waren es noch unter 10&nbsp;%. Ingenieure liefern pro Quartal achtmal so viel Code wie vor 2025. Anthropic warnt, die Technologie n&auml;here sich der <em>rekursiven Selbstverbesserung</em> &ndash; einem Zustand, in dem KI ihre eigenen Nachfolger entwirft, baut und trainiert, ohne dass Menschen jeden Schritt steuern. Gleichzeitig ver&ouml;ffentlichte das Unternehmen eine wissenschaftliche Analyse unter dem Titel &bdquo;When AI builds itself&ldquo;. Das Wei&szlig;e Haus und mehrere Konkurrenten wiesen den Appell als &uuml;bertrieben und als Wettbewerbsstrategie zur&uuml;ck.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Historische Schwelle:</strong> Wenn KI ihren eigenen Code schreibt und testet, verliert menschliche &Uuml;berwachung strukturell an Wirkung &ndash; Anthropic sieht genau diesen Punkt als unmittelbar bevorstehend an.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Fortune / Al Jazeera / anthropic.com</span>
+      <a class="read-link" href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Claude Opus 4.8 Dynamic Workflows -->
+  <article class="card claude-card" data-cat="claude modelle">
     <div class="card-header">
       <div class="card-icon">&#x1F9E0;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">&#x1F534;&nbsp;Breaking</span>
-        <span class="tag tag-orange">Managed Agents</span>
-        <span class="tag tag-amber">Dreaming</span>
-        <span class="tag tag-violet">Multiagent</span>
+        <span class="tag tag-orange">Opus 4.8</span>
+        <span class="tag tag-violet">Dynamic Workflows</span>
+        <span class="tag tag-green">Benchmarks</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Managed Agents &ndash; 4 neue F&auml;higkeiten: Dreaming, Multiagent-Orchestrierung, Outcomes &amp; Private MCP</h2>
-      <p>Anthropic rollt vier neue Kernf&auml;higkeiten f&uuml;r <strong>Claude Managed Agents</strong> aus, ab sofort f&uuml;r alle Entwickler verf&uuml;gbar: <strong>Dreaming</strong> &ndash; ein geplanter Prozess, der vergangene Agent-Sessions analysiert, Muster erkennt und h&auml;ufige Fehler automatisch ins Agent-Memory &uuml;berf&uuml;hrt, sodass Agenten zwischen Runs kontinuierlich besser werden. <strong>Multiagent-Orchestrierung</strong> erlaubt einem Lead-Agenten, Aufgaben an parallele Spezialagenten auf einem gemeinsamen Filesystem zu delegieren &ndash; jeder mit eigenem Modell, Prompt und Tool-Set, vollst&auml;ndig nachverfolgbar in der Claude Console. <strong>Outcomes</strong> definiert Qualit&auml;tsziele mit einer Rubrik und schickt den Agenten zur &Uuml;berarbeitung zur&uuml;ck, bis der Standard erf&uuml;llt ist &ndash; mit bis zu <strong>10 Punkten Verbesserung</strong> auf schwierigen Tasks. Zus&auml;tzlich k&ouml;nnen Managed Agents jetzt in einer <strong>kontrollierten Sandbox</strong> laufen und sich mit privaten MCP-Servern verbinden.</p>
+      <h2>Claude Opus 4.8: Dynamic Workflows, 96,7&nbsp;% bei USAMO 2026 &amp; 3&times; g&uuml;nstigerer Fast Mode</h2>
+      <p>Anthropic ver&ouml;ffentlichte Claude Opus 4.8 am 28. Mai 2026 mit mehreren Durchbr&uuml;chen: <strong>Dynamic Workflows</strong> in Claude Code erm&ouml;glichen es, Codebase-Migrationen &uuml;ber hunderttausende Code-Zeilen mit Hunderten paralleler Subagenten in einer einzigen Session abzuwickeln. In Benchmarks erzielte Opus 4.8 <strong>96,7&nbsp;% beim USAMO-2026-Mathe-Test</strong> (Opus 4.7: 69,3&nbsp;%) &ndash; der gr&ouml;&szlig;&te Einzelzyklus-Sprung in der Opus-Geschichte. Auf dem Super-Agent-Benchmark schlie&szlig;t Opus 4.8 als einziges Modell jeden Fall vollst&auml;ndig ab. Der Fast Mode ist jetzt <strong>3&times; g&uuml;nstiger</strong> als bei Vorg&auml;ngermodellen und l&auml;uft mit 2,5-facher Geschwindigkeit.</p>
     </div>
     <div class="card-highlight">
-      <strong>Architektur-Shift:</strong> Mit Dreaming und Outcomes lernen Claude-Agenten zwischen Runs &ndash; ein fundamentaler Schritt von statischen Prompts zu kontinuierlich verbessernden KI-Systemen in der Produktion.
+      <strong>Benchmark-Highlight:</strong> 96,7&nbsp;% beim USAMO 2026 und 69,2&nbsp;% auf SWE-Bench Pro platzieren Opus 4.8 vor GPT-5.5 &amp; Gemini 3.1 Pro bei den komplexesten Coding- und Mathe-Aufgaben.
     </div>
     <div class="card-footer">
-      <span class="source-name">Anthropic / Releasebot</span>
-      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">TechCrunch / VentureBeat / anthropic.com</span>
+      <a class="read-link" href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Claude Code Ultracode Mode + Agent View -->
-  <article class="card claude-card" data-cat="claude modelle">
+  <!-- Project Glasswing -->
+  <article class="card claude-card" data-cat="claude forschung industrie">
     <div class="card-header">
-      <div class="card-icon">&#x26A1;</div>
+      <div class="card-icon">&#x1F6E1;&#xFE0F;</div>
       <div class="card-meta">
-        <span class="tag tag-orange">Claude Code</span>
-        <span class="tag tag-violet">Ultracode</span>
-        <span class="tag tag-cyan">Agent View</span>
+        <span class="tag tag-orange">Project Glasswing</span>
+        <span class="tag tag-rose">Kritische Infrastruktur</span>
+        <span class="tag tag-green">15+ L&auml;nder</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Code: Ultracode-Modus &amp; Agent View &ndash; Multi-Session-Management im CLI</h2>
-      <p>Anthropic ver&ouml;ffentlicht zwei bedeutende Claude-Code-Updates: Der neue <strong>Ultracode-Modus</strong> ist &uuml;ber das Effort-Men&uuml; zug&auml;nglich und setzt die Aufwandsstufe automatisch auf <em>xhigh</em> &ndash; Claude entscheidet selbst, wann komplexe agentic Workflows n&ouml;tig sind, ohne manuelle Konfiguration. Gleichzeitig wird die <strong>Agent View</strong> eingef&uuml;hrt: eine neue CLI-Ansicht, &uuml;ber die Entwickler mehrere parallele Claude-Code-Sessions von einem einzigen Interface aus verwalten k&ouml;nnen. Dazu kommen verbesserte OTEL-Resource-Labels f&uuml;r Telemetrie-Monitoring, schnelleres Rendering sowie Bugfixes f&uuml;r Login, Windows-Kompatibilit&auml;t und Worktree-Probleme.</p>
+      <h2>Project Glasswing: Claude Mythos findet 10.000+ Sicherheitsl&uuml;cken in Strom, Wasser &amp; Gesundheit weltweit</h2>
+      <p>Anthropic expandiert <strong>Project Glasswing</strong> auf rund 150 neue Organisationen in mehr als <strong>15 L&auml;ndern</strong>. Das Herzst&uuml;ck ist <strong>Claude Mythos Preview</strong> &ndash; ein noch nicht &ouml;ffentlich verf&uuml;gbares Frontier-Modell, das laut Anthropic alle bis auf die erfahrensten menschlichen Security-Experten bei der Schwachstellensuche &uuml;bertrifft. Seit dem Start in April 2026 haben die 50 Erstpartner (inkl. US-Regierung) bereits &uuml;ber <strong>10.000 kritische oder hochgef&auml;hrliche Sicherheitsl&uuml;cken</strong> gefunden &ndash; darunter Zero-Days in allen g&auml;ngigen Betriebssystemen und Webbrowsern. Die neue Erweiterung umfasst jetzt auch Strom-, Wasser-, Gesundheits-, Kommunikations- und Hardware-Industrien.</p>
     </div>
     <div class="card-highlight">
-      <strong>Produktivit&auml;tsgewinn:</strong> Multi-Session-Management via Agent View macht Claude Code zum Command Center f&uuml;r Entwickler, die gleichzeitig an mehreren KI-gesteuerten Aufgaben arbeiten.
+      <strong>Sicherheits-Meilenstein:</strong> Kontrollierter Zugang zu Claude Mythos statt &ouml;ffentlichem Release &ndash; Anthropic zeigt, wie verantwortungsvoller Einsatz hochleistungsf&auml;higer KI f&uuml;r kritische Infrastruktur aussehen kann.
     </div>
     <div class="card-footer">
-      <span class="source-name">Anthropic / Releasebot Claude Code</span>
-      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude Legal MCP 20+ Connectors -->
-  <article class="card claude-card" data-cat="claude industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x2696;&#xFE0F;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Legal MCP</span>
-        <span class="tag tag-green">20+ Connectors</span>
-        <span class="tag tag-amber">Enterprise</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Claude erweitert Legal-MCP-&Ouml;kosystem: 20+ neue Konnektoren &amp; 12 Praxisbereichs-Plugins f&uuml;r Kanzleien</h2>
-      <p>Anthropic ver&ouml;ffentlicht mehr als <strong>20 neue Legal MCP Connectors</strong> und <strong>12 praxisspezifische Plugins</strong>, die Claude tief in juristische Arbeitsabl&auml;ufe integrieren: Rechtsrecherche, Vertragsanalyse, Dokumentenentdeckung, Fallmanagement und Legal-Aid-Prozesse werden nahtlos unterst&uuml;tzt. Enterprise-Admins erhalten zus&auml;tzlich <strong>Connector Permissions in Custom Roles</strong> &ndash; granulare Kontrolle dar&uuml;ber, welche Connectors welche Nutzergruppen verwenden d&uuml;rfen. Das Legal-MCP-Paket ist die bislang umfangreichste branchenspezifische Erweiterung von Claude und positioniert Anthropic als ernsthaften Konkurrenten f&uuml;r legaltech-spezialisierte Anbieter wie Harvey AI.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Marktdynamik:</strong> Harvey AI und andere Legal-KI-Startups geraten durch Claudes native MCP-Integration unter Druck &ndash; Kanzleien k&ouml;nnen jetzt direkt auf Claude ohne teure Middleware setzen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic / Releasebot</span>
-      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Code w/ Claude Tokyo Konferenz -->
-  <article class="card claude-card" data-cat="claude industrie forschung">
-    <div class="card-header">
-      <div class="card-icon">&#x1F3CE;&#xFE0F;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Konferenz</span>
-        <span class="tag tag-cyan">Tokyo</span>
-        <span class="tag tag-amber">YouTube</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Code w/ Claude Tokyo (5.&ndash;6. Juni) &ndash; alle Keynotes &amp; Breakout-Sessions jetzt auf YouTube</h2>
-      <p>Nach den Konferenzen in San Francisco (Mai) und London ist <strong>Code w/ Claude Tokyo</strong> (5.&ndash;6. Juni 2026) abgeschlossen. Die Veranstaltung pr&auml;sentierte die neuesten Claude-Entwicklungen vor einem japanischen und asiatisch-pazifischen Entwicklerpublikum. S&auml;mtliche Keynotes, Demos und Breakout-Sessions sind jetzt auf dem offiziellen <strong>Claude YouTube-Kanal</strong> verf&uuml;gbar &ndash; inklusive Deep-Dives zu Managed Agents, Claude Code Agentic Workflows und MCP-Integrationen f&uuml;r Enterprise. Die Reihe unterstreicht Anthropics globalen Expansionskurs: Nach Tokio sind weitere Events in Europa und Asien f&uuml;r H2 2026 geplant.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Globale Strategie:</strong> Code w/ Claude ist Anthropics Antwort auf Google I/O und Microsoft Build &ndash; eine eigene Entwicklerkonferenz-Marke mit regionaler Pr&auml;senz in Schl&uuml;sselm&auml;rkten.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic / claude.com/blog / YouTube</span>
-      <a class="read-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">TechCrunch / anthropic.com/glasswing</span>
+      <a class="read-link" href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
@@ -465,138 +442,115 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: ChatGPT Superapp morgen 9. Juni -->
+  <!-- FEATURED: ChatGPT Superapp – heute live -->
   <article class="card featured" data-cat="modelle industrie">
     <div class="card-header">
       <div class="card-icon">&#x1F680;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">&#x1F534;&nbsp;Breaking</span>
+        <span class="tag tag-rose">&#x1F534;&nbsp;Heute Live</span>
         <span class="tag tag-indigo">OpenAI</span>
         <span class="tag tag-green">Superapp</span>
-        <span class="tag tag-violet">9. Juni Launch</span>
+        <span class="tag tag-violet">Dreaming V3</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>OpenAI launcht ChatGPT als Superapp morgen (9. Juni) &ndash; Agents, Coding, Bildgenerierung &amp; Automatisierung in einer App</h2>
-      <p>OpenAI startet morgen, am <strong>9. Juni 2026</strong>, das gr&ouml;&szlig;te Redesign von ChatGPT seit dessen Einf&uuml;hrung: Aus dem Chatbot wird eine <strong>vollst&auml;ndige Superapp</strong> mit integrierten KI-Agenten, Coding-Tools, nativer Bildgenerierung und Workflow-Automatisierung. Laut Entwickler-Dokumentation b&uuml;ndelt die neue Version Aufgabenerledigung in Forschung, Programmierung, Support, Rechtliches und E-Commerce in einer einheitlichen Oberfl&auml;che. Das Update tritt in direkten Wettbewerb zu Claude Projects, Googles Gemini-Ultra-Workspace und Microsofts Copilot. Parallel dazu gab OpenAI bekannt, die <strong>exklusive Cloud-Partnerschaft mit Microsoft aufzugeben</strong> &ndash; OpenAI-Modelle werden k&uuml;nftig auch auf AWS und weiteren Plattformen verf&uuml;gbar sein, was mehr Wettbewerb auf dem Cloud-Markt bringt.</p>
+      <h2>ChatGPT Superapp ist heute live &ndash; Dreaming V3, Agents, Coding &amp; Automatisierung vereint</h2>
+      <p>OpenAI hat heute, am <strong>9. Juni 2026</strong>, das gr&ouml;&szlig;te ChatGPT-Redesign seit dessen Einf&uuml;hrung gestartet: Aus dem Chatbot wird eine <strong>vollst&auml;ndige Superapp</strong> mit integrierten KI-Agenten, Coding-Tools, nativer Bildgenerierung und Workflow-Automatisierung. Besonders hervorzuheben ist <strong>Dreaming V3</strong> &ndash; ein neues Ged&auml;chtnissystem, das n&uuml;tzlichen Kontext aus vergangenen Gespr&auml;chen synthetisiert und Pr&auml;ferenzen, Einschr&auml;nkungen und Muster automatisch fortschreibt. Die neue Version b&uuml;ndelt Aufgabenerledigung in Forschung, Programmierung, Support, Rechtliches und E-Commerce in einer einheitlichen Oberfl&auml;che. Parallel gab OpenAI bekannt, die <strong>exklusive Cloud-Partnerschaft mit Microsoft aufzugeben</strong> &ndash; OpenAI-Modelle werden k&uuml;nftig auch auf AWS und weiteren Plattformen verf&uuml;gbar sein.</p>
     </div>
     <div class="card-highlight">
-      <strong>Strategischer Pivot:</strong> OpenAIs Superapp-Ansatz ist eine direkte Antwort auf Apple Intelligence und Googles Assistant &ndash; der Kampf um das prim&auml;re KI-Interface des Nutzers beginnt jetzt ernsthaft.
+      <strong>Kampf ums prim&auml;re KI-Interface:</strong> ChatGPT mit Dreaming V3 und Agentic Workflows ist eine direkte Antwort auf Claude Projects &amp; Googles Gemini Workspace &ndash; der Markt f&uuml;r KI-Betriebssysteme konsolidiert sich heute sichtbar.
     </div>
     <div class="card-footer">
-      <span class="source-name">Windows News / OpenAI / CNBC</span>
-      <a class="read-link" href="https://windowsnews.ai/article/chatgpt-superapp-redesign-agents-coding-images-and-automation-coming-in-june-2026.423520" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Microsoft Project Polaris -->
-  <article class="card" data-cat="modelle industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4BB;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">Microsoft</span>
-        <span class="tag tag-cyan">Project Polaris</span>
-        <span class="tag tag-violet">GitHub Copilot</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Microsoft Project Polaris: Eigenes KI-Coding-Modell l&ouml;st GPT-4 Turbo als Copilot-Standard ab</h2>
-      <p>Microsoft hat auf der Build 2026 (2. Juni) sein eigenes KI-Coding-Modell <strong>Project Polaris</strong> angek&uuml;ndigt, das ab <strong>August 2026</strong> GPT-4 Turbo als Standardmodell f&uuml;r alle GitHub Copilot Abonnenten ersetzen wird. Polaris wurde speziell f&uuml;r Code-Assistenz, Refactoring und Agentic Development-Tasks optimiert und soll signifikant bessere Completion-Qualit&auml;t bei komplexen Programmieraufgaben bieten. Der Schritt unterstreicht Microsofts Strategie, unabh&auml;ngiger von OpenAI zu werden &ndash; parallel dazu l&ouml;sen beide Unternehmen ihre exklusive Cloud-Partnerschaft auf, sodass OpenAI-Modelle k&uuml;nftig auch auf AWS verf&uuml;gbar sein werden.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Unabh&auml;ngigkeit:</strong> Microsofts eigenes Coding-Modell macht GitHub Copilot zur eigenst&auml;ndigen KI-Plattform &ndash; mit direkter Konkurrenz zu Claude Code und Google Codex.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">CNBC / Microsoft Build 2026</span>
-      <a class="read-link" href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- OpenAI kauft TBPN -->
-  <article class="card" data-cat="industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4FA;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">OpenAI</span>
-        <span class="tag tag-amber">Medien-Akquisition</span>
-        <span class="tag tag-rose">Strategisch</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>OpenAI kauft TBPN &ndash; erste Medienunternehmens-Akquisition markiert Einstieg in Live-Tech-Berichterstattung</h2>
-      <p>OpenAI hat <strong>TBPN (Technology Business Programming Network)</strong> &uuml;bernommen, eine t&auml;gliche Live-Tech-Talkshow &ndash; die erste Medienunternehmens-Akquisition in der Geschichte von OpenAI. TBPN produziert t&auml;gliche Live-Diskussionen zu KI, Tech und Wirtschaft und erreicht t&auml;glich Hunderttausende Tech-Entscheider und Entwickler. Der Kauf signalisiert OpenAIs Ambition, &uuml;ber KI-Modelle hinaus zum <strong>Medien- und Informationskonzern</strong> zu werden. Analysten sehen dies als Teil einer Strategie, direkte Kan&auml;le zu kontrollieren und die Markenwahrnehmung gegen&uuml;ber Konkurrenten wie Anthropic und Google zu st&auml;rken.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Medienstrategie:</strong> Wer die Berichterstattung &uuml;ber KI kontrolliert, kontrolliert die Narrative &ndash; OpenAIs TBPN-Kauf ist ein direkter Angriff auf die Meinungsf&uuml;hrerschaft in der KI-Branche.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">AI News / llm-stats.com</span>
+      <span class="source-name">llm-stats.com / blog.mean.ceo / OpenAI</span>
       <a class="read-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Shadow AI + ChatGPT Lockdown Mode -->
-  <article class="card" data-cat="forschung industrie">
+  <!-- Mustafa Suleyman: Bürojobs automatisiert in 18 Monaten -->
+  <article class="card" data-cat="arbeit industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F6E1;&#xFE0F;</div>
+      <div class="card-icon">&#x1F4BC;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">Sicherheit</span>
-        <span class="tag tag-amber">Shadow AI</span>
-        <span class="tag tag-indigo">Lockdown Mode</span>
+        <span class="tag tag-indigo">Microsoft</span>
+        <span class="tag tag-amber">Arbeitswelt</span>
+        <span class="tag tag-rose">Automatisierung</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Shadow AI: KI-Agenten umgehen 81&nbsp;% der Bot-Erkennung &ndash; OpenAI reagiert mit ChatGPT Lockdown Mode</h2>
-      <p>Eine neue Studie vom 6. Juni 2026 belegt: KI-Agenten umgehen inzwischen <strong>81 % aller traditionellen Bot-Erkennungssysteme</strong> und werden f&uuml;r Kreditkartentests, Fake-Account-Erstellung und illegales Account-Sharing missbraucht. Als direkte Reaktion f&uuml;hrte OpenAI am selben Tag den <strong>ChatGPT Lockdown Mode</strong> ein: Unternehmen k&ouml;nnen damit Live-Webzugriff und Datei-Downloads f&uuml;r ChatGPT deaktivieren, um Prompt-Injection-Angriffe und Datenlecks zu verhindern. Analysten fordern eine branchenweite L&ouml;sung, da aktuell kein KI-Anbieter vollst&auml;ndigen Schutz vor KI-gesteuerten Bot-Angriffen gew&auml;hrleisten kann.</p>
+      <h2>Microsoft AI-CEO Suleyman: S&auml;mtliche B&uuml;roarbeit in 12&ndash;18 Monaten durch KI automatisiert</h2>
+      <p>Mustafa Suleyman, CEO von Microsoft AI, erkl&auml;rte in einem Interview mit der Financial Times, dass KI-Systeme <strong>nahezu alle computergest&uuml;tzten Wissensaufgaben</strong> &ndash; Jura, Buchhaltung, Projektmanagement, Marketing &ndash; innerhalb von 12 bis 18 Monaten vollst&auml;ndig automatisieren werden. Er verwies auf das rasante Wachstum der Rechenleistung als Warnsignal f&uuml;r den Arbeitsmarkt und prognostizierte: &bdquo;Das Erstellen eines neuen Modells wird wie das Aufnehmen eines Podcasts sein.&ldquo; Branchenbeobachter sehen den Zeitrahmen als sehr ambitioniert an, da KI in professionellen Dienstleistungen bislang nur begrenzte Disruption ausge&uuml;bt hat &ndash; die Richtung des Wandels gilt jedoch als unumstritten.</p>
     </div>
     <div class="card-highlight">
-      <strong>Handlungsbedarf:</strong> F&uuml;r Security-Teams bedeutet das: CAPTCHA und IP-basierte Erkennung reichen nicht mehr aus &ndash; KI-spezifische Verhaltensanalyse wird zur Pflicht f&uuml;r moderne Web-Sicherheit.
+      <strong>Politischer Sprengstoff:</strong> Suleymans Prognose l&ouml;st Debatten &uuml;ber Sozialversicherungssysteme, Umschulungsprogramme und die Zukunft von White-Collar-Jobs in Europa und den USA aus.
     </div>
     <div class="card-footer">
-      <span class="source-name">ad-hoc-news.de / OpenAI</span>
-      <a class="read-link" href="https://www.ad-hoc-news.de/wissenschaft/shadow-ai-ki-agenten-umgehen-81-percent-der-bot-erkennung/69496707" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">Fortune / Windows Central / eWeek</span>
+      <a class="read-link" href="https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Boston Dynamics + Google DeepMind Gemini Robotics -->
-  <article class="card" data-cat="robotik forschung">
+  <!-- YouTube KI-Labels automatisch -->
+  <article class="card" data-cat="industrie forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F9BE;</div>
+      <div class="card-icon">&#x1F3AC;</div>
       <div class="card-meta">
-        <span class="tag tag-cyan">Boston Dynamics</span>
-        <span class="tag tag-green">Gemini Robotics</span>
-        <span class="tag tag-violet">Spot-Roboter</span>
+        <span class="tag tag-rose">YouTube</span>
+        <span class="tag tag-indigo">KI-Kennzeichnung</span>
+        <span class="tag tag-amber">Automatisch</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Boston Dynamics &amp; Google DeepMind: Spot-Roboter erh&auml;lt Gemini Robotics-ER&nbsp;1.6 &ndash; KI-Vision jetzt in der Realwelt</h2>
-      <p>Boston Dynamics hat eine strategische Partnerschaft mit <strong>Google Cloud und Google DeepMind</strong> bekannt gegeben und integriert <strong>Gemini Robotics-ER 1.6</strong> in den Spot-Roboterhund sowie die Sichtpr&uuml;fungsplattform Orbit. Das Modell erm&ouml;glicht Spot erstmals das <strong>Verstehen von Umgebungen</strong> auf Basis nat&uuml;rlicher Sprachanweisungen in Echtzeit. Praxisanwendungen umfassen Industrieinspektion, Sicherheits&uuml;berwachung, autonome Navigation in gef&auml;hrlichen Bereichen und kollaborative Mensch-Roboter-Interaktion. Googles multimodales Foundation-Modell verlässt das Labor und wird in kommerziell eingesetzten Industrierobotern produktiv genutzt.</p>
+      <h2>YouTube kennzeichnet KI-generierte Videos ab sofort automatisch &ndash; auch ohne Creator-Angabe</h2>
+      <p>YouTube hat sein KI-Kennzeichnungssystem grundlegend ausgeweitet: Interne Erkennungssignale identifizieren ab sofort <strong>fotorealistische KI-Inhalte automatisch</strong> und versehen sie mit einem sichtbaren Label &ndash; auch wenn der Creator keine freiwillige Angabe macht. Das Label wurde bei Langformvideos von der Beschreibung auf einen prominenten Platz <strong>&uuml;ber dem Kanal-Icon</strong> verschoben, bei Shorts erscheint es unten links. Hintergrund ist die explodierte Menge an &bdquo;AI Slop&ldquo; auf der Plattform. YouTube-CEO Neal Mohan hatte die Reduzierung von KI-generiertem Minderqualit&auml;tscontent und Deepfakes als Top-Priorit&auml;t f&uuml;r 2026 ausgerufen. Google I/O 2026 zeigte zus&auml;tzlich neue Remix-Features f&uuml;r KI-Shorts.</p>
     </div>
     <div class="card-highlight">
-      <strong>Praxis-Meilenstein:</strong> Gemini Robotics-ER 1.6 im Einsatz bei Spot ist der erste Nachweis, dass Foundation Models in echten Industrierobotern funktionieren &ndash; nicht nur in Forschungslabors.
+      <strong>Plattform-Standard:</strong> YouTubes automatische KI-Erkennung setzt einen Pr&auml;zedenzfall &ndash; andere Plattformen wie Instagram, TikTok und X stehen unter Druck, vergleichbare Transparenzma&szlig;nahmen einzuf&uuml;hren.
     </div>
     <div class="card-footer">
-      <span class="source-name">Google DeepMind / hipther.com</span>
-      <a class="read-link" href="https://hipther.com/latest-news/2026/06/04/112799/ai-dispatch-daily-trends-and-innovations-june-4-2026-samsung-google-deepmind-openai-microsoft-and-continuum/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">TechCrunch / MacRumors / 9to5Google</span>
+      <a class="read-link" href="https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- US-Pentagon Microsoft KI-Vertrag -->
-  <article class="card" data-cat="industrie arbeit">
+  <!-- MiniMax M3 -->
+  <article class="card" data-cat="modelle forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F3DB;&#xFE0F;</div>
+      <div class="card-icon">&#x26A1;</div>
       <div class="card-meta">
-        <span class="tag tag-indigo">US-Verteidigung</span>
-        <span class="tag tag-amber">9,69 Mrd. USD</span>
-        <span class="tag tag-green">Microsoft Azure</span>
+        <span class="tag tag-cyan">MiniMax M3</span>
+        <span class="tag tag-green">1M Token</span>
+        <span class="tag tag-violet">Multimodal</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>US-Pentagon vergibt 9,69-Milliarden-Dollar-KI-Vertrag an Microsoft &ndash; gr&ouml;&szlig;te Regierungs-KI-Beschaffung aller Zeiten</h2>
-      <p>Das <strong>US-Verteidigungsministerium (DoD)</strong> hat einen Vertrag im Wert von rund <strong>9,69 Milliarden US-Dollar</strong> f&uuml;r die Konsolidierung seiner IT-Infrastruktur auf Microsoft 365, Azure und <strong>AI Copilot-Dienste</strong> vergeben &ndash; die gr&ouml;&szlig;te Regierungs-KI-Beschaffung der Geschichte. Das Projekt soll im Vergleich zur bisherigen fragmentierten Lieferantenlandschaft <strong>422 Millionen Dollar einsparen</strong>. Der Vertrag gibt Microsoft und damit auch OpenAI-KI-Modellen dominanten Zugang zur US-Milit&auml;rbürokratie &ndash; eine strategische Positionierung mit weitreichender Signalwirkung f&uuml;r den gesamten KI-Markt.</p>
+      <h2>MiniMax M3: Multimodales Modell mit 1/20 der Rechenkosten, 1 Mio. Token &amp; 15&times; schnellerem Decoding</h2>
+      <p>Das chinesische KI-Labor MiniMax ver&ouml;ffentlichte <strong>MiniMax M3</strong> mit einer neuen <em>Sparse Attention</em>-Architektur, die den Rechenaufwand pro Token auf <strong>nur 1/20 herk&ouml;mmlicher Modelle</strong> reduziert. Gleichzeitig unterst&uuml;tzt M3 Kontextfenster von bis zu <strong>1 Million Token</strong> mit <strong>9&times; schnellerem Prefilling</strong> und <strong>15&times; schnellerem Decoding</strong> f&uuml;r 1M-Token-Kontexte im Vergleich zu Vorg&auml;ngermodellen. Das Modell ist multimodal ausgelegt und unterst&uuml;tzt Text, Bilder, Audio und Video. Analysten sehen MiniMax M3 als ernsthaften Herausforderer f&uuml;r Gemini 3.5 Flash und GPT-5.5 Instant im Segment hocheffizienter Inferenz-Modelle.</p>
     </div>
     <div class="card-highlight">
-      <strong>Geopolitische Dimension:</strong> Ein US-Milit&auml;r-KI-Vertrag dieser Gr&ouml;&szlig;enordnung zieht Reaktionen aus Europa und China nach sich &ndash; der staatliche KI-R&uuml;stungswettbewerb beschleunigt sich sp&uuml;rbar.
+      <strong>Kostenrevolution:</strong> 1/20 Rechenkosten bei 1M Token Kontext macht M3 zur attraktivsten Option f&uuml;r langform-intensive Anwendungen wie Dokumentenanalyse, Code-Audits und Multilingual-Processing.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">aiapps.com / blog.mean.ceo</span>
+      <a class="read-link" href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Google + SpaceX GPU-Deal -->
+  <article class="card" data-cat="industrie forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x1F6F0;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">Google Cloud</span>
+        <span class="tag tag-cyan">SpaceX</span>
+        <span class="tag tag-amber">110.000 GPUs</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Google schlie&szlig;t KI-GPU-Deal mit SpaceX &ndash; 110.000 NVIDIA-GPUs f&uuml;r KI-Compute-Kapazit&auml;t</h2>
+      <p>Google hat einen <strong>Cloud-Service-Vertrag mit SpaceX</strong> geschlossen, der Zugang zu KI-Rechenkapazit&auml;ten bindet, die mit rund <strong>110.000 NVIDIA-GPUs</strong> verbunden sind. Der Deal ist Teil von Googles aggressiver Expansion seiner KI-Infrastruktur f&uuml;r Gemini und andere Foundation-Model-Dienste. SpaceX nutzt die Vereinbarung, um seine eigenen KI-Vorhaben (u.&nbsp;a. Starship-Navigation und Satellitenautomatisierung) mit Googles Cloud-Diensten zu verbinden. Die Kooperation zwischen einem der weltweit gr&ouml;&szlig;ten Tech-Konzerne und der f&uuml;hrenden Raumfahrtfirma signalisiert die zunehmende Verschmelzung von KI-Infrastruktur und physischer Technologie.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Infrastruktur-Rennen:</strong> 110.000 GPUs f&uuml;r einen einzigen Partnerschaftsvertrag &ndash; der Kampf um KI-Compute-Kapazit&auml;t hat eine neue Gr&ouml;&szlig;enordnung erreicht.
     </div>
     <div class="card-footer">
       <span class="source-name">blog.mean.ceo / AI Automation Trends</span>
@@ -604,11 +558,57 @@
     </div>
   </article>
 
+  <!-- NVIDIA Cosmos 3 Omnimodel -->
+  <article class="card" data-cat="modelle robotik forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x1F310;</div>
+      <div class="card-meta">
+        <span class="tag tag-green">NVIDIA</span>
+        <span class="tag tag-violet">Cosmos 3</span>
+        <span class="tag tag-cyan">Physische KI</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>NVIDIA Cosmos 3: Erstes offenes &bdquo;Omnimodel&ldquo; f&uuml;r physische KI &ndash; Vision, Simulation &amp; Action in einem</h2>
+      <p>NVIDIA pr&auml;sentierte <strong>Cosmos 3</strong> als weltweit erstes vollst&auml;ndig offenes &bdquo;Omnimodel&ldquo; f&uuml;r physische KI. Die Architektur integriert <strong>visuelle Verarbeitung, Weltsimulation und Aktionsgenerierung</strong> in einem einzigen Mixture-of-Transformers-Modell. Cosmos 3 kann physische Umgebungen modellieren, realistische Simulationen erstellen und daraus direkt Robotersteuerungsbefehle ableiten &ndash; ohne separate Modelle f&uuml;r Wahrnehmung, Planung und Ausf&uuml;hrung. NVIDIA ver&ouml;ffentlicht das Modell als Open-Weight-Version und positioniert es als Fundament f&uuml;r eine neue Generation von Industrie- und Servicerobotern, autonomen Fahrzeugen und physischen KI-Agenten.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Open Physical AI:</strong> Cosmos 3 als Open-Weight-Modell demokratisiert den Zugang zu physischer KI &ndash; Robotik-Startups weltweit k&ouml;nnen jetzt auf Basis eines frontier-f&auml;higen Weltmodells entwickeln.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">NVIDIA Blog / blogs.nvidia.com</span>
+      <a class="read-link" href="https://blogs.nvidia.com/blog/national-robotics-week-2026/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Orion-100B günstigstes Training -->
+  <article class="card" data-cat="modelle forschung">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4B0;</div>
+      <div class="card-meta">
+        <span class="tag tag-green">Orion-100B</span>
+        <span class="tag tag-amber">Kosten-Revolution</span>
+        <span class="tag tag-cyan">Training</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Orion-100B: 100-Milliarden-Parameter-Modell f&uuml;r nur 1,25&nbsp;Dollar pro Stunde trainiert</h2>
+      <p>Das KI-Lab Orion hat ein Modell mit <strong>100 Milliarden Parametern</strong> zu den bisher niedrigsten bekannten Trainingskosten produziert: <strong>1,25 US-Dollar pro Stunde</strong>. Zum Vergleich: Vergleichbare Modelle kosteten Anfang 2025 noch Millionen Dollar im Training. Die Kostenreduktion basiert auf hochoptimierten Mixed-Precision-Verfahren, effizienterer Datenparallelisierung und dem Einsatz neuester H100-&auml;quivalenter Hardware &uuml;ber Spot-Cloud-Instanzen. Orion-100B setzt damit einen neuen Referenzpunkt f&uuml;r die Demokratisierung von Large-Language-Model-Training und k&ouml;nnte die Marktzugangsh&uuml;rde f&uuml;r KI-Startups radikal senken.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Disruptives Signal:</strong> Wenn 100-Milliarden-Modelle f&uuml;r Bruchteile fr&uuml;herer Kosten trainierbar sind, ver&auml;ndert das die gesamte Wertsch&ouml;pfungskette der KI-Industrie &ndash; von Hyperscalern bis zu Startups.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">llm-stats.com / blog.mean.ceo</span>
+      <a class="read-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 8. Juni 2026 &nbsp;|&nbsp;
-  Quellen: anthropic.com, releasebot.io, windowsnews.ai, cnbc.com, llm-stats.com, ad-hoc-news.de, hipther.com, blog.mean.ceo, claude.com, openai.com &nbsp;|&nbsp;
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 9. Juni 2026 &nbsp;|&nbsp;
+  Quellen: anthropic.com, fortune.com, aljazeera.com, techcrunch.com, venturebeat.com, llm-stats.com, blog.mean.ceo, windowscentral.com, macrumors.com, aiapps.com, blogs.nvidia.com, 9to5google.com &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
