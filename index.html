@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI & Automatisierung – News 3. Juli 2026</title>
+  <title>KI & Automatisierung – News 4. Juli 2026</title>
   <style>
     :root {
       --bg:        #0d1117;
@@ -335,14 +335,14 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 3. Juli 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 4. Juli 2026</div>
 </header>
 
 <div class="stats">
   <div class="stat"><span class="dot"></span><strong>8</strong>&nbsp;aktuelle Artikel</div>
   <div class="stat">&#x1F310;&nbsp;<strong>12+</strong>&nbsp;Quellen</div>
-  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Ultracode &amp; Dynamic Workflows in Claude Code; Managed Agents mit Cron-Schedule; Azure Foundry GA; Neue Claude-Constitution</div>
-  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt:</strong>&nbsp;UN warnt: KI &uuml;berholt Regulierung (Global Dialogue 6.&nbsp;Juli); US-Jobmarkt: nur 57k Jobs im Juni; Nobel-Laureate Jumper wechselt zu Anthropic; OpenAI Jala&ntilde;o-Chip</div>
+  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Fable 5 wechselt ab 7.&nbsp;Juli auf Usage Credits ($10/$50 pro MTok); Sonnet 5 Standard f&uuml;r alle; Artifacts Enterprise-Beta; Claude in Chrome GA</div>
+  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt:</strong>&nbsp;Google Gemini Omni + Boston Dynamics; OpenAI kauft Ona (Codex 5&nbsp;Mio. Nutzer); EU AI Act Omnibus (Deadline bis 2027); UN Global Dialogue startet 6.&nbsp;Juli Genf</div>
 </div>
 
 <div class="filters">
@@ -350,8 +350,7 @@
   <button class="filter-btn" onclick="filterCards('modelle', this)">KI-Modelle</button>
   <button class="filter-btn" onclick="filterCards('industrie', this)">Industrie</button>
   <button class="filter-btn" onclick="filterCards('robotik', this)">Robotik</button>
-  <button class="filter-btn" onclick="filterCards('arbeit', this)">Arbeitswelt</button>
-  <button class="filter-btn" onclick="filterCards('forschung', this)">Forschung</button>
+  <button class="filter-btn" onclick="filterCards('forschung', this)">Regulierung &amp; Governance</button>
   <button class="filter-btn claude-btn" onclick="filterCards('claude', this)">&#x1F916; Claude &amp; Anthropic</button>
 </div>
 
@@ -364,96 +363,98 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: Claude Code Ultracode + Dynamic Workflows -->
+  <!-- FEATURED: Fable 5 → Usage Credits ab 7. Juli -->
   <article class="card claude-card featured" data-cat="claude modelle">
     <div class="card-header">
-      <div class="card-icon">&#x26A1;</div>
+      <div class="card-icon">&#x1F4B3;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Fable 5</span>
+        <span class="tag tag-amber">Preismodell-Wechsel</span>
+        <span class="tag tag-rose">Ab 7. Juli</span>
+        <span class="tag tag-cyan">Usage Credits</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Fable 5: Nur noch 3 Tage im Abo-Limit &ndash; ab 7. Juli wechselt Anthropics m&auml;chtigstes Modell auf nutzungsbasierte Credits ($10/$50 pro MTok)</h2>
+      <p>Fable 5 kehrte am <strong>1. Juli</strong> nach fast drei Wochen Pause (12.&nbsp;Juni – 1.&nbsp;Juli) durch Exportkontroll-Beschr&auml;nkungen zur&uuml;ck &ndash; mit neuen Classifiern f&uuml;r mehr Sicherheit (nach produktiven Gespr&auml;chen mit der US-Regierung). Bis <strong>7.&nbsp;Juli</strong> k&ouml;nnen alle bezahlten Pl&auml;ne (Pro, Max, Team, Enterprise) Fable 5 f&uuml;r bis zu <strong>50&nbsp;% des w&ouml;chentlichen Nutzungslimits</strong> kostenlos nutzen. Ab dem <strong>8.&nbsp;Juli</strong> wechselt der Zugang auf <strong>Usage Credits</strong>: $10 pro Million Input-Token, $50 pro Million Output-Token. Anthropic betont ausdr&uuml;cklich: Fable 5 verlässt die Abos <em>nicht dauerhaft</em> &ndash; der Schritt ist auf <strong>Kapazit&auml;tsengp&auml;sse durch hohe Nachfrage</strong> zur&uuml;ckzuf&uuml;hren. Fable 5 denkt l&auml;nger und produziert l&auml;ngere Outputs als Opus&nbsp;4.8, was das Wochenlimit schneller aussch&ouml;pft. Parallel bleibt <strong>Claude Sonnet 5</strong> Standard-Modell mit Promotional Pricing ($2/$10 per MTok) bis 31.&nbsp;August. Fable 5 erzielte laut Messungen <strong>16,1&nbsp;% Automatisierungsrate</strong> bei freiberuflichen Aufgaben (Design, CAD) &ndash; viermal mehr als sein Vorg&auml;nger Opus&nbsp;4.6.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Handlungsempfehlung:</strong> Intensive Fable-5-Projekte jetzt noch im Abo-Limit starten &ndash; ab 8.&nbsp;Juli z&auml;hlt jedes Token. Prompt-Caching f&uuml;r lange Kontexte spart Credits besonders effizient.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">BleepingComputer / APIdog / SearchEngineJournal / X @claudeai (Juli 2026)</span>
+      <a class="read-link" href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Claude Code Artifacts -->
+  <article class="card claude-card" data-cat="claude industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F5BC;&#xFE0F;</div>
       <div class="card-meta">
         <span class="tag tag-orange">Claude Code</span>
-        <span class="tag tag-green">Ultracode</span>
-        <span class="tag tag-violet">Dynamic Workflows</span>
-        <span class="tag tag-cyan">Parallele Agenten</span>
+        <span class="tag tag-violet">Artifacts</span>
+        <span class="tag tag-green">Enterprise Beta</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Code bekommt Ultracode-Modus &amp; Dynamic Workflows: KI erledigt Codebase-Migrationen und komplexe Ingenieur-Aufgaben parallel &ndash; mit eingebautem Verifikations-Agenten</h2>
-      <p>Anthropic hat zwei gro&szlig;e Claude-Code-Features ausgerollt: Der neue <strong>Ultracode-Modus</strong> (erreichbar &uuml;ber das Effort-Men&uuml;) setzt den Reasoning-Level auf <code>xhigh</code> und l&auml;sst Claude automatisch entscheiden, wann ein Multi-Agenten-Workflow gestartet wird &ndash; ohne manuelle Orchestrierung. <strong>Dynamic Workflows</strong> (Research Preview) erm&ouml;glichen parallele End-to-End-Aufgabenverarbeitung &uuml;ber ganze Codebasen: Migrationen, komplexe Engineering-Aufgaben und großfl&auml;chige Analysen werden in parallele Sub-Agenten aufgeteilt und der Fortschritt wird session&uuml;bergreifend gespeichert. Zus&auml;tzlich: <strong>Verbesserte Background-Sessions</strong> &uuml;berleben jetzt auch Prozess-Neustarts und Updates &ndash; auch unter Windows. Neue <strong>OpenTelemetry-Logs</strong> und Transcript-Debugging erleichtern die Fehlersuche in Agenten-Runs. Token-Einsparung: Der verbesserte <code>/code-review</code>-Workflow reduziert Token-Verbrauch um <strong>~25&nbsp;%</strong>.</p>
+      <h2>Claude Code Artifacts: Coding-Sessions werden zu live-aktualisierten, teilbaren Webseiten &ndash; PR-Walkthroughs, Dashboards &amp; Checklisten auf festem Link</h2>
+      <p>Anthropic hat <strong>Claude Code Artifacts</strong> (seit 18.&nbsp;Juni) jetzt f&uuml;r alle Team- und Enterprise-Orgs aktiviert: Claude verwandelt Arbeitsergebnisse automatisch in <strong>selbst-aktualisierende HTML-Seiten</strong> &ndash; PR-Walkthroughs, Incident-Pages, Team-Dashboards oder Release-Checklisten. Der Link bleibt fest; jede neue Session-Ausgabe wird automatisch an dieselbe URL publiziert. Technische Rahmenbedingungen: maximal <strong>16&nbsp;MiB</strong> pro Artifact, strenge CSP blockiert alle externen Requests &ndash; alles (CSS, JS, Bilder als Data-URIs) muss inline sein. Enterprise-Admins k&ouml;nnen Zugriffsrollen, Retention-Fenster und Artifact-Aktivit&auml;t &uuml;ber die <strong>Compliance API</strong> pr&uuml;fen und steuern. Artifacts sind nur f&uuml;r authentifizierte Org-Mitglieder sichtbar &ndash; keine &ouml;ffentliche Freigabe m&ouml;glich. Version-History in Beta f&uuml;r Team und Enterprise.</p>
     </div>
     <div class="card-highlight">
-      <strong>Update jetzt:</strong> Version 2.1.197+ bringt Ultracode und Dynamic Workflows &ndash; Claude Sonnet&nbsp;5 ist als Standard-Modell mit Promotional Pricing ($2/$10 per MTok) bis 31.&nbsp;August aktiv.
+      <strong>VentureBeat:</strong> &bdquo;Claude Code Artifacts bringt lebendige, geteilte Dashboards und interaktive Arbeitsbereiche direkt in den Enterprise-Workflow &ndash; ohne externen Hosting-Dienst.&ldquo;
     </div>
     <div class="card-footer">
-      <span class="source-name">Releasebot / Claude Code Changelog / GitHub (Juli 2026)</span>
+      <span class="source-name">Anthropic Blog / VentureBeat / DevOps.com (Juni&ndash;Juli 2026)</span>
+      <a class="read-link" href="https://claude.com/blog/artifacts-in-claude-code" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Sonnet 5 Default + Enterprise Analytics -->
+  <article class="card claude-card" data-cat="claude industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F916;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Sonnet 5</span>
+        <span class="tag tag-green">Default-Modell</span>
+        <span class="tag tag-indigo">Enterprise</span>
+        <span class="tag tag-cyan">Admin Analytics</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Sonnet 5 ist Standard f&uuml;r alle Nutzer: Enterprise-Admins erhalten tiefere Analytics, Ausgaben-Alerts und Modell-Level-Entitlements</h2>
+      <p>Seit dem <strong>1.&nbsp;Juli</strong> ist <strong>Claude Sonnet 5</strong> das Standard-Modell f&uuml;r alle Free- und Pro-Nutzer &ndash; das agentic-f&auml;higste Sonnet-Modell: erstellt Pl&auml;ne, steuert Browser und Terminals, verf&uuml;gt &uuml;ber <strong>1&nbsp;Mio. Token Kontext</strong> nativ. Anthropic hat parallel umfangreiche <strong>Enterprise-Admin-Features</strong> ausgerollt: tiefere Nutzungsanalysen (Kosten, Produktivit&auml;tstrends), <strong>Ausgaben-Alerts</strong> gegen unerwartete &Uuml;berl&auml;ufe und <strong>Modell-Level-Entitlements</strong> &ndash; Admins vergeben gezielt Zugang zu bestimmten Modellen (z.&nbsp;B. Fable 5) an Teams oder Rollen. Org-Admins k&ouml;nnen jetzt ein <strong>Org-Default-Modell</strong> direkt in der Console festlegen. Sonnet 5 l&auml;uft mit Promotional Pricing (<strong>$2/$10 per MTok</strong>) bis 31.&nbsp;August 2026 &ndash; danach greifen Standardpreise.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Agentic-Leistung zum Einstiegspreis:</strong> Sonnet 5 erledigt Aufgaben autonom, die vor Monaten noch die gro&szlig;en (teureren) Modelle erforderten &ndash; jetzt als Standard auf jedem Plan.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Anthropic / Releasebot / Claude Changelog (Juli 2026)</span>
+      <a class="read-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Claude in Chrome GA + Background Sessions -->
+  <article class="card claude-card" data-cat="claude industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F310;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Code</span>
+        <span class="tag tag-cyan">Chrome GA</span>
+        <span class="tag tag-green">Background Sessions</span>
+        <span class="tag tag-violet">Windows-Fix</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude in Chrome ist Generally Available &ndash; Background-Sessions &uuml;berleben jetzt Prozess-Neustarts und Windows-Updates, /code-review spart 25&nbsp;% Token</h2>
+      <p>Claude Code hat <strong>Claude in Chrome</strong> als <em>Generally Available</em> ver&ouml;ffentlicht &ndash; der Browser-Agent erh&auml;lt neue F&auml;higkeiten: <strong>Background Notifications</strong>, automatisiertes <strong>Draft-PR-Handoff</strong>, verbessertes Failover und stabileres Session-Handling. Parallel: <strong>Background-Sessions</strong> &uuml;berstehen ab sofort Prozess-Neustarts, Updates &ndash; und erstmals korrekt auch auf <strong>Windows</strong>: Background-Shells werden &uuml;bergeben statt gekillt. UI-Verbesserungen im Agents-View: lesbare Session-Namen, klickbare Datei-Anh&auml;nge, korrigierte Status-Anzeigen (erledigte Zeilen wechseln nicht mehr zwischen &bdquo;Done&ldquo; und &bdquo;Needs your input&ldquo;; gestockte Agenten zeigen &bdquo;Needs attention&ldquo;). Der <strong>/code-review</strong>-Workflow fasst f&uuml;nf Cleanup-Finder zu einem zusammen und spart rund <strong>25&nbsp;% Token-Kosten</strong>.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Windows-Fix:</strong> Laufende Agenten-Tasks &uuml;berstehen Updates erstmals ohne Abbruch &ndash; ein wichtiger Schritt f&uuml;r Windows-Entwicklungsteams, die auf langfristige Background-Agents setzen.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Claude Code Changelog / Releasebot / code.claude.com (Juli 2026)</span>
       <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude Managed Agents Cron -->
-  <article class="card claude-card" data-cat="claude industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x23F0;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Managed Agents</span>
-        <span class="tag tag-cyan">Cron-Scheduling</span>
-        <span class="tag tag-green">Vault-Secrets</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Claude Managed Agents laufen jetzt auf Schedule: Cron-basierte Automatisierung, sichere CLI-Tools &amp; Vault-gespeicherte Secrets ohne eigene Infrastruktur</h2>
-      <p>Anthropic hat <strong>Claude Managed Agents</strong> um Cron-Scheduling erweitert: Agenten k&ouml;nnen jetzt per Cron-Schedule automatisch gestartet werden &ndash; ein Trigger startet jeweils eine neue Session. Typische Anwendungsf&auml;lle: n&auml;chtliche Datensynchronisierungen, w&ouml;chentliche Compliance-Scans oder t&auml;gliche Digest-Reports. Neu: Agenten k&ouml;nnen jetzt <strong>sicher auf CLI-Tools und authentifizierte Services</strong> zugreifen, Secrets werden verschl&uuml;sselt im <strong>Vault</strong> gespeichert. Browser-f&auml;hige Integrationen erm&ouml;glichen auch Web-Automatisierungen. Damit entf&auml;llt der Bedarf an eigenem Scheduler-Backend &ndash; Governance, Logging und Zugriffssteuerung sind direkt in die Plattform eingebaut.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Einsatzbereit:</strong> Nachtl&auml;ufe, Compliance-Checks, Digest-Generierung &ndash; kein eigener Scheduler oder Secrets-Manager mehr n&ouml;tig.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic Platform Docs / Releasebot (Juli 2026)</span>
-      <a class="read-link" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude in Microsoft Azure Foundry -->
-  <article class="card claude-card" data-cat="claude industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x2601;&#xFE0F;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Azure Foundry</span>
-        <span class="tag tag-indigo">Microsoft</span>
-        <span class="tag tag-green">Generally Available</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Claude ist jetzt generally available in Microsoft Azure Foundry: Native Azure-Integration mit SSO, Compliance-Zones und Enterprise-Billing</h2>
-      <p>Anthropic hat den <strong>GA-Launch von Claude in Microsoft Foundry auf Azure</strong> bekanntgegeben. Die Integration bietet native Azure-Identit&auml;tsverwaltung, Enterprise-Billing &uuml;ber bestehende Azure-Vertr&auml;ge und optionalen <strong>US Data Zone Support</strong> f&uuml;r Compliance-sensitive Workloads. Claude-Modelle k&ouml;nnen damit direkt aus dem Azure-&Ouml;kosystem genutzt werden &ndash; ohne zus&auml;tzliche API-Keys oder separate Anthropic-Vertr&auml;ge. F&uuml;r Enterprise-Teams bedeutet das: bestehende Azure-Governance, Security-Policies und Audit-Logs greifen automatisch auch f&uuml;r Claude-Workloads. Verf&uuml;gbar f&uuml;r Sonnet&nbsp;5, Opus&nbsp;4.8 und Fable&nbsp;5.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Azure-Native:</strong> Wer Claude bereits &uuml;ber AWS Bedrock oder Google Cloud nutzt, bekommt mit Azure Foundry nun auch Microsoft-native Unternehmensintegration.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic / Microsoft Azure (Juli 2026)</span>
-      <a class="read-link" href="https://www.anthropic.com/news" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude neue Constitution -->
-  <article class="card claude-card" data-cat="claude forschung">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4DC;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Claude Constitution</span>
-        <span class="tag tag-violet">AI Alignment</span>
-        <span class="tag tag-cyan">Open Source</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Anthropic ver&ouml;ffentlicht Claudes neue &bdquo;Constitution&ldquo;: Von Regeln zur Vernunft &ndash; ein &ouml;ffentliches Werte-Dokument unter CC0 f&uuml;r die gesamte KI-Branche</h2>
-      <p>Anthropic hat eine neue <strong>Claude Constitution</strong> ver&ouml;ffentlicht &ndash; ein detailliertes Dokument, das Claudes Werte, Verhaltens-Hierarchie und den Kontext seiner Entwicklung beschreibt. Die vier Kern-Priorit&auml;ten in absteigender Reihenfolge: <strong>Broadly Safe</strong> (keine Untergrabung menschlicher KI-Aufsicht), <strong>Broadly Ethical</strong> (Ehrlichkeit, gute Werte, Schadensvermeidung), <strong>Compliant</strong> (Anthropics Leitlinien) und <strong>Genuinely Helpful</strong>. Der philosophische Shift: weg von star­ren Regeln, hin zu erkl&auml;rter Vernunft &ndash; Claude soll die <em>Logik</em> hinter ethischen Prinzipien verstehen, nicht nur Regeln befolgen. Das Dokument ist unter <strong>Creative Commons CC0&nbsp;1.0</strong> ver&ouml;ffentlicht und kann frei von jedem genutzt werden &ndash; als Vorlage f&uuml;r die KI-Branche.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Oxford University:</strong> &bdquo;Das detaillierteste &ouml;ffentliche KI-Verhaltens-Framework eines Frontlabs &ndash; und ein Modell daf&uuml;r, wie KI-Unternehmen Verantwortung kommunizieren sollten.&ldquo;
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic / Oxford AI Ethics / InfoQ (2026)</span>
-      <a class="read-link" href="https://www.anthropic.com/news/claude-new-constitution" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
@@ -465,98 +466,99 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: UN warnt – KI überholt Regulierung -->
-  <article class="card featured" data-cat="forschung industrie">
+  <!-- FEATURED: Google DeepMind – Gemini Omni + 3.5 Flash + Boston Dynamics -->
+  <article class="card featured" data-cat="modelle robotik industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F9A4;</div>
+      <div class="card-meta">
+        <span class="tag tag-cyan">Google DeepMind</span>
+        <span class="tag tag-violet">Gemini Omni</span>
+        <span class="tag tag-green">Gemini 3.5 Flash GA</span>
+        <span class="tag tag-indigo">Boston Dynamics</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Google DeepMinds KI-Woche: Gemini Omni (multimodale Video-KI), Gemini 3.5 Flash allgemein verf&uuml;gbar und Robotics-ER 1.6 jetzt im Spot-Roboterhund</h2>
+      <p><strong>Gemini 3.5 Flash</strong> ist jetzt breit verf&uuml;gbar &ndash; Googles schnellstes und kosteneffizientestes Frontier-Modell: Output-Tokens kommen <strong>4&times; schneller</strong> als bei anderen Frontier-Modellen, optimiert f&uuml;r komplexe agentische Workflows, Coding und multimodale Aufgaben. <strong>Gemini Omni</strong>, die neue multimodale Modellfamilie, erstellt und bearbeitet Videos aus beliebigen Kombinationen von Text, Bild, Audio und bestehenden Videos. Auf der Robotik-Front: Boston Dynamics integriert <strong>Gemini Robotics-ER 1.6</strong> in seinen Spot-Roboterhund und die Orbit-KI-Inspektionsplattform &ndash; das Modell verbessert r&auml;umliches Verst&auml;ndnis und Reasoning erheblich. Gemini-betriebene <strong>Atlas-Roboter</strong> werden in Hyundai-Autofabriken getestet. AIVI-Learning (Boston Dynamics) l&auml;uft seit 8.&nbsp;April vollst&auml;ndig auf Gemini. Auch <strong>Gemini 3.5 Pro</strong> bleibt in limitierter Vertex-AI-Enterprise-Preview. Zus&auml;tzlich: <strong>Blackstone</strong> investiert $30&nbsp;Mrd. in KI-Rechenzentren in Japan &ndash; Zeichen f&uuml;r weiteren Infrastrukturausbau der Google-&Ouml;kosystem-Partner.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Robotik-KI-Schnittstelle:</strong> Gemini Robotics erm&ouml;glicht Robotern jeder Form wahrzunehmen, zu schlussfolgern, Werkzeuge zu benutzen und mit Menschen zu interagieren &ndash; Hyundai-Fabriken werden zum ersten Gro&szlig;test.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Google DeepMind / Boston Dynamics / TechCrunch / llm-stats.com (Juli 2026)</span>
+      <a class="read-link" href="https://deepmind.google/blog/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- OpenAI akquiriert Ona (ex-Gitpod) -->
+  <article class="card" data-cat="industrie modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x2601;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">OpenAI</span>
+        <span class="tag tag-violet">Akquisition</span>
+        <span class="tag tag-green">Codex</span>
+        <span class="tag tag-cyan">5 Mio. Nutzer</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>OpenAI kauft Ona (ex-Gitpod): Codex-Agenten laufen jetzt stunden- oder tagelang autonom in Enterprise-Clouds &ndash; auch nachdem der Laptop zugeklappt ist</h2>
+      <p>OpenAI hat am <strong>11.&nbsp;Juni</strong> die Akquisition von <strong>Ona</strong> (fr&uuml;her Gitpod) angek&uuml;ndigt &ndash; dem deutschen Startup, das von Entwickler-Dev-Environments zu <em>sicherer Cloud-Ausf&uuml;hrung f&uuml;r KI-Agenten</em> pivotierte. Das Ziel: <strong>Codex-Agenten k&ouml;nnen Aufgaben stunden- oder tagelang erledigen</strong>, nachdem der Entwickler seinen Laptop geschlossen hat. Ona's produktive Nutzung stieg im letzten Jahr um das <strong>13-fache</strong> &ndash; Kunden sind gro&szlig;e US-Banken, europ&auml;ische Pharmaunternehmen und asiatische Staatsfonds. <strong>Codex</strong> hat inzwischen &uuml;ber <strong>5 Millionen w&ouml;chentliche Nutzer</strong> (+400&nbsp;% seit Jahresbeginn). Das gesamte Ona-Team unter CEO Johannes Landgraf wechselt in OpenAIs Codex-Gruppe. Vorbehaltlich kartellrechtlicher Genehmigung. Parallel: OpenAI setzt auch bei Hardware auf Eigenentwicklung (Jala&ntilde;o-Chip) und entwickelte einen GeneBench-Pro-Benchmark f&uuml;r Bioinformatik-KI.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Paradigmenwechsel:</strong> Persistente Cloud-Agenten l&ouml;sen &bdquo;Copilot-Assistenz&ldquo; durch vollst&auml;ndig autonome Softwareentwicklung ab &ndash; Codex wird zur autonomen Coding-Einheit, nicht nur zum Vorschlags-Tool.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">OpenAI / Sentinel / InfoWorld / mlq.ai (Juni 2026)</span>
+      <a class="read-link" href="https://sentinel.ht/openai-acquires-ona-codex-enterprise-agents/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- EU AI Act Omnibus -->
+  <article class="card" data-cat="forschung industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x2696;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-violet">EU AI Act</span>
+        <span class="tag tag-amber">Omnibus</span>
+        <span class="tag tag-green">Frist 2027</span>
+        <span class="tag tag-rose">Compliance</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>EU AI Act Omnibus beschlossen: High-Risk-Deadline bis Dezember 2027 verschoben, KMU erhalten vereinfachte Anforderungen und mehr Sandbox-Zugang</h2>
+      <p>Am <strong>29.&nbsp;Juni 2026</strong> erteilte der Rat der EU seine finale Zustimmung zum <strong>AI Act Omnibus-Vereinfachungspaket</strong> &ndash; nach politischer Einigung am 7.&nbsp;Mai und Parlamentszustimmung am 16.&nbsp;Juni. Die wichtigsten &Auml;nderungen: Die Frist f&uuml;r Hochrisiko-KI-Compliance wird auf den <strong>2.&nbsp;Dezember 2027</strong> verschoben (vorher: August 2026). <strong>KMU und Mittelst&auml;ndler</strong> erhalten vereinfachte Anforderungen. Mehr Unternehmen erhalten Zugang zu regulatorischen <strong>Sandboxes</strong> f&uuml;r KI-Experimente. Das KI-B&uuml;ro erh&auml;lt verst&auml;rkte Aufsichtsbefugnisse und zentralisiert die Oversight &uuml;ber GPAI-Modelle. Das Basis-Gesetz gilt ab <strong>2.&nbsp;August 2026</strong> vollst&auml;ndig &ndash; Verbote f&uuml;r verbotene KI-Praktiken und KI-Literacy-Pflichten gelten bereits seit Februar 2025. Die USA verfolgen den genau entgegengesetzten Kurs: <strong>federaler Leichtgewichts-Rahmen</strong> mit starker Pr&auml;emption staatlicher Gesetze.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Praxisrelevanz:</strong> Unternehmen mit Hochrisiko-KI (Kreditvergabe, Personal, Medizin-KI) haben mehr Zeit &ndash; aber das Fenster f&uuml;r Sandbox-Experimente und Freistellungen schlie&szlig;t sich schneller als gedacht.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">EU AI Act Portal / DLA Piper / Collibra / Wilson Sonsini (Juni&ndash;Juli 2026)</span>
+      <a class="read-link" href="https://artificialintelligenceact.eu/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- UN Global Dialogue on AI Governance -->
+  <article class="card" data-cat="forschung industrie">
     <div class="card-header">
       <div class="card-icon">&#x1F30D;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">UN-Warnung</span>
+        <span class="tag tag-rose">UN</span>
         <span class="tag tag-amber">Global Dialogue</span>
         <span class="tag tag-cyan">6.&ndash;7.&nbsp;Juli Genf</span>
-        <span class="tag tag-violet">Yoshua Bengio</span>
+        <span class="tag tag-violet">KI-Governance</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>UN-Wissenschaftspanel schlägt Alarm: KI schreitet schneller voran als Wissenschaft und Regierungen sie verstehen &ndash; Erster Global Dialogue startet 6.&nbsp;Juli in Genf</h2>
-      <p>Am <strong>1.&nbsp;Juli 2026</strong> ver&ouml;ffentlichte das unabh&auml;ngige UN-Wissenschaftspanel seinen Vorabbericht: KI entwickelt sich schneller, als die Wissenschaft sie vollst&auml;ndig verstehen kann &ndash; und schneller, als Regierungen sie regulieren k&ouml;nnen. Panel-Vorsitzender <strong>Yoshua Bengio</strong> (Turing-Preisleistungsf&auml;hige): &bdquo;KI-F&auml;higkeiten &uuml;berholen sowohl wissenschaftliches Verst&auml;ndnis als auch die Anpassungsf&auml;higkeit von Regierungen.&ldquo; Das Gremium warnt: Mit wachsenden Belegen f&uuml;r <strong>dezip&ouml;ses KI-Verhalten</strong> kann die Wissenschaft derzeit nicht garantieren, dass KI keinen katastrophalen Schaden anrichten wird. Der <strong>UN Global Dialogue on AI Governance</strong> startet am <strong>6.&ndash;7.&nbsp;Juli</strong> in Genf &ndash; parallel tritt die <strong>UN AI for Good Commission</strong> am 8.&nbsp;Juli erstmals zusammen, mit Anthropic-Mitgr&uuml;nder Jack Clark, Jensen Huang (NVIDIA), Andy Jassy (Amazon) und Brad Smith (Microsoft) als Mitglieder.</p>
+      <h2>UN Global Dialogue on AI Governance startet in 2 Tagen in Genf &ndash; Wissenschaftspanel: &bdquo;KI-F&auml;higkeiten &uuml;berholen Wissenschaft und Regierungen&ldquo;</h2>
+      <p>Am <strong>6.&ndash;7.&nbsp;Juli 2026</strong> findet in Genf der <strong>UN Global Dialogue on AI Governance</strong> statt &ndash; Mitgliedsstaaten diskutieren internationale Ans&auml;tze zur KI-Steuerung. Das <strong>UN-Wissenschaftspanel zur KI</strong> (Vorsitz: <strong>Yoshua Bengio</strong>, Turing-Preistr&auml;ger) warnt in seinem Vorabbericht: KI-F&auml;higkeiten &uuml;bertreffen sowohl das wissenschaftliche Verst&auml;ndnis als auch die Regulierungsgeschwindigkeit von Regierungen. Mit wachsenden Belegen f&uuml;r <em>dezipi&ouml;ses KI-Verhalten</em> kann Wissenschaft derzeit nicht garantieren, dass KI keinen katastrophalen Schaden anrichten wird. Am <strong>8.&nbsp;Juli</strong> tritt die <strong>UN AI for Good Commission</strong> erstmals zusammen &ndash; Mitglieder: Jack Clark (Anthropic-Mitgr&uuml;nder), Jensen Huang (NVIDIA), Andy Jassy (Amazon), Brad Smith (Microsoft). Die USA halten <strong>75&nbsp;%</strong> der Rechenleistung der 500 st&auml;rksten KI-Supercomputer weltweit &ndash; Entwicklungsl&auml;nder fordern faire Beteiligung.</p>
     </div>
     <div class="card-highlight">
-      <strong>Machtkonzentration als Risiko:</strong> Die USA halten 75&nbsp;% der Rechenleistung der weltweit 500 st&auml;rksten KI-Supercomputer &ndash; Entwicklungsl&auml;nder fordern faire Beteiligung an KI-Governance-Prozessen.
+      <strong>Governance-L&uuml;cke:</strong> Das Fenster f&uuml;r effektive globale KI-Regulierung ist laut UN-Panel noch offen &ndash; m&ouml;glicherweise aber nicht mehr lange.
     </div>
     <div class="card-footer">
-      <span class="source-name">UN News / The National / Axios / The Register (1.&ndash;3.&nbsp;Juli 2026)</span>
+      <span class="source-name">UN News / Axios / AI Herald / artificialintelligenceherald.com (Juli 2026)</span>
       <a class="read-link" href="https://news.un.org/en/story/2026/07/1167848" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- US Arbeitsmarkt Juni: 57k Jobs -->
-  <article class="card" data-cat="arbeit industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4C9;</div>
-      <div class="card-meta">
-        <span class="tag tag-rose">US-Jobmarkt</span>
-        <span class="tag tag-amber">57.000 Jobs</span>
-        <span class="tag tag-indigo">BLS Juni&nbsp;2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>US-Jobmarkt Juni: Nur 57.000 neue Stellen &ndash; KI-Automatisierung eliminiert Einstiegsjobs in Content, Support und Coding im Rekordtempo</h2>
-      <p>Der BLS-Besch&auml;ftigungsbericht f&uuml;r Juni 2026 &ndash; ver&ouml;ffentlicht am <strong>3.&nbsp;Juli</strong> &ndash; zeigt nur <strong>57.000</strong> neu geschaffene Stellen, deutlich unter dem Konsens. KI-Tools eliminieren Einstiegsjobs in Administration, Content-Erstellung, Kundensupport und Coding-Assistenz in beschleunigendem Tempo. Das <strong>RAISE US</strong> sch&auml;tzt 88.000 US-Jobabbau 2026 direkt durch KI &ndash; Rekordhoch. PwCs <strong>Global AI Jobs Barometer</strong> (2026) zeigt jedoch einen Zwei-Klassen-Arbeitsmarkt: Jobs, die durch KI &bdquo;professionalisiert&ldquo; werden, wachsen <strong>doppelt so schnell</strong> und haben 42&nbsp;% h&ouml;heres Lohnwachstum seit 2021. Besonders betroffen: <strong>unter-25-J&auml;hrige</strong> &ndash; nicht durch Entlassungen, sondern durch kollabierenden Einstieg in KI-exponierte Berufe.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Goldman Sachs:</strong> 300 Millionen Jobs weltweit sind KI-Automatisierung ausgesetzt. In den USA k&ouml;nnte KI Aufgaben &uuml;bernehmen, die 25&nbsp;% aller Arbeitsstunden ausmachen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">BLS / PwC / BuildFastWithAI / Goldman Sachs (3.&nbsp;Juli 2026)</span>
-      <a class="read-link" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Google: Nobel-Preisträger Jumper wechselt zu Anthropic + Gemini 3.5 Flash -->
-  <article class="card" data-cat="modelle forschung">
-    <div class="card-header">
-      <div class="card-icon">&#x1F3C6;</div>
-      <div class="card-meta">
-        <span class="tag tag-cyan">Google DeepMind</span>
-        <span class="tag tag-violet">Gemini 3.5 Flash</span>
-        <span class="tag tag-rose">Talent-Abgang</span>
-        <span class="tag tag-green">Nobel-Laureate</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Nobel-Preisträger John Jumper verlässt Google DeepMind zu Anthropic &ndash; und Gemini 3.5 Flash ist jetzt allgemein verfügbar</h2>
-      <p>Google DeepMind verzeichnet prominente Abg&auml;nge: <strong>John Jumper</strong>, Vize-Pr&auml;sident und Nobelpreistr&auml;ger 2024 f&uuml;r AlphaFold, wechselt zu <strong>Anthropic</strong>. Parallel k&uuml;ndigt <strong>Noam Shazeer</strong>, Gemini-Co-Lead und Mit-Autor des bahnbrechenden &bdquo;Attention Is All You Need&ldquo;-Papers, seinen Wechsel zu OpenAI an. Trotz Talentverlusten liefert Google: <strong>Gemini 3.5 Flash</strong> ist jetzt breit verf&uuml;gbar &ndash; Googles schnellstes und kosteneffizientestes Modell f&uuml;r Coding, Agenten, Multimodal und Langdokument-Aufgaben. Das Modell &uuml;bertrifft &auml;ltere Gemini-Generationen deutlich in kommerziell relevanten Benchmarks. <strong>Gemini 3.5 Pro</strong> bleibt bis mindestens Ende Juli in limitierter Vertex-AI-Enterprise-Preview.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Talent-Krieg eskaliert:</strong> Anthropic gewinnt einen Nobelpreistr&auml;ger, OpenAI einen Transformer-Miterfinder &ndash; die Schlachten um KI-Talente werden pers&ouml;nlicher und spektakul&auml;rer.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Tech-Insider / llm-stats.com / blog.mean.ceo (Juli 2026)</span>
-      <a class="read-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- OpenAI Jalapeño-Chip + GPT-5.6 -->
-  <article class="card" data-cat="modelle industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F336;&#xFE0F;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">OpenAI</span>
-        <span class="tag tag-amber">Jala&ntilde;o-Chip</span>
-        <span class="tag tag-violet">GPT-5.6</span>
-        <span class="tag tag-cyan">750 Tokens/s</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>OpenAI pr&auml;sentiert eigenen Jala&ntilde;o-Inferenz-Chip &ndash; und GPT-5.6 Sol l&auml;uft auf Cerebras mit 750&nbsp;Tokens pro Sekunde</h2>
-      <p>OpenAI hat am <strong>1.&nbsp;Juli</strong> seinen neuen Custom-Chip <strong>Jala&ntilde;o</strong> f&uuml;r KI-Inferenz vorgestellt &ndash; parallel zum gemeinsam mit Broadcom entwickelten LLM-optimierten Inferenzchip (angek&uuml;ndigt 25.&nbsp;Juni). <strong>GPT-5.6 Sol</strong>, das neue Flaggschiff, l&auml;uft auf Cerebras-Hardware mit bis zu <strong>750&nbsp;Tokens/Sekunde</strong> und bietet einen <strong>Max Reasoning Mode</strong> sowie einen <strong>Ultra Mode</strong> mit automatischer Sub-Agenten-Orchestrierung. Neben Sol gibt es <strong>Terra</strong> (GPT-5.5-Niveau, halbe Kosten) und <strong>Luna</strong> (schnellstes, g&uuml;nstigstes Modell). Der Launch erfolgt als <strong>Limited Preview f&uuml;r ausgew&auml;hlte Enterprise-Kunden</strong> &ndash; breitere Verf&uuml;gbarkeit in den kommenden Wochen. Neu: <strong>GeneBench-Pro</strong> als Benchmark f&uuml;r KI in der Bioinformatik.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Hardware-Unabh&auml;ngigkeit:</strong> Mit eigenem Chip reduziert OpenAI seine Abh&auml;ngigkeit von NVIDIA &ndash; ein strategischer Schritt, den auch Google (TPU) und Anthropic (AWS Trainium) verfolgen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">OpenAI / llm-stats.com / Releasebot (Juli 2026)</span>
-      <a class="read-link" href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
@@ -565,8 +567,8 @@
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 3. Juli 2026 &nbsp;|&nbsp;
-  Quellen: anthropic.com, releasebot.io, code.claude.com, news.un.org, buildfastwithai.com, llm-stats.com, tech-insider.org, openai.com, blog.mean.ceo, pwc.com, axios.com &nbsp;|&nbsp;
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 4. Juli 2026 &nbsp;|&nbsp;
+  Quellen: anthropic.com, bleepingcomputer.com, claude.com, releasebot.io, deepmind.google, bostondynamics.com, sentinel.ht, artificialintelligenceact.eu, news.un.org, venturebeat.com, devops.com, artificialintelligenceherald.com &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
