@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI & Automatisierung – News 18. August 2026</title>
+  <title>KI & Automatisierung – News 19. August 2026</title>
   <style>
     :root {
       --bg:        #0d1117;
@@ -335,21 +335,21 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 18. August 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 19. August 2026</div>
 </header>
 
 <div class="stats">
   <div class="stat"><span class="dot"></span><strong>9</strong>&nbsp;aktuelle Artikel</div>
   <div class="stat">&#x1F310;&nbsp;<strong>10+</strong>&nbsp;Quellen</div>
-  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Claude Code GitLab-MR-Support &amp; Self-Hosted Environments (Public Beta); Wasserzeichen f&uuml;r EU AI Act; Compliance-API auf allen Plattformen</div>
-  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt heute:</strong>&nbsp;EU AI Act vollst&auml;ndig in Kraft (Bußgelder bis €15&nbsp;Mio.); OpenAI GPT-5.6-Cyber f&uuml;r Security-Forschung; KI in 55&nbsp;% aller Cyberangriffe; YouTube kennzeichnet KI-Inhalte automatisch</div>
+  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Auto-Continue beim Usage-Limit-Reset; Unsichtbare Wasserzeichen (C2PA); Mid-Conversation Tool Changes Beta; Microsoft&nbsp;365-Connector mit Write-Tools</div>
+  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt heute:</strong>&nbsp;Google Gemini&nbsp;3.7&nbsp;Flash (+13&nbsp;pp AutomationBench); OpenAI GPT-5.6&nbsp;Sol Ultrafast 750&nbsp;Tok/s; Meta 30B Open-Weight Agent-Modell; ChatGPT Teen Mode; Embodied AI Boom in Logistik</div>
 </div>
 
 <div class="filters">
   <button class="filter-btn active" onclick="filterCards('all', this)">Alle</button>
   <button class="filter-btn" onclick="filterCards('modelle', this)">KI-Modelle</button>
   <button class="filter-btn" onclick="filterCards('industrie', this)">Industrie</button>
-  <button class="filter-btn" onclick="filterCards('robotik', this)">Robotik</button>
+  <button class="filter-btn" onclick="filterCards('robotik', this)">Robotik &amp; Embodied AI</button>
   <button class="filter-btn" onclick="filterCards('forschung', this)">Regulierung &amp; Governance</button>
   <button class="filter-btn claude-btn" onclick="filterCards('claude', this)">&#x1F916; Claude &amp; Anthropic</button>
 </div>
@@ -363,71 +363,95 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: Claude Code GitLab + Self-Hosted -->
+  <!-- FEATURED: Claude Code Auto-Continue + MCP Updates -->
   <article class="card claude-card featured" data-cat="claude modelle">
     <div class="card-header">
-      <div class="card-icon">&#x1F680;</div>
+      <div class="card-icon">&#x1F504;</div>
       <div class="card-meta">
         <span class="tag tag-orange">Claude Code</span>
-        <span class="tag tag-green">GitLab MR-Support</span>
-        <span class="tag tag-cyan">Self-Hosted Public Beta</span>
-        <span class="tag tag-violet">Enterprise Ready</span>
+        <span class="tag tag-green">Auto-Continue</span>
+        <span class="tag tag-cyan">MCP 2026-07-28</span>
+        <span class="tag tag-violet">Remote Control</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Code: GitLab Merge-Request-Support &amp; Self-Hosted Environments in Public Beta &ndash; zwei Enterprise-Milestones an einem Tag</h2>
-      <p>Anthropic hat zwei gro&szlig;e Claude-Code-Updates ver&ouml;ffentlicht: <strong>GitLab Merge-Request-Support</strong> ist jetzt verf&uuml;gbar &ndash; Claude Code kann MRs lesen, kommentieren und reviewen, gleichwertig zum bisherigen GitHub-PR-Support. Zus&auml;tzlich startet die <strong>Public Beta der Self-Hosted Environments</strong> f&uuml;r Team- und Enterprise-Pläne: Teams k&ouml;nnen Claude-Code-Cloud-Sessions <strong>auf eigener Infrastruktur</strong> betreiben und erhalten damit Zugang zu internen Services und Netzwerken, kundenspezifischem Tooling und strikten Compliance-Kontrollen. Unterst&uuml;tzt werden <strong>feste und On-Demand-Runner</strong>. Schnellere Self-Hosted-Runner-Starts und verst&auml;rkte Gateway- &amp; Plugin-Validierung runden das Update ab.</p>
+      <h2>Claude Code: Auto-Continue bei Usage-Limit-Reset, MCP-Spec-Update &amp; erweitertes Remote-Control-Syncing &ndash; Desktop-Update vom 14.&nbsp;August</h2>
+      <p>Anthropic liefert ein umfangreiches Claude-Code-Update: Die neue <strong>Auto-Continue-Checkbox</strong> nimmt blockierte Sessions automatisch wieder auf, sobald das Usage-Limit zur&uuml;ckgesetzt wird &ndash; kein manuelles Eingreifen mehr n&ouml;tig. Das <strong>Remote-Control-Syncing</strong> wurde erheblich erweitert, sodass Team-Sessions &uuml;ber mehrere Maschinen hinweg synchron bleiben. Dazu kommt volle Unterst&uuml;tzung der neuen <strong>MCP-Spezifikation&nbsp;2026-07-28</strong>: Der stateless Core, verst&auml;rktes OAuth/OIDC, versionierte Extensions f&uuml;r Apps und Tasks sowie neue Connector-Features wie <strong>Embedded&nbsp;UI, Enterprise-Managed-Auth, Observability und Private-Network-Tunnels</strong> sind jetzt integriert. Richer TUI-Workflows, verbesserte Transcript- und Error-Behandlung sowie sch&auml;rfere Permission- und Security-Controls runden das Update ab.</p>
     </div>
     <div class="card-highlight">
-      <strong>Game-Changer f&uuml;r Enterprises:</strong> Self-Hosted Environments bedeutet: voller Claude-Code-Funktionsumfang im eigenen Rechenzentrum &ndash; hinter der Firewall, mit internen APIs. GitLab-Support schlie&szlig;t die lange klaffende L&uuml;cke f&uuml;r Nicht-GitHub-Teams.
+      <strong>Produktivit&auml;tssprung f&uuml;r Long-Running-Tasks:</strong> Auto-Continue macht Nacht-Sessions ohne Monitoring m&ouml;glich. Die MCP-2026-Updates &ouml;ffnen Claude Code f&uuml;r komplexe Enterprise-Integrationen mit privaten Netzwerken und SaaS-OAuth.
     </div>
     <div class="card-footer">
-      <span class="source-name">releasebot.io / code.claude.com (18.&nbsp;Aug.&nbsp;2026)</span>
+      <span class="source-name">releasebot.io / gradually.ai / code.claude.com (14.&nbsp;Aug.&nbsp;2026)</span>
       <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Anthropic Watermarking EU AI Act -->
+  <!-- Claude Invisible Watermarks C2PA -->
   <article class="card claude-card" data-cat="claude forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F4DC;</div>
+      <div class="card-icon">&#x1F4A7;</div>
       <div class="card-meta">
         <span class="tag tag-orange">Anthropic</span>
-        <span class="tag tag-amber">EU AI Act</span>
-        <span class="tag tag-cyan">Wasserzeichen</span>
-        <span class="tag tag-green">Compliance-API</span>
+        <span class="tag tag-amber">C2PA Wasserzeichen</span>
+        <span class="tag tag-cyan">EU AI Act</span>
+        <span class="tag tag-rose">Provenance Metadata</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Anthropic f&uuml;gt unsichtbare Wasserzeichen zu Claude-Outputs hinzu &ndash; EU AI Act Compliance-API jetzt auf Desktop, Web, Mobile &amp; CLI</h2>
-      <p>Anthropic reagiert auf den in Kraft getretenen EU AI Act: K&uuml;nftige Claude-Text-Outputs erhalten <strong>unsichtbare Wasserzeichen (C2PA-Standard)</strong>, die KI-generierten Inhalt maschinenlesbar kennzeichnen &ndash; ohne sichtbaren Einfluss auf Qualit&auml;t, Geschwindigkeit oder Preis. Anthropic geh&ouml;rt zu den rund <strong>190 Unterzeichnern des EU Code of Practice on Transparency</strong>. Parallel wurde die <strong>Compliance-API</strong> erheblich erweitert: Security-Teams k&ouml;nnen jetzt unified Session-Content und Metadaten f&uuml;r Audits und eDiscovery &uuml;ber eine einzige API abrufen &ndash; inkl. Claude Code (CLI), Cowork (Desktop, Web, Mobile). Beta-Zugang f&uuml;r Enterprise-Kunden ab sofort.</p>
+      <h2>Anthropic integriert unsichtbare C2PA-Wasserzeichen in Claude-Outputs &ndash; Text, SVG, PNG und JPG erhalten Provenance-Metadaten</h2>
+      <p>Claude-Modelle, die seit dem <strong>2.&nbsp;August 2026</strong> ver&ouml;ffentlicht wurden, weben ein <strong>imperceptibles Wasserzeichen direkt in generierten Text</strong> ein und h&auml;ngen signierte <strong>C2PA-Provenance-Metadaten</strong> an unterst&uuml;tzte Dateitypen an (`.svg`, `.png`, `.jpg`). Die Watermarking-Implementierung erfolgt als direkte Reaktion auf den <strong>EU AI Act</strong> &ndash; Anthropic geh&ouml;rt zu den rund 190 Unterzeichnern des EU Code of Practice on Transparency of AI-Generated Content (Juli 2026). Laut Anthropic hat das Wasserzeichen <strong>keinen messbaren Einfluss</strong> auf Qualit&auml;t, Geschwindigkeit oder Kosten. Ein separater Artikel auf explainx.ai beleuchtet, was das Wasserzeichen erkennt und &ndash; bewusst &ndash; <em>nicht</em> erkennt.</p>
     </div>
     <div class="card-highlight">
-      <strong>EU-konform aus der Box:</strong> Anthropic ist einer der ersten gro&szlig;en Provider, der aktiv Wasserzeichen implementiert &ndash; nicht nur verspricht. Unternehmen im EU-Raum k&ouml;nnen damit ihre eigene AI Act Compliance vereinfachen.
+      <strong>Erste Frontier-Implementierung:</strong> Anthropic ist einer der ersten gro&szlig;en KI-Provider, der aktiv C2PA-Wasserzeichen ausrollt. EU-Unternehmen k&ouml;nnen damit ihre eigene AI Act Compliance vereinfachen &ndash; ohne Mehraufwand.
     </div>
     <div class="card-footer">
-      <span class="source-name">anthropic.com / releasebot.io / cooley.com (Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://www.anthropic.com/news" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">explainx.ai / releasebot.io / anthropic.com (Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://explainx.ai/blog/anthropic-claude-invisible-watermarks-c2pa-august-2026" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Claude Code Cross-Session + Diagnostics -->
+  <!-- Mid-Conversation Tool Changes Beta -->
   <article class="card claude-card" data-cat="claude modelle">
     <div class="card-header">
-      <div class="card-icon">&#x1F4AC;</div>
+      <div class="card-icon">&#x1F527;</div>
       <div class="card-meta">
-        <span class="tag tag-orange">Claude Code</span>
-        <span class="tag tag-violet">Cross-Session Messages</span>
-        <span class="tag tag-green">Accessibility</span>
-        <span class="tag tag-cyan">Diagnostics</span>
+        <span class="tag tag-orange">Claude Developer API</span>
+        <span class="tag tag-violet">Tool-Changes Beta</span>
+        <span class="tag tag-green">Prompt-Cache</span>
+        <span class="tag tag-cyan">Fable&nbsp;5 &amp; Opus&nbsp;5</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Code verbessert Session-&Uuml;bergreifende Nachrichten, Barrierefreiheit &amp; Diagnose-Tools &ndash; Linux-/Windows-Fixes enthalten</h2>
-      <p>Das j&uuml;ngste Claude-Code-Update bringt eine Reihe von UX- und Stabilit&auml;tsverbesserungen: <strong>Cross-Session Messages</strong> werden jetzt mit Absender und Nachrichtentext direkt angezeigt statt als eingeklappte Zeile. Nachrichten an Remote-Control-Sessions erhalten den Session-Namen als Absender-Label. Die <strong>Accessibility</strong> wurde verbessert, ebenso wie die <strong>Diagnosewerkzeuge</strong> f&uuml;r Entwickler. Bugfixes adressieren Probleme auf <strong>Linux und Windows</strong>, im MCP-Stack, bei Berechtigungen und Session-Stabilit&auml;t. Zudem wurden die Hardened Skills aus claude.ai nochmals versch&auml;rft: Sie schatten keine lokalen Befehle mehr und d&uuml;rfen auf dem eigenen Rechner keine Shell-Befehle ausf&uuml;hren.</p>
+      <h2>Beta: Tools w&auml;hrend eines laufenden Gespr&auml;chs hinzuf&uuml;gen und entfernen &ndash; jetzt auf Claude Fable&nbsp;5, Opus&nbsp;4.8 und Opus&nbsp;5</h2>
+      <p>Eine lang ersehnte API-Funktion ist jetzt in der Beta: <strong>Mid-Conversation Tool Changes</strong> erlauben Entwicklern, Tools zwischen Turns hinzuzuf&uuml;gen oder zu entfernen, <strong>ohne den Prompt-Cache zu invalidieren</strong>. Das ist besonders relevant f&uuml;r dynamische Agent-Workflows, bei denen Werkzeuge kontextabh&auml;ngig aktiviert werden sollen. Die Beta ist aktiv auf <strong>Claude Fable&nbsp;5, Claude Mythos&nbsp;5, Claude Opus&nbsp;4.8 und Claude Opus&nbsp;5</strong>. Anthropic plant, das Feature nach der Betaphase auf weitere Modelle auszurollen. Die Kombination mit der neuen MCP-2026-07-28-Spec macht dynamische Tool-Orchestrierung erstmals kosteneffizient.</p>
     </div>
     <div class="card-highlight">
-      <strong>Polishing-Update:</strong> Kleinere UX-Verbesserungen, die den t&auml;glichen Einsatz angenehmer machen &ndash; besonders f&uuml;r Teams, die Claude Code &uuml;ber Remote-Control-Sessions koordinieren.
+      <strong>Agentic Workflows neu gedacht:</strong> Kein vollst&auml;ndiger Neustart mehr, wenn ein Agent ein neues Werkzeug braucht. Der Cache bleibt warm &ndash; ein erheblicher Kostenbonus bei langen Multi-Step-Workflows.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">releasebot.io / anthropic.com (Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Microsoft 365 Connector Write Tools -->
+  <article class="card claude-card" data-cat="claude industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4E7;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Claude Cowork</span>
+        <span class="tag tag-cyan">Microsoft 365</span>
+        <span class="tag tag-green">OneDrive / SharePoint</span>
+        <span class="tag tag-amber">Write-Tools</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Claude Microsoft-365-Connector erh&auml;lt Write-Tools: E-Mails verfassen &amp; senden, Kalender verwalten, OneDrive-Dateien erstellen</h2>
+      <p>Der <strong>Microsoft&nbsp;365 Connector</strong> f&uuml;r Claude (Cowork) hat bedeutende neue F&auml;higkeiten erhalten: Neben dem bisherigen Lesen von E-Mails und Dateien kann Claude nun <strong>E-Mails verfassen und senden</strong>, <strong>Kalendertermine verwalten</strong>, <strong>Mailbox-Einstellungen anpassen</strong> sowie <strong>Dateien in OneDrive und SharePoint erstellen und aktualisieren</strong>. Das macht Claude zum vollwertigen Microsoft-365-Assistenten f&uuml;r den Arbeitsalltag &ndash; vom Inbox-Management &uuml;ber Meeting-Planung bis zur Dokumentenpflege. Alle Aktionen k&ouml;nnen &uuml;ber die Compliance-API protokolliert werden, was Enterprise-Sicherheitsanforderungen erf&uuml;llt.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Echter Arbeitsalltag-Assistent:</strong> Claude kann jetzt nicht nur lesen, sondern handeln: E-Mail-Drafts, Kalenderbuchungen, Datei-Updates direkt aus Claude heraus &ndash; ohne App-Wechsel.
     </div>
     <div class="card-footer">
       <span class="source-name">gradually.ai / releasebot.io (Aug.&nbsp;2026)</span>
@@ -444,147 +468,123 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: EU AI Act Enforcement live -->
-  <article class="card featured" data-cat="forschung industrie">
+  <!-- FEATURED: Google Gemini 3.7 Flash -->
+  <article class="card featured" data-cat="modelle forschung">
     <div class="card-header">
-      <div class="card-icon">&#x2696;&#xFE0F;</div>
+      <div class="card-icon">&#x26A1;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">EU AI Act</span>
-        <span class="tag tag-amber">Enforcement live</span>
-        <span class="tag tag-cyan">Transparenzpflicht</span>
-        <span class="tag tag-green">Bu&szlig;gelder bis €15&nbsp;Mio.</span>
+        <span class="tag tag-cyan">Google</span>
+        <span class="tag tag-green">Gemini 3.7 Flash</span>
+        <span class="tag tag-amber">AutomationBench +13&nbsp;pp</span>
+        <span class="tag tag-violet">FrontierCode +9&nbsp;pp</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>EU AI Act vollst&auml;ndig in Kraft: Chatbots m&uuml;ssen sich als KI zu erkennen geben, Deepfakes gekennzeichnet werden &ndash; Bu&szlig;gelder bis €15&nbsp;Mio.</h2>
-      <p>Seit dem <strong>2.&nbsp;August 2026</strong> gelten die strikten Transparenzpflichten des EU AI Act als hartes EU-Recht. Das AI Office und die Beh&ouml;rden der Mitgliedstaaten &uuml;bernehmen Aufsicht und Durchsetzung. Die konkreten Pflichten: <strong>Chatbots und interaktive KI-Systeme</strong> m&uuml;ssen Nutzer darauf hinweisen, dass sie mit einer KI kommunizieren; <strong>Deepfakes</strong> (KI-generierte oder ver&auml;nderte Bild-, Video- und Audioinhalte) m&uuml;ssen sichtbar und maschinenlesbar gekennzeichnet sein. Das AI Office kann <strong>technische Dokumentation anfordern</strong>, Modelle evaluieren, Korrekturen verlangen und Bußgelder von bis zu <strong>€15&nbsp;Millionen oder 3&nbsp;% des weltweiten Jahresumsatzes</strong> verh&auml;ngen. Als erste Ma&szlig;nahme f&uuml;hrt das AI Office sogenannte &bdquo;Technical Compliance Dialogues&ldquo; &ndash; strukturierte Gespr&auml;che &ndash; durch, bevor formale Verfahren eingeleitet werden.</p>
+      <h2>Google Gemini&nbsp;3.7&nbsp;Flash: FrontierCode auf 43,6&nbsp;%, AutomationBench auf 30,4&nbsp;% &ndash; Einf&uuml;hrungspreis $0,75/$3,75 bis Ende 2026</h2>
+      <p>Google ver&ouml;ffentlicht <strong>Gemini&nbsp;3.7&nbsp;Flash</strong> &ndash; nur drei Wochen nach 3.6&nbsp;Flash &ndash; und zeigt damit ein massiv beschleunigtes Release-Tempo. Die Benchmark-Sprungh&ouml;he ist bemerkenswert: <strong>FrontierCode&nbsp;1.1 steigt von 34,4&nbsp;% auf 43,6&nbsp;%</strong> (+9,2&nbsp;pp) und <strong>DeepSWE&nbsp;v1.1 von 49&nbsp;% auf 65,3&nbsp;%</strong> (+16,3&nbsp;pp). Besonders auff&auml;llig ist der Sprung bei <strong>AutomationBench von 17&nbsp;% auf 30,4&nbsp;%</strong> (+13,4&nbsp;pp) &ndash; einem Benchmark, der reale Automatisierungsaufgaben misst. Der <strong>Einf&uuml;hrungspreis</strong> betr&auml;gt $0,75 pro Mio. Input-Token und $3,75 Output bis 31.&nbsp;Dezember 2026, danach kehrt er zu $1,50/$7,50 zur&uuml;ck. Das Signal an OpenAI und Anthropic: Google schlie&szlig;t die Delivery-L&uuml;cke.</p>
     </div>
     <div class="card-highlight">
-      <strong>Handlungsbedarf jetzt:</strong> Wer KI-Systeme in der EU einsetzt, muss Transparenzpflichten sofort erf&uuml;llen. Anthropic, OpenAI und Google geh&ouml;ren zu den rund 190 Unterzeichnern des EU Code of Practice &ndash; die praktische Umsetzung liegt bei den Deployern.
+      <strong>AutomationBench fast verdoppelt:</strong> Von 17&nbsp;% auf 30,4&nbsp;% in einem einzigen Flash-Release &ndash; das positioniert Gemini&nbsp;3.7&nbsp;Flash als starkes Modell f&uuml;r Agentic-Automation-Workflows, direkt in Konkurrenz zu Claude Haiku und GPT-4o-Mini.
     </div>
     <div class="card-footer">
-      <span class="source-name">european-commission.eu / cooley.com / enterprisedna.co (2.&nbsp;Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">imfounder.com / aiweekly.co / Google (19.&nbsp;Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://imfounder.com/science-tech/ai/ai-updates-august-2026-openai-astra-deepmind/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- OpenAI GPT-5.6-Cyber + Daybreak -->
-  <article class="card" data-cat="modelle forschung">
+  <!-- OpenAI GPT-5.6 Sol Ultrafast Mode -->
+  <article class="card" data-cat="modelle industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F6E1;&#xFE0F;</div>
+      <div class="card-icon">&#x1F4A8;</div>
       <div class="card-meta">
         <span class="tag tag-indigo">OpenAI</span>
-        <span class="tag tag-rose">GPT-5.6-Cyber</span>
-        <span class="tag tag-amber">Daybreak Red &amp; Blue</span>
-        <span class="tag tag-cyan">Security-Forschung</span>
+        <span class="tag tag-rose">GPT-5.6 Sol</span>
+        <span class="tag tag-amber">Ultrafast 750 Tok/s</span>
+        <span class="tag tag-cyan">Cerebras-Power</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>OpenAI erweitert Daybreak-Initiative: GPT-5.6-Cyber f&uuml;r autorisierte Sicherheitsforschung &ndash; Daybreak Red &amp; Blue f&uuml;r Defender</h2>
-      <p>OpenAI hat seine Cybersecurity-Initiative <strong>Daybreak</strong> signifikant erweitert und dabei ein neues Modell vorgestellt: <strong>GPT-5.6-Cyber</strong> ist speziell f&uuml;r autorisierte Security-Arbeit optimiert und erm&ouml;glicht Vulnerability-Forschung, Code-Review, Incident Response und Security-Tests auf Frontier-Niveau. Zus&auml;tzlich werden <strong>Daybreak Blue</strong> (defensiv) und <strong>Daybreak Red</strong> (Offensive Security) als separate Zug&auml;nge f&uuml;r genehmigte Defenders eingef&uuml;hrt. Die Initiative baut auf dem Responses-API-Update auf, das <strong>native Multi-Agent-Orchestrierung, Reasoning Continuity und verbesserte Prompt-Caching</strong> mitbrachte. Zugang ausschlie&szlig;lich f&uuml;r verifizierte Sicherheitsteams.</p>
+      <h2>OpenAI GPT-5.6&nbsp;Sol Ultrafast: 750 Output-Token/Sekunde via Cerebras &ndash; 14&times; Standard-Throughput im limitierten API-Preview</h2>
+      <p>OpenAI &ouml;ffnet einen limitierten API-Preview von <strong>Ultrafast Mode</strong> f&uuml;r <strong>GPT-5.6&nbsp;Sol</strong>: Betrieben auf <strong>Cerebras-Hardware</strong> liefert das Modell rund <strong>750 Output-Token pro Sekunde</strong> &ndash; bis zu <strong>14-facher Standard-Throughput</strong>, bei gleichem Benchmark-Niveau wie herk&ouml;mmliches GPT-5.6&nbsp;Sol. Das er&ouml;ffnet Anwendungsf&auml;lle, die bisher an Latenz gescheitert sind: Echtzeit-Code-Generierung, interaktive Agent-Loops und hochfrequente Automatisierungs-Pipelines. Die Integration ist API-kompatibel &ndash; ein Flag-Wechsel gen&uuml;gt. Preisdetails f&uuml;r Ultrafast sind noch nicht ffentlich, der Zugang ist bisher auf ausgew&auml;hlte Partner beschr&auml;nkt.</p>
     </div>
     <div class="card-highlight">
-      <strong>Dual-Use gezielt geregelt:</strong> OpenAI kontrolliert den Zugang zu leistungsf&auml;higen Security-KI &uuml;ber ein Verification-Gate &ndash; ein Modell, das Anthropic &auml;hnlich mit seiner Responsible Scaling Policy verfolgt.
+      <strong>Latenzdurchbruch f&uuml;r Agenten:</strong> 750&nbsp;Tok/s bedeuten, dass ein 2000-Token-Response in unter 3&nbsp;Sekunden steht. F&uuml;r Multi-Step-Agent-Loops k&ouml;nnte das die User-Experience transformieren.
     </div>
     <div class="card-footer">
-      <span class="source-name">deploymentsafety.openai.com / openai.com (Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://deploymentsafety.openai.com/gpt-5-6-august-update" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">aiweekly.co / imfounder.com / openai.com (19.&nbsp;Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Google DeepMind Führungswechsel -->
+  <!-- Meta 30B Open-Weight Agent Model -->
   <article class="card" data-cat="modelle forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F3DB;&#xFE0F;</div>
+      <div class="card-icon">&#x1F4BB;</div>
       <div class="card-meta">
-        <span class="tag tag-cyan">Google DeepMind</span>
-        <span class="tag tag-amber">Hassabis Chairman</span>
-        <span class="tag tag-green">Kavukc&uuml;o&gbreve;lu operativ</span>
-        <span class="tag tag-violet">Alphabet -4&nbsp;%</span>
+        <span class="tag tag-indigo">Meta</span>
+        <span class="tag tag-green">30B Open-Weight</span>
+        <span class="tag tag-violet">On-Device Agents</span>
+        <span class="tag tag-cyan">Laptop-ready</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Google DeepMind: Demis Hassabis wird Chairman, Koray Kavukc&uuml;o&gbreve;lu &uuml;bernimmt operative KI-Leitung &ndash; Jeff Dean verl&auml;sst Google</h2>
-      <p>Google DeepMind vollzieht einen <strong>historischen Generationenwechsel</strong>: Co-Founder <strong>Demis Hassabis</strong> wird <strong>Chairman von Google DeepMind und Chief Scientist von Alphabet</strong>. Sein Nachfolger als operativer Leiter ist <strong>Koray Kavukc&uuml;o&gbreve;lu</strong> (bisher CTO), der als Senior VP direkt an Sundar Pichai berichtet und Gemini-Entwicklung sowie Frontier-AI verantwortet. Gleichzeitig k&uuml;ndigt <strong>Jeff Dean</strong> an, Google zu verlassen um ein Startup zu gr&uuml;nden. Die Zwei-Kontinent-Trennung zwischen Google Brain (Mountain View) und DeepMind (London) wird aufgehoben. <strong>Alphabet-Aktie fiel um 4&nbsp;%</strong>. Hintergrund: Gemini 3.5 Pro liegt Monate hinter dem Zeitplan, w&auml;hrend OpenAI und Anthropic neue Frontier-Modelle liefern.</p>
+      <h2>Meta ver&ouml;ffentlicht 30&nbsp;Mrd. Parameter Open-Weight-KI, die autonome Agenten direkt auf dem Laptop ausf&uuml;hrt &ndash; kein Cloud-Zwang</h2>
+      <p>Meta hat ein <strong>30-Milliarden-Parameter Open-Weight-Modell</strong> ver&ouml;ffentlicht, das auf gew&ouml;hnlicher Consumer-Hardware (Laptop, lokaler GPU) autonome Agenten ausf&uuml;hren kann. Das Modell ist speziell auf <strong>Agent-Tasks</strong> optimiert: Tool-Use, Planung &uuml;ber mehrere Schritte und Selbstkorrektur &ndash; alles lokal, ohne API-Abh&auml;ngigkeit. Die Open-Weight-Ver&ouml;ffentlichung (unter einer &auml;hnlichen Lizenz wie Llama) macht leistungsf&auml;hige Agenten erstmals <strong>datenschutzkonform und kostenfrei</strong> f&uuml;r lokalen Einsatz verf&uuml;gbar. Laut YouTube-AI-News vom 11.&nbsp;August war das Modell der meistbesprochene Open-Source-Release der Woche. Fein-Tuning &uuml;ber standard&auml;ssige Hugging-Face-Workflows soll zug&auml;nglich sein.</p>
     </div>
     <div class="card-highlight">
-      <strong>Strukturproblem adressiert:</strong> Die Zwei-Kontinent-Aufstellung galt intern als Bremse. Kavukc&uuml;o&gbreve;lu hat ein klares Mandat: Delivery-Geschwindigkeit verdoppeln und den Abstand zu OpenAI und Anthropic schlie&szlig;en.
+      <strong>Democratization at Scale:</strong> Ein 30B-Agenten-Modell on-device zu betreiben, war vor einem Jahr undenkbar. Mit Quantisierung l&auml;uft es auf Consumer-GPUs &ndash; ein Wendepunkt f&uuml;r Datenschutz-bewusste Unternehmen und Entwickler ohne Cloud-Budget.
     </div>
     <div class="card-footer">
-      <span class="source-name">cnbc.com / bloomberg.com / fortune.com (12.&nbsp;Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">YouTube AI News in a Minute / aiweekly.co (11.&nbsp;Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://www.youtube.com/watch?v=-vSev6e4qpc" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- AI Agents: Agentic Automation goes Enterprise -->
-  <article class="card" data-cat="industrie modelle">
-    <div class="card-header">
-      <div class="card-icon">&#x1F9E0;</div>
-      <div class="card-meta">
-        <span class="tag tag-green">Agentic AI</span>
-        <span class="tag tag-indigo">Dynatrace</span>
-        <span class="tag tag-cyan">Cognizant EMEA</span>
-        <span class="tag tag-violet">No-Code Agent Builder</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Agentic Automation goes Enterprise: Dynatrace Autonomous SRE, Cognizant EMEA AI Unit &amp; Alibaba Cloud-Agenten erschlie&szlig;en den Massenmarkt</h2>
-      <p>Die Woche vom 16.&nbsp;August steht im Zeichen der <strong>Enterprise-Adoption autonomer KI-Agenten</strong>. <strong>Dynatrace</strong> pr&auml;sentiert Produktionsfeatures f&uuml;r seine Observability-Plattform: <strong>Autonomous SRE Agents</strong> f&uuml;r Triage und Remediation sowie einen <strong>No-Code Agent Builder</strong> f&uuml;r benutzerdefinierte Agenten. <strong>Cognizant</strong> gr&uuml;ndet eine dedizierte <strong>EMEA AI Unit</strong>, um europ&auml;ischen Kunden beim Aufbau und Deployment agentenbasierter L&ouml;sungen zu helfen. <strong>Alibabas Enterprise-Agenten-Plattform</strong> koordiniert Workflows &uuml;ber Slack, Microsoft Teams und Analytics-Plattformen hinweg. GitHub Copilot Workspace und Slack Workflow Automation sind laut Nutzerberichten erstmals f&uuml;r den Arbeitsalltag &bdquo;bereit genug&ldquo;.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Von Hype zu Deployment:</strong> August 2026 markiert den Moment, in dem Agenten-Automation aus der Experimentation-Phase in den operativen Unternehmenseinsatz wechselt &ndash; mit konkreten ROI-Belegen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">aiagentstore.ai / aiapps.com / innofeaturelabs.com (16.–18.&nbsp;Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- YouTube: KI-Inhalte Kennzeichnung + Monetarisierung -->
+  <!-- ChatGPT Teen Mode -->
   <article class="card" data-cat="industrie forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F3AC;</div>
+      <div class="card-icon">&#x1F9D2;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">YouTube</span>
-        <span class="tag tag-amber">KI-Kennzeichnung</span>
-        <span class="tag tag-green">Automatische Erkennung</span>
-        <span class="tag tag-violet">Monetarisierung eingeschr&auml;nkt</span>
+        <span class="tag tag-indigo">OpenAI</span>
+        <span class="tag tag-amber">ChatGPT Teen Mode</span>
+        <span class="tag tag-rose">13&ndash;17 Jahre</span>
+        <span class="tag tag-green">Altersverifikation</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>YouTube kennzeichnet KI-Inhalte automatisch &amp; streicht Monetarisierung f&uuml;r Millionen von KI-Videos &ndash; EU AI Act als Treiber</h2>
-      <p>YouTube rolliert zwei weitreichende KI-Policies aus: Ein <strong>automatisches Erkennungssystem</strong> pr&uuml;ft Videos auf signifikanten Einsatz von fotorealistischer KI &ndash; erkannte Videos erhalten eine sichtbare Kennzeichnung direkt unterhalb des Videotitels, bei Shorts als Einblendung &uuml;ber das Bild. Parallel zieht YouTube bei zahlreichen <strong>KI-generierten Videos die Monetarisierung</strong> zur&uuml;ck: Kanäle, die haupts&auml;chlich automatisiert erzeugten Content ohne redaktionellen Mehrwert ver&ouml;ffentlichen, verlieren ihren Partner-Status. Hintergrund sind sowohl der <strong>EU AI Act</strong> (Transparenzpflicht seit 2.&nbsp;August) als auch der eigene Qualit&auml;tsanspruch der Plattform. Das System soll &auml;hnlich wie Content-ID funktionieren und zuk&uuml;nftig in Echtzeit arbeiten.</p>
+      <h2>OpenAI launcht ChatGPT Teen Mode: Jugendliche 13&ndash;17 erhalten automatischen Schutzfilter f&uuml;r Suizid, Selbstverletzung und Romanzen</h2>
+      <p>OpenAI f&uuml;hrt eine <strong>jugendspezifische Version von ChatGPT</strong> f&uuml;r Nutzer zwischen 13 und 17 Jahren ein. Der Teen Mode blockiert automatisch Gespr&auml;che zu <strong>Suizid, Selbstverletzung sowie romantischen und sexuellen Inhalten</strong>. Das System nutzt <strong>Altersvorhersage</strong>, um minderjährige Nutzer automatisch in diesen Modus zu leiten. Erfahrungsgemäß legen Eltern und Regulatoren besonderen Wert auf Schutzma&szlig;nahmen f&uuml;r Minderj&auml;hrige &ndash; OpenAI reagiert damit auf politischen Druck aus den USA und Europa sowie auf Erkenntnisse aus der Forschung zu KI und psychischer Gesundheit von Jugendlichen. Nach der EU-Einschr&auml;nkung des ChatGPT-Bildungsbetriebs in Teilen Europas (2025) soll dieses Update die Regulatorik beschwichtigen.</p>
     </div>
     <div class="card-highlight">
-      <strong>Plattform-Shift:</strong> Wer auf YouTube mit KI-Content Geld verdient, muss jetzt echten Mehrwert nachweisen. Reine KI-Output-Kanäle verlieren ihre Einnahmequelle &ndash; ein Weckruf f&uuml;r Content-Automatisierer.
+      <strong>Safety first, dann Markt:</strong> Wer KI f&uuml;r Minderj&auml;hrige anbietet, steht unter besonderer Beobachtung. OpenAIs schneller Schritt k&ouml;nnte als Blaupause f&uuml;r KI-Governance im Jugendschutz dienen.
     </div>
     <div class="card-footer">
-      <span class="source-name">pcgames.de / it-daily.net / t-online.de (Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://www.pcgames.de/YouTube-Thema-163920/News/ki-videos-automatische-kennzeichnung-erkennung-neue-regeln-1538535/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">aiweekly.co / imfounder.com / openai.com (19.&nbsp;Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- INTERPOL: KI in 55% Cyberangriffe -->
-  <article class="card" data-cat="forschung industrie">
+  <!-- Embodied AI Boom Logistik -->
+  <article class="card" data-cat="robotik industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F575;&#xFE0F;</div>
+      <div class="card-icon">&#x1F3ED;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">Cybersecurity</span>
-        <span class="tag tag-amber">INTERPOL Report</span>
-        <span class="tag tag-indigo">55&nbsp;% KI-Beteiligung</span>
-        <span class="tag tag-cyan">Afrika &amp; Global</span>
+        <span class="tag tag-green">Embodied AI</span>
+        <span class="tag tag-cyan">VLA-Modelle</span>
+        <span class="tag tag-amber">Logistik &amp; Lager</span>
+        <span class="tag tag-violet">ROI operativ</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>INTERPOL-Report: K&uuml;nstliche Intelligenz ist jetzt in 55&nbsp;% aller gemeldeten Cyberangriffe in Afrika involviert &ndash; globaler Trend</h2>
-      <p>INTERPOLs <strong>African Cyberthreat Assessment 2026</strong> schreckt auf: <strong>55&nbsp;%</strong> der gemeldeten Cyberangriffe auf dem afrikanischen Kontinent sind inzwischen mit dem Einsatz k&uuml;nstlicher Intelligenz verbunden. KI-gest&uuml;tzte Angriffe reichen von automatisierten Phishing-Kampagnen und Deepfake-Betrug &uuml;ber KI-generierte Malware bis zu autonomen Social-Engineering-Attacken. Sicherheitsexperten betonen, dass dies <strong>kein afrikanisches Ph&auml;nomen</strong> ist &ndash; Europa und Nordamerika verzeichnen &auml;hnliche Trends, aber bessere Meldeinfrastruktur verf&auml;lsche die Zahlen. OpenAIs GPT-5.6-Cyber-Initiative (s. o.) und Anthropics Compliance-API sind direkte industrielle Antworten. Die Zahlen unterstreichen: KI ist die gr&ouml;&szlig;te gleichzeitige <strong>Chance und Bedrohung</strong> in der Cybersicherheit.</p>
+      <h2>Embodied-AI-Boom: Vision-Language-Action-Modelle treffen auf echte Hardware in Logistikzentren &ndash; ROI-Case wird operativ</h2>
+      <p><strong>Vision-Language-Action-Modelle (VLAs)</strong> &ndash; Systeme, die sehen, schlussfolgern und physisch handeln k&ouml;nnen &ndash; werden jetzt in gro&szlig;em Ma&szlig;stab in echte Hardware integriert. Logistikzentren und Lagerhäuser setzen VLA-gesteuerte Roboterarme und mobile Plattformen ein, die ohne vorherige Programmierung neue Objekte und Aufgaben durch visuelles Reasoning meistern. Laut aktuellen AI-Updates ist der <strong>ROI-Case f&uuml;r physische Automatisierung</strong> von der Experimentalphase in den operativen Betrieb gewechselt. Gleichzeitig ereignete sich ein vielbeachteter Roboter-Fauxpas: Ein Humanoid-Roboter fiel w&auml;hrend einer &ouml;ffentlichen Demo auf der B&uuml;hne hin &ndash; ein Reminder, dass die Technologie trotz Fortschritten noch nicht Ausfall-frei ist (YouTube, 8.&nbsp;August).</p>
     </div>
     <div class="card-highlight">
-      <strong>R&uuml;stungsspirale:</strong> Je m&auml;chtiger KI-Angriffstools werden, desto dringender werden KI-gest&uuml;tzte Abwehrwerkzeuge. Unternehmen ohne KI-Sicherheitsstrategie sind bereits heute im Nachteil.
+      <strong>Vom Labor zum Lager:</strong> Der Durchbruch liegt nicht im Modell, sondern in der Hardware-Integration und dem ROI-Nachweis. Unternehmen, die jetzt investieren, sichern sich einen 2&ndash;3-j&auml;hrigen Vorsprung vor dem Massenmarkt.
     </div>
     <div class="card-footer">
-      <span class="source-name">interpol.int / artificialintelligence-news.com (Aug.&nbsp;2026)</span>
-      <a class="read-link" href="https://www.artificialintelligence-news.com/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">aiweekly.co / YouTube AI News (Aug.&nbsp;2026)</span>
+      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
@@ -592,8 +592,8 @@
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 18. August 2026 &nbsp;|&nbsp;
-  Quellen: releasebot.io, code.claude.com, gradually.ai, anthropic.com, cooley.com, enterprisedna.co, deploymentsafety.openai.com, cnbc.com, bloomberg.com, fortune.com, aiagentstore.ai, aiapps.com, pcgames.de, it-daily.net, interpol.int, artificialintelligence-news.com &nbsp;|&nbsp;
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 19. August 2026 &nbsp;|&nbsp;
+  Quellen: releasebot.io, gradually.ai, explainx.ai, anthropic.com, imfounder.com, aiweekly.co, openai.com, youtube.com &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
