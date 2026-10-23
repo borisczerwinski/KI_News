@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KI & Automatisierung – News 22. Oktober 2026</title>
+  <title>KI & Automatisierung – News 23. Oktober 2026</title>
   <style>
     :root {
       --bg:        #0d1117;
@@ -335,14 +335,14 @@
 <header>
   <h1>KI &amp; Automatisierung</h1>
   <p class="subtitle">Aktuelle News aus Forschung, Industrie &amp; Wirtschaft</p>
-  <div class="date-badge">&#x1F4C5; Stand: 22. Oktober 2026</div>
+  <div class="date-badge">&#x1F4C5; Stand: 23. Oktober 2026</div>
 </header>
 
 <div class="stats">
   <div class="stat"><span class="dot"></span><strong>12</strong>&nbsp;aktuelle Artikel</div>
-  <div class="stat">&#x1F310;&nbsp;<strong>12+</strong>&nbsp;Quellen</div>
-  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Claude Duet proaktiver Agent (Neu!); Claude Security Enterprise Beta; Inference Hooks GA + User Profiles; 318.484 Protein-Designs autonom; Code Review 3&times; schneller</div>
-  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt heute:</strong>&nbsp;Agentic-AI-Markt $227,8 Mrd. bis 2031; OpenAI &uuml;bernimmt Orchestra Bio; FTC ermittelt gegen OpenAI &amp; Anthropic; GPT-6 auf allen Tarifen; Nvidia + Bundesregierung KI-B&uuml;ndnis best&auml;tigt</div>
+  <div class="stat">&#x1F310;&nbsp;<strong>10+</strong>&nbsp;Quellen</div>
+  <div class="stat">&#x1F916;&nbsp;<strong>Claude &amp; Anthropic:</strong>&nbsp;Claude Duet proaktiver Agent (iOS/Android/Web); API v2026-10-21 Breaking Changes; Dashboards &amp; Motion Beta; Claude Code 2.1.306; zweiter $45-Mrd.-Nscale-Deal</div>
+  <div class="stat">&#x1F4BC;&nbsp;<strong>Markt heute:</strong>&nbsp;Barclays streicht 5.000 Stellen per KI; Meta investiert Milliarden; Nvidia GTC Berlin &amp; Agile ONE Humanoid; Watchtower $35M Supply-Chain-KI; Anthropic er&ouml;ffnet B&uuml;ro in Singapur</div>
 </div>
 
 <div class="filters">
@@ -387,99 +387,99 @@
     </div>
   </article>
 
-  <!-- Claude Security – Continuous Scanning -->
-  <article class="card claude-card" data-cat="claude industrie forschung">
+  <!-- Claude API v2026-10-21: Breaking Changes -->
+  <article class="card claude-card" data-cat="claude modelle industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F510;</div>
+      <div class="card-icon">&#x1F527;</div>
       <div class="card-meta">
-        <span class="tag tag-orange">Anthropic</span>
-        <span class="tag tag-rose">Claude Security</span>
-        <span class="tag tag-green">Enterprise Beta</span>
+        <span class="tag tag-orange">Developer Platform</span>
+        <span class="tag tag-rose">Breaking Change</span>
+        <span class="tag tag-violet">API v2026-10-21</span>
         <span class="tag tag-cyan">21. Okt. 2026</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Security in Public Beta: Kontinuierliches Code-Scanning, automatisches Fix-Tracking &amp; neue API &ndash; $25.000 kostenlose Credits f&uuml;r Enterprise</h2>
-      <p>Anthropic hat am 21.&nbsp;Oktober <strong>Claude Security</strong> als Public Beta f&uuml;r Enterprise-Kunden gestartet. Das Update f&uuml;gt <strong>kontinuierliches Scanning</strong> hinzu, das Sicherheitsl&uuml;cken direkt beim Push von Code-&Auml;nderungen erkennt &ndash; kein manueller Scan-Trigger mehr n&ouml;tig. Neu ist auch das <strong>automatische Fix-Tracking</strong>, das behobene Schwachstellen &uuml;ber PRs hinweg verfolgt, sowie <strong>projektspezifische Bedrohungsmodelle</strong>, die individuelle Sicherheitspriori&auml;ten ber&uuml;cksichtigen. Eine neue API erm&ouml;glicht die Integration in bestehende Security-Pipelines. Als Launch-Angebot erhalten berechtigte Organisationen <strong>$25.000 kostenlose Credits pro Monat f&uuml;r zwei Monate</strong> (g&uuml;ltig bis 31.&nbsp;Dezember 2026).</p>
+      <h2>Claude API-Version 2026-10-21: temperature, top_p &amp; top_k entfernt &ndash; erste neue offizielle API-Version seit 2023</h2>
+      <p>Anthropic hat die <strong>erste neue offizielle API-Version seit 2023</strong> ver&ouml;ffentlicht: <em>claude-api-2026-10-21</em>. Das Update enth&auml;lt Breaking Changes: Die Sampling-Parameter <strong>temperature, top_p und top_k</strong> wurden aus der Messages API entfernt &ndash; Anfragen mit diesen Parametern geben ab sofort einen Fehler zur&uuml;ck. Zus&auml;tzlich l&ouml;sen Dokumente in Assistant-Turns sowie Citations in User-Turns jetzt einen <strong>400-Fehler</strong> aus. Entwickler m&uuml;ssen bestehende Integrationen anpassen. Die Versionierung signalisiert Anthropics Bereitschaft, die API-Schnittstelle aktiver weiterzuentwickeln &ndash; und schafft klare Trennlinien zwischen Modell-Kontrolle und Sampling-Strategie auf Anwendungsebene.</p>
     </div>
     <div class="card-highlight">
-      <strong>Security als First-Class-Feature:</strong> Mit Claude Security macht Anthropic automatisierte Schwachstellenanalyse zum Bestandteil jedes Entwicklungs-Workflows &ndash; und $25K/Monat free machen den Einstieg nahezu risikolos.
+      <strong>Wichtig f&uuml;r Entwickler:</strong> Bestehende Code-Basen, die temperature oder top_p &uuml;bergeben, brechen sofort &ndash; Update-Pflicht vor dem n&auml;chsten Deploy. Migration auf neue API-Version jetzt starten.
     </div>
     <div class="card-footer">
-      <span class="source-name">unite.ai / Anthropic (21. Okt. 2026)</span>
-      <a class="read-link" href="https://www.unite.ai/anthropic-adds-continuous-scanning-and-fix-tracking-to-claude-security/" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">Anthropic Platform Docs (21. Okt. 2026)</span>
+      <a class="read-link" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Claude Platform: Inference Hooks GA + User Profiles -->
+  <!-- Claude Dashboards & Motion Beta -->
   <article class="card claude-card" data-cat="claude industrie modelle">
     <div class="card-header">
-      <div class="card-icon">&#x2699;&#xFE0F;</div>
+      <div class="card-icon">&#x1F4CA;</div>
       <div class="card-meta">
-        <span class="tag tag-orange">Developer Platform</span>
-        <span class="tag tag-violet">Inference Hooks GA</span>
-        <span class="tag tag-green">User Profiles</span>
-        <span class="tag tag-cyan">20. Okt. 2026</span>
+        <span class="tag tag-orange">Anthropic</span>
+        <span class="tag tag-violet">Dashboards Beta</span>
+        <span class="tag tag-cyan">Motion Beta</span>
+        <span class="tag tag-green">10. Okt. 2026</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Platform: Inference Hooks f&uuml;r Enterprise allgemein verf&uuml;gbar &ndash; User Profiles f&uuml;r API-Anfragen; neue Nutzungsrichtlinien ab 12. November</h2>
-      <p>Am 20.&nbsp;Oktober hat Anthropic <strong>Inference Hooks</strong> aus der Beta entlassen und f&uuml;r alle Claude Enterprise-Organisationen allgemein verf&uuml;gbar gemacht. Damit k&ouml;nnen Entwickler serverseitig auf API-Anfragen reagieren und individuelle Logik vor oder nach dem Modell ausf&uuml;hren &ndash; z.&nbsp;B. Validierung, Logging oder Routing. Neu hinzugekommen sind zudem <strong>User Profiles</strong>: API-Kunden k&ouml;nnen jede Anfrage mit dem jeweiligen Endkunden taggen, was Nutzungsanalysen und Abrechnung pro Kunde vereinfacht. Separat tritt am <strong>12.&nbsp;November</strong> eine aktualisierte Nutzungsrichtlinie in Kraft, die sch&auml;rfere Regeln zu get&auml;uschender Aktivit&auml;t und einen &uuml;berarbeiteten Abschnitt zu Wahlkampf-Inhalten enth&auml;lt.</p>
+      <h2>Claude Dashboards &amp; Motion in Beta &ndash; Docs, Slides &amp; Design jetzt auf allen Tarifen kostenlos verf&uuml;gbar</h2>
+      <p>Anthropic hat zwei neue Beta-Produkte ge launcht: <strong>Claude Dashboards</strong> erstellt Live-&Uuml;bersichten direkt aus Unternehmensdaten &ndash; Verbindungen zu Datenbanken und Business-Tools erm&ouml;glichen automatisch aktualisierende Berichte ohne manuelle Exports. <strong>Claude Motion</strong> generiert animierte Erkl&auml;rvideos aus Text und wandelt Dokumente oder Pr&auml;sentationen in visuell aufbereitete Video-Inhalte um. Gleichzeitig sind <strong>Claude Docs, Slides und Design</strong> aus der Beta entlassen worden und stehen nun auf <strong>allen Tarifen inkl. Free</strong> zur Verf&uuml;gung &ndash; ein bedeutender Schritt, der Millionen Nutzer kostenlos mit KI-Produktivit&auml;tstools ausstattet und Microsoft 365 &amp; Google Workspace direkt herausfordert.</p>
     </div>
     <div class="card-highlight">
-      <strong>Enterprise-Kontrolle w&auml;chst:</strong> Inference Hooks + User Profiles geben Unternehmen granulare Steuerung &uuml;ber ihre KI-Infrastruktur &ndash; genau das, was regulierte Branchen f&uuml;r Compliance ben&ouml;tigen.
+      <strong>KI-Produktivit&auml;t f&uuml;r alle:</strong> Docs, Slides und Design ohne Paywall &ndash; Anthropic greift Microsoft 365 und Google Workspace auch im Free-Segment an. Motion macht erkl&auml;rende Videos zur One-Click-Sache.
     </div>
     <div class="card-footer">
-      <span class="source-name">releasebot.io / Anthropic Platform Docs (20. Okt. 2026)</span>
-      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">releasebot.io / Anthropic (10. Okt. 2026)</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Claude autonomes Proteindesign -->
-  <article class="card claude-card" data-cat="claude forschung modelle">
-    <div class="card-header">
-      <div class="card-icon">&#x1F9EC;</div>
-      <div class="card-meta">
-        <span class="tag tag-orange">Anthropic Research</span>
-        <span class="tag tag-violet">Proteindesign</span>
-        <span class="tag tag-green">Wissenschaft</span>
-        <span class="tag tag-cyan">Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Claude entwickelt 318.484 Protein-Designs autonom in 64 Stunden &ndash; 17 von 211 Labor-Kandidaten binden Skorpion-Neurotoxine</h2>
-      <p>Anthropic berichtet, dass Claude eine <strong>64-st&uuml;ndige autonome Forschungskampagne</strong> durchgef&uuml;hrt hat, bei der das Modell selbstst&auml;ndig &uuml;ber <strong>12 verschiedene Werkzeuge</strong> hinweg arbeitete und insgesamt <strong>318.484 Protein-Designs</strong> f&uuml;r Antik&ouml;rper-Bindemotive gegen Skorpion-Neurotoxine erzeugte. Von den 211 im Labor getesteten Kandidaten banden <strong>17 Designs tatsa&#776;chlich Neurotoxine</strong> &ndash; ein vielversprechender Ausgangspunkt f&uuml;r die Entwicklung neuer Gegenmittel gegen Skorpiongift. Das Experiment zeigt, wie autonome KI-Agenten komplexe, iterative wissenschaftliche Workflows &uuml;bernehmen k&ouml;nnen, die bisher ausschlie&szlig;lich menschlichen Forscher-Teams vorbehalten waren.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>KI in der Grundlagenforschung:</strong> 318.000+ Designs in 64 Stunden &ndash; was menschliche Laborteams Monate kosten w&uuml;rde, schlie&szlig;t Claude autonom ab. Ein Meilenstein f&uuml;r die KI-gest&uuml;tzte Medikamentenentwicklung.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Anthropic Research / aiweekly.co (Okt. 2026)</span>
-      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Claude Code Review 3x schneller + neue Einstellungen -->
+  <!-- Claude Code 2.1.306: Client-Side Model Selection + Background Subagents -->
   <article class="card claude-card" data-cat="claude modelle industrie">
     <div class="card-header">
-      <div class="card-icon">&#x1F4DD;</div>
+      <div class="card-icon">&#x1F4BB;</div>
       <div class="card-meta">
         <span class="tag tag-orange">Claude Code</span>
-        <span class="tag tag-green">Code Review GA</span>
-        <span class="tag tag-violet">3&times; schneller</span>
-        <span class="tag tag-cyan">15. Okt. 2026</span>
+        <span class="tag tag-violet">v2.1.306</span>
+        <span class="tag tag-green">Auto-Mode</span>
+        <span class="tag tag-cyan">21. Okt. 2026</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Claude Code Review allgemein verf&uuml;gbar: dreimal schneller, Quick/Standard/Deep-Modi &amp; neues Auto-Mode-Classifier-Modell</h2>
-      <p>Anthropic hat <strong>Claude Code Review</strong> f&uuml;r Team- und Enterprise-Pl&auml;ne als GA-Feature freigegeben. Reviews werden jetzt <strong>dreimal schneller</strong> abgeschlossen als in der Research Preview &ndash; ein erheblicher Vorteil im t&auml;glichen Entwicklungs-Loop. Pro Repository lassen sich nun <strong>Quick, Standard oder Deep</strong> als Review-Tiefe einstellen: Quick f&uuml;r schnelle Pr&uuml;fungen, Deep f&uuml;r sicherheitskritische Codepfade. Zus&auml;tzlich wurde die neue Umgebungsvariable <strong>CLAUDE_CODE_AUTO_MODE_MODEL</strong> eingeführt, mit der Teams das Modell f&uuml;r den Auto-Mode-Classifier w&auml;hlen k&ouml;nnen. Idle Conversation Compaction spart Kontext-Tokens in langen Sessions; ein Retry-Watchdog verbessert die Zuverl&auml;ssigkeit bei instabilen Verbindungen.</p>
+      <h2>Claude Code 2.1.306: Client-seitige Modellauswahl im Auto-Mode &ndash; Subagents laufen jetzt standardm&auml;&szlig;ig im Hintergrund</h2>
+      <p>Das Claude Code Update auf Version 2.1.306 bringt zwei wichtige &Auml;nderungen f&uuml;r Enterprise-Teams: Erstmals k&ouml;nnen Teams &uuml;ber die neue Umgebungsvariable <strong>CLAUDE_CODE_AUTO_MODE_MODEL</strong> das Modell f&uuml;r den Auto-Mode-Classifier selbst w&auml;hlen &ndash; mehr Kontrolle &uuml;ber Performance und Kosten. Zus&auml;tzlich laufen <strong>Subagents in Desktop App und VS Code</strong> jetzt standardm&auml;&szlig;ig im Hintergrund, was parallele Entwicklungsaufgaben deutlich fl&uuml;ssiger macht. Der Plugin-Start wurde beschleunigt (gro&szlig;e Plugin-Sammlungen starten schneller), Cloud-Session-Login-Erkennung und Compaction-Verhalten wurden gefixt. Parallel ist <strong>Claude Code Review</strong> allgemein verf&uuml;gbar f&uuml;r Team und Enterprise mit <strong>3&times; schnelleren Reviews</strong> und w&auml;hlbaren Tiefen-Modi (Quick / Standard / Deep).</p>
     </div>
     <div class="card-highlight">
-      <strong>Entwickler-Produktivit&auml;t auf neuem Niveau:</strong> 3&times; schnellere Reviews + w&auml;hlbare Tiefen-Einstellung machen Claude Code zum vollwertigen CI-Partner &ndash; nicht mehr nur ein Editor-Plugin, sondern Infrastruktur.
+      <strong>Dev-Tooling reift:</strong> Hintergrund-Subagents + eigene Modellwahl machen Claude Code zum echten Multi-Agent-Entwicklungsrahmen &ndash; orchestrierte KI-Pipeline statt einzelnem Editor-Plugin.
     </div>
     <div class="card-footer">
-      <span class="source-name">releasebot.io / code.claude.com (15. Okt. 2026)</span>
-      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">releasebot.io / Claude Code Updates (21. Okt. 2026)</span>
+      <a class="read-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Anthropic + Nscale: Zweiter $45B Compute-Deal -->
+  <article class="card claude-card" data-cat="claude industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F3D7;&#xFE0F;</div>
+      <div class="card-meta">
+        <span class="tag tag-orange">Anthropic</span>
+        <span class="tag tag-amber">$45 Mrd. Deal</span>
+        <span class="tag tag-violet">Nscale</span>
+        <span class="tag tag-cyan">22. Okt. 2026</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Anthropic verhandelt zweiten $45-Milliarden-Compute-Deal mit Nscale &ndash; zweites Monarch-Geb&auml;ude in West Virginia geplant</h2>
+      <p>Laut Bloomberg-Berichten vom 22.&nbsp;Oktober verhandelt Anthropic mit dem britischen Rechenzentrumsbetreiber <strong>Nscale</strong> &uuml;ber einen <strong>zweiten Compute-Vertrag im Volumen von ~45 Milliarden Dollar</strong> &ndash; ein zweites Geb&auml;ude auf demselben Monarch-Campus in West Virginia. Der erste Deal (August 2026) umfasst bereits 460&nbsp;MW und Nvidia-Vera-Rubin-Chips ab Ende 2027. Nscale, das vor seinem geplanten B&ouml;rsengang (IPO) steht, hatte zuvor Gespr&auml;che mit Microsoft verloren. Der neue Deal w&uuml;rde Anthropics Compute-Kapazit&auml;t verdoppeln &ndash; n&ouml;tig f&uuml;r die wachsende Nachfrage durch Claude Duet, Dynamic Workflows und neue Enterprise-Features. Herausforderung: Luft- und Wasser-Genehmigungen am gasbetriebenen Kraftwerk stehen noch aus.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Compute-R&uuml;stungswettlauf:</strong> Zwei $45-Mrd.-Deals bei einem Anbieter &ndash; Anthropic baut die Infrastruktur f&uuml;r Frontier-Modelle im XXL-Ma&szlig;stab. Nscale positioniert sich als zentraler KI-Infrastruktur-Partner.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Bloomberg / borncity.com (22. Okt. 2026)</span>
+      <a class="read-link" href="https://borncity.com/news/anthropic-und-nscale-gespraeche-ueber-rechenleistung-fuer-45-milliarden-dollar/" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
@@ -490,178 +490,155 @@
     <span class="line"></span>
   </div>
 
-  <!-- FEATURED: Agentic AI Markt $227.8B + Microsoft Math Proof -->
-  <article class="card featured" data-cat="industrie forschung modelle">
+  <!-- FEATURED: Barclays 5.000 Stellen + Meta KI-Milliarden -->
+  <article class="card featured" data-cat="industrie forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F4CA;</div>
+      <div class="card-icon">&#x1F3E6;</div>
       <div class="card-meta">
-        <span class="tag tag-indigo">Markt</span>
-        <span class="tag tag-amber">$227,8 Mrd.</span>
-        <span class="tag tag-violet">Microsoft Research</span>
-        <span class="tag tag-cyan">21. Okt. 2026</span>
+        <span class="tag tag-rose">Stellenabbau</span>
+        <span class="tag tag-amber">Barclays 5.000</span>
+        <span class="tag tag-violet">Meta KI-Invest</span>
+        <span class="tag tag-cyan">23. Okt. 2026</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Agentic-KI-Markt w&auml;chst auf $227,8 Mrd. bis 2031 (32,6&thinsp;% CAGR) &ndash; Microsoft Research beweist mit KI eine 30 Jahre alte Mathematik-Vermutung</h2>
-      <p>Ein am 21.&nbsp;Oktober ver&ouml;ffentlichter Marktbericht von GlobeNewsWire prognostiziert, dass der <strong>Enterprise Agentic AI &amp; AI Automation Market</strong> von heute bis 2031 mit einem j&auml;hrlichen Wachstum von <strong>32,6&thinsp;%</strong> auf <strong>227,8 Milliarden Dollar</strong> anwachsen wird. Treiber sind autonome Workflows, Multi-Agenten-Koordination und KI-gesteuerte Prozessautomatisierung in Branchen wie Finance, Healthcare und Logistik. Parallel sorgt eine wissenschaftliche Meldung f&uuml;r Aufsehen: <strong>Microsoft Research</strong> hat mithilfe eines menschlich gesteuerten KI-Agentic-Workflows die <strong>Kannan&ndash;Lov&aacute;sz&ndash;Simonovits-Vermutung</strong> aus dem Jahr 1995 bewiesen. Das Team erkundete &uuml;ber 100 Kandidatenans&auml;tze und pr&auml;sentiert einen <strong>140-seitigen Beweis</strong> &ndash; die erste Kl&auml;rung dieses offenen Problems der algorithmischen Geometrie.</p>
+      <h2>Barclays streicht 5.000 Stellen durch KI-Effizienz &ndash; Meta investiert Milliarden in KI-Infrastruktur &amp; sichert Zuckerbergs Kontrolle per neuer Anteilsklasse</h2>
+      <p>Die britische Gro&szlig;bank <strong>Barclays</strong> gibt bekannt, <strong>5.000 Stellen abzubauen</strong> &ndash; als Grund nennt das Management gestiegene Effizienz durch KI-gest&uuml;tzte Automatisierung in Backoffice, Compliance und Kundenservice. Damit k&uuml;ndigt sich die n&auml;chste Welle branchen&uuml;bergreifender KI-bedingter Jobverluste im Finanzsektor an. Gleichzeitig hat <strong>Meta</strong> Rekord-Investitionszahlen f&uuml;r KI-Infrastruktur angek&uuml;ndigt &ndash; finanziert durch das boomende Werbegesch&auml;ft und eine <strong>neue Anteilsklasse</strong>, die Mark Zuckerberg langfristige Kontrolle &uuml;ber strategische KI-Entscheidungen sichert. Meta, Microsoft und Nvidia meldeten zudem im Q3&nbsp;2026 Rekord-Lobbying-Ausgaben in Washington &ndash; der Kampf um die KI-Regulierung eskaliert.</p>
     </div>
     <div class="card-highlight">
-      <strong>KI als Grundlagenforscher:</strong> Ein 30 Jahre altes Mathe-Problem gel&ouml;st, ein $227-Milliarden-Markt vor der T&uuml;r &ndash; agentic AI ist keine Zukunftsmusik mehr, sondern konkreter wirtschaftlicher und wissenschaftlicher Hebel.
+      <strong>Zwei Seiten der KI-Revolution:</strong> Barclays-Stellenabbau und Meta-Milliarden-Invest zeigen das gleiche Ph&auml;nomen aus verschiedenen Winkeln &ndash; die wirtschaftliche Umverteilung durch KI l&auml;uft in Echtzeit.
     </div>
     <div class="card-footer">
-      <span class="source-name">GlobeNewsWire / Microsoft Research (21. Okt. 2026)</span>
-      <a class="read-link" href="https://www.globenewswire.com/news-release/2026/10/21/3385223/28124/en/global-enterprise-agentic-ai-and-ai-automation-market-strategic-research-report-2026-2031-32-6-cagr-drives-a-227-8-billion-autonomous-workflow-opportunity.html" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- OpenAI GPT-6 global + Modell-Abkündigungen -->
-  <article class="card" data-cat="modelle industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x1F916;</div>
-      <div class="card-meta">
-        <span class="tag tag-amber">OpenAI</span>
-        <span class="tag tag-indigo">GPT-6 global</span>
-        <span class="tag tag-rose">API-Abk&uuml;ndigung</span>
-        <span class="tag tag-cyan">7.&ndash;8. Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>OpenAI rollt GPT-6 auf alle ChatGPT-Tarife aus &ndash; GPT-4o, 4o-mini und GPT-4.1 verschwinden ab 14. Januar 2027 aus der API</h2>
-      <p>OpenAI hat <strong>GPT-6 mit Intelligent UI</strong> am 7.&nbsp;Oktober f&uuml;r Plus und Pro eingef&uuml;hrt; einen Tag sp&auml;ter rollte es auf <strong>alle Tarife inkl. Free und Go</strong> aus. Gleichzeitig erschienen neue Sprachausgabe-Modelle: <strong>GPT-Live-1.1</strong> bringt nat&uuml;rlichere, latenz&auml;rmere Sprachausgabe mit mehr nicht-englischen Sprachoptionen. ChatGPT <strong>Slides</strong> (f&uuml;r Pro, Business, Enterprise) wurde am 16.&nbsp;Oktober lanciert &ndash; ein direkter Angriff auf PowerPoint und Googles Slides. Wichtige API-Warnung: OpenAI depreciert zum <strong>14. Januar 2027</strong> die Modelle GPT-4o, GPT-4o-mini und GPT-4.1 aus der API &ndash; Entwickler sollen auf <strong>gpt-6-luna</strong> migrieren. Betroffene Anwendungen m&uuml;ssen bis dahin aktualisiert sein.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>GPT-6 f&uuml;r alle &ndash; Migrationsdruck f&uuml;r Entwickler:</strong> Die Abk&uuml;ndigung von GPT-4o und Co. gibt Entwicklern knapp drei Monate Zeit zur Migration &ndash; wer jetzt wartet, riskiert Produktionsausf&auml;lle ab Januar.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">ChatGPT Release Notes / aiweekly.co (Okt. 2026)</span>
-      <a class="read-link" href="https://aiweekly.co/ai-news-today/openai-news" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- FTC 50-seitige Untersuchungsanordnungen an OpenAI und Anthropic -->
-  <article class="card" data-cat="forschung industrie">
-    <div class="card-header">
-      <div class="card-icon">&#x2696;&#xFE0F;</div>
-      <div class="card-meta">
-        <span class="tag tag-rose">Regulierung</span>
-        <span class="tag tag-amber">FTC</span>
-        <span class="tag tag-violet">OpenAI &amp; Anthropic</span>
-        <span class="tag tag-cyan">Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>FTC schickt 50-seitige Untersuchungsanordnungen an OpenAI und Anthropic &ndash; KI-Sicherheitsvorf&auml;lle im Fokus der Beh&ouml;rden</h2>
-      <p>Die <strong>Federal Trade Commission (FTC)</strong> hat an <strong>OpenAI und Anthropic</strong> je eine <strong>50-seitige Civil Investigative Demand</strong> wegen KI-Sicherheitsvorf&auml;llen geschickt. Die formellen Untersuchungsanordnungen verlangen detaillierte Dokumentation &uuml;ber interne Sicherheitsma&szlig;nahmen, bekannte Vorf&auml;lle und Risikobewertungsprozesse. Zeitgleich hat ein US-Bundesrichter OpenAI angewiesen, Apple ger&auml;teforensische Daten in einem Gesch&auml;ftsgeheimnis-Verfahren zu &uuml;bergeben. Der ISO/IEC-Norm <strong>27090</strong> f&uuml;r KI-spezifische Angriffe und Gegenmassnahmen hat Heise als wichtige Erg&auml;nzung zu ISO 27001 vorgestellt. Der Druck auf f&uuml;hrende KI-Labore w&auml;chst regulatorisch und rechtlich gleichzeitig &ndash; ein Signal, dass die &Auml;ra freiwilliger KI-Compliance in den USA zu Ende geht.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Koordinierter Regulierungsdruck:</strong> Gleichzeitige FTC-Untersuchungen bei OpenAI und Anthropic markieren einen Wendepunkt &ndash; verbindliche KI-Sicherheitsstandards r&uuml;cken in den USA n&auml;her.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">Axios / heise.de (Okt. 2026)</span>
-      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- OpenAI übernimmt Orchestra Bio -->
-  <article class="card" data-cat="industrie modelle">
-    <div class="card-header">
-      <div class="card-icon">&#x1F48A;</div>
-      <div class="card-meta">
-        <span class="tag tag-amber">OpenAI</span>
-        <span class="tag tag-green">M&amp;A</span>
-        <span class="tag tag-violet">Orchestra Bio</span>
-        <span class="tag tag-cyan">Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>OpenAI &uuml;bernimmt Orchestra Bio &ndash; Einstieg in KI-gest&uuml;tzte Medikamentenentwicklung und Life-Sciences</h2>
-      <p>OpenAI hat die <strong>&Uuml;bernahme von Orchestra Bio</strong> bekannt gegeben, einem auf KI-gest&uuml;tzte Medikamentenentwicklung spezialisierten Unternehmen. Damit &uuml;berschreitet OpenAI erstmals gezielt die Grenze von Sprach- und Bildmodellen hin zu konkreten biotechnologischen Anwendungen. Orchestra Bio nutzt KI-Modelle, um Wirkstoff-Kandidaten schneller zu identifizieren und Klinische-Studien-Designs zu optimieren. Parallel lancierte OpenAI einen akademischen Tarif <strong>Rosalind</strong> f&uuml;r universit&auml;re Life-Sciences-Labore. Zudem sind laut einem 404-Media-Bericht neue Targeting-Optionen f&uuml;r ChatGPT-Ads im Aufbau, bei denen Advertiser auf Basis von E-Mails, Telefonnummern und Prompt-Daten von rund <strong>1 Milliarde ChatGPT-Nutzern</strong> targeten k&ouml;nnen &ndash; mit erwartetem Datenschutz-Gegenwind.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>OpenAI expandiert in Biotech:</strong> Die Orchestra-Bio-&Uuml;bernahme zeigt: KI-Labore wollen nicht nur Modelle bauen, sondern direkt Branchen-Wertsch&ouml;pfung vereinnahmen &ndash; Pharma und Life Sciences stehen ganz oben auf der Liste.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">heise.de / 404 Media (Okt. 2026)</span>
-      <a class="read-link" href="https://aiweekly.co/" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Kognitos KI-Mitarbeiter für Finance -->
-  <article class="card" data-cat="industrie modelle">
-    <div class="card-header">
-      <div class="card-icon">&#x1F4BC;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">Enterprise</span>
-        <span class="tag tag-green">Finance-KI</span>
-        <span class="tag tag-violet">Kognitos</span>
-        <span class="tag tag-cyan">Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Kognitos launcht 61 rollenbezogene „KI-Mitarbeiter&ldquo; f&uuml;r Finance &ndash; 515 SOPs und KI-generiertes Regelwerk mit Genehmigungsworkflow</h2>
-      <p>Das Automatisierungsunternehmen <strong>Kognitos</strong> hat seine neue Generation von <strong>KI-Mitarbeitern</strong> vorgestellt: 61 rollenbezogene KI-Agenten speziell f&uuml;r Finanzabteilungen, hinterlegt mit <strong>515 Standard Operating Procedures (SOPs)</strong>. Neu ist ein KI-gest&uuml;tzter <strong>Drafting-Agent</strong>, der SOPs automatisch entwirft und zur menschlichen Genehmigung vorlegt &ndash; ein Kontrollprinzip, das regulatorische Anforderungen ber&uuml;cksichtigt. Erweiterte <strong>Context Graphs</strong> verbessern die Datenverflechtung zwischen den Agenten. Im selben Umfeld hat <strong>Automation Anywhere</strong> das Unternehmen <strong>Boost.ai</strong> (Konversations-KI) &uuml;bernommen und gleichzeitig <strong>Model Context Protocol (MCP)</strong>-Unterst&uuml;tzung in Automation 360 v.42 integriert &ndash; ein wachsender Standard f&uuml;r Agenten-Interoperabilit&auml;t.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Rollen-spezifische KI-Belegschaft:</strong> 61 vordefinierte Finance-Agenten mit genehmigungspflichtigen SOPs &ndash; Kognitos l&ouml;st das Compliance-Problem von Unternehmen, die KI nicht „wild" einsetzen k&ouml;nnen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">aiagentstore.ai (Okt. 2026)</span>
-      <a class="read-link" href="https://aiagentstore.ai/ai-agent-news/topic/business-automation" target="_blank" rel="noopener">Lesen &rarr;</a>
-    </div>
-  </article>
-
-  <!-- Nvidia + Bundesregierung KI-Bündnis -->
-  <article class="card" data-cat="industrie forschung">
-    <div class="card-header">
-      <div class="card-icon">&#x1F1E9;&#x1F1EA;</div>
-      <div class="card-meta">
-        <span class="tag tag-indigo">Deutschland</span>
-        <span class="tag tag-violet">Nvidia</span>
-        <span class="tag tag-green">KI-Strategie</span>
-        <span class="tag tag-cyan">Okt. 2026</span>
-      </div>
-    </div>
-    <div class="card-body">
-      <h2>Nvidia und Bundesregierung starten KI-B&uuml;ndnis f&uuml;r deutsche Industrie &ndash; strategische Kooperation offiziell best&auml;tigt</h2>
-      <p>Die <strong>Bundesregierung und Nvidia</strong> haben ihr strategisches KI-B&uuml;ndnis f&uuml;r die deutsche Industrie offiziell best&auml;tigt. Das Programm zielt darauf ab, <strong>Deutschland als KI-Standort</strong> zu st&auml;rken und insbesondere mittelst&auml;ndischen Industrieunternehmen Zugang zu modernster KI-Infrastruktur zu verschaffen. Nvidia bringt Rechenzentrum-Kapazit&auml;ten, Entwicklungs-Frameworks (CUDA, NIM) und Trainings-Ressourcen ein; die Bundesregierung &uuml;bernimmt koordinierende Funktion und Fo&#776;rdermaßnahmen. Laut einer WSJ-Intelligence-Studie nutzen gro&szlig;e Unternehmen aktuell im Schnitt <strong>183 verschiedene KI-Tools</strong>, von denen nur 15&thinsp;% vernetzt sind &ndash; genau dieses „Tool-Chaos" soll die Kooperation durch konsolidierte Infrastruktur l&ouml;sen.</p>
-    </div>
-    <div class="card-highlight">
-      <strong>Deutschland holt auf:</strong> Das Nvidia-Bund-B&uuml;ndnis ist ein Signal, dass die Bundesregierung KI-Infrastruktur als nationale Aufgabe versteht &ndash; &auml;hnlich wie Frankreich mit Mistral und die USA mit nationalen AI-Programmen.
-    </div>
-    <div class="card-footer">
-      <span class="source-name">heise.de / Handelsblatt (Okt. 2026)</span>
+      <span class="source-name">Handelsblatt / Reuters (23. Okt. 2026)</span>
       <a class="read-link" href="https://www.handelsblatt.com/themen/kuenstliche-intelligenz" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
 
-  <!-- Meta stoppt Muse + YouTube Music KI-Labels -->
+  <!-- Nvidia GTC Berlin: Jensen Huang + Agile ONE humanoid -->
+  <article class="card" data-cat="robotik industrie">
+    <div class="card-header">
+      <div class="card-icon">&#x1F916;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">Robotik</span>
+        <span class="tag tag-violet">Nvidia GTC Berlin</span>
+        <span class="tag tag-amber">Agile ONE SN</span>
+        <span class="tag tag-cyan">Okt. 2026</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Nvidia GTC Berlin: Jensen Huang pr&auml;sentiert Agile ONE Humanoid (1,4m, 40kg, 40 DOF) &ndash; Europa als KI-Partner</h2>
+      <p>Auf dem <strong>Nvidia GTC Berlin</strong> trat CEO Jensen Huang als Partner f&uuml;r Europas KI-Zukunft auf und pr&auml;sentierte neue Kooperationen mit deutschen und europ&auml;ischen Institutionen. Highlight war die Enth&uuml;llung des <strong>Agile Robots Agile ONE SN</strong>: ein <strong>1,4&nbsp;m gro&szlig;er, 40&nbsp;kg schwerer Humanoid</strong> mit 40 Freiheitsgraden, angetrieben vom <strong>Nvidia IGX Thor</strong> &ndash; demselben SoC, das Agility Robotics f&uuml;r seinen Digit&nbsp;5 w&auml;hlt. Digit&nbsp;5 l&auml;uft bei Agility damit vollst&auml;ndig auf Nvidia-Hardware. Nvidia zeigte auch physische KI-Demos f&uuml;r Lager, Fertigung und Logistik. Kritische Stimmen merkten an, dass Nvidia-Hardware-Affinit&auml;t der Kooperationen europ&auml;ische digitale Souver&auml;nit&auml;t untergr&auml;bt.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>IGX Thor = Standard-Plattform:</strong> Zwei große Humanoid-Plattformen auf Nvidia-Basis in einer Woche &ndash; Nvidia setzt sich als Betriebssystem der Physical-AI-Ära fest.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Handelsblatt / aiagentstore.ai (Okt. 2026)</span>
+      <a class="read-link" href="https://www.handelsblatt.com/themen/kuenstliche-intelligenz" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Watchtower $35M: KI für Supply-Chain-Planung -->
+  <article class="card" data-cat="industrie modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F4E6;</div>
+      <div class="card-meta">
+        <span class="tag tag-green">Supply Chain</span>
+        <span class="tag tag-indigo">Watchtower</span>
+        <span class="tag tag-amber">$35M Seed</span>
+        <span class="tag tag-cyan">21. Okt. 2026</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Watchtower launcht mit $35M-Finanzierung: LLMs + Simulation f&uuml;r Echtzeit-Supply-Chain-Fragen in nat&uuml;rlicher Sprache</h2>
+      <p><strong>Watchtower</strong> ist mit einer $35-Millionen-Seed-Runde gestartet, co-gef&uuml;hrt von Shield Capital und Conviction. Das Startup kombiniert <strong>Large Language Models mit Discrete-Event-Simulation</strong>, um Supply-Chain-Planern zu erm&ouml;glichen, komplexe Fragen in nat&uuml;rlicher Sprache zu stellen: &bdquo;Was passiert mit unserer Lieferkette, wenn Taiwan-Halbleiter 3 Monate ausbleiben?&ldquo; Das System durchl&auml;uft Tausende Simulations-Szenarien und liefert wahrscheinlichkeits-gewichtete Antworten in Minuten statt Wochen. Das Modell richtet sich an Planungsabteilungen gro&szlig;er Industrieunternehmen &ndash; genau das Segment, das am meisten unter Supply-Chain-Risiken durch geopolitische Spannungen leidet.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>KI trifft Operations Research:</strong> Die Kombination aus LLM-Verstehen und mathematischer Simulation l&ouml;st das Dauerproblem von Supply-Chain-Teams &ndash; Szenarien analysieren, bevor Krisen eintreten.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">aiagentstore.ai / aiweekly.co (21. Okt. 2026)</span>
+      <a class="read-link" href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Anthropic Singapur + Claude Frontier Academy -->
   <article class="card" data-cat="industrie forschung">
     <div class="card-header">
-      <div class="card-icon">&#x1F3B5;</div>
+      <div class="card-icon">&#x1F30F;</div>
       <div class="card-meta">
-        <span class="tag tag-rose">Plattformen</span>
-        <span class="tag tag-amber">Meta Muse</span>
-        <span class="tag tag-violet">YouTube Music</span>
+        <span class="tag tag-indigo">Anthropic Global</span>
+        <span class="tag tag-green">Singapur</span>
+        <span class="tag tag-violet">Frontier Academy</span>
         <span class="tag tag-cyan">14. Okt. 2026</span>
       </div>
     </div>
     <div class="card-body">
-      <h2>Meta stoppt Freigaben seines Muse-Modells nach 6.800 problematischen Chats &ndash; YouTube Music labelt KI-generierte Musik seit 14. Oktober</h2>
-      <p><strong>Meta</strong> hat die weiteren Ver&ouml;ffentlichungen seines Musik-KI-Modells <strong>Muse</strong> vorl&auml;ufig gestoppt, nachdem Forscher in der Ausgabe <strong>6.800 problematische Konversationsverl&auml;ufe</strong> identifiziert hatten. Das Unternehmen untersucht, ob und wann es eine bereinigte Version ver&ouml;ffentlicht. Zeitgleich hat <strong>YouTube Music</strong> am 14.&nbsp;Oktober begonnen, Musikst&uuml;cke, die &uuml;berwiegend mit generativer KI erstellt wurden, mit einem sichtbaren <strong>KI-Label</strong> zu versehen &ndash; direkt auf der Player-Seite einsehbar. Massenhaft generierte oder emotional manipulative KI-Videos werden systematisch von der Monetarisierung ausgeschlossen, w&auml;hrend kreatives KI-Storytelling weiterhin unterst&uuml;tzt wird. YouTube-Chef Neal Mohan betonte: das Herz von YouTube m&uuml;sse menschlich bleiben.</p>
+      <h2>Anthropic er&ouml;ffnet B&uuml;ro in Singapur &amp; startet Claude Frontier Academy &ndash; 10.000 KI-Ingenieure bis Ende 2027</h2>
+      <p>Anthropic hat am 14.&nbsp;Oktober sein erstes B&uuml;ro in <strong>Singapur</strong> er&ouml;ffnet und ein Memorandum of Understanding (MOU) mit der <strong>Singapurischen Regierung</strong> unterzeichnet. Im Fokus stehen KI-Sicherheit, staatliche KI-Infrastruktur und Forschungskooperationen. Parallel investiert Anthropic <strong>$100 Millionen</strong> in die <strong>Claude Frontier Academy</strong> &ndash; ein Ausbildungsprogramm mit dem Ziel, bis Ende 2027 <strong>10.000 Frontier Deployed Engineers</strong> auszubilden: Spezialisten f&uuml;r den Einsatz von Frontier-KI in Unternehmen. Das Programm richtet sich an Ingenieure, die KI-Systeme sicher und effektiv in kritische Unternehmensinfrastruktur integrieren.</p>
     </div>
     <div class="card-highlight">
-      <strong>Plattformen ziehen Grenzen:</strong> KI-Label bei YouTube Music und Metas Muse-Stopp zeigen: Transparenz und Qualit&auml;tskontrolle werden zum Standard &ndash; der Rest der Branche wird folgen.
+      <strong>Anthropic wird global:</strong> Singapur-B&uuml;ro + $100 Mio. Akademie &ndash; Anthropic baut nicht nur Modelle, sondern auch das Talent-Netzwerk, das f&uuml;r Enterprise-Skalierung gebraucht wird.
     </div>
     <div class="card-footer">
-      <span class="source-name">all-ai.de / GameStar (Okt. 2026)</span>
-      <a class="read-link" href="https://www.gamestar.de/artikel/youtube-ki-massnahmen-2026-ai-slop-creator-tools,3446691.html" target="_blank" rel="noopener">Lesen &rarr;</a>
+      <span class="source-name">Anthropic Newsroom (14. Okt. 2026)</span>
+      <a class="read-link" href="https://www.anthropic.com/news" target="_blank" rel="noopener">Lesen &rarr;</a>
     </div>
   </article>
+
+  <!-- Higgsfield + Marketing Automation -->
+  <article class="card" data-cat="industrie modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F3AC;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">Marketing-KI</span>
+        <span class="tag tag-violet">Higgsfield</span>
+        <span class="tag tag-amber">Video-Automation</span>
+        <span class="tag tag-cyan">22. Okt. 2026</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Higgsfield: URL rein, fertiger Video-Werbespot raus &ndash; KI automatisiert vollst&auml;ndige Videokampagnen f&uuml;r Produkte</h2>
+      <p><strong>Higgsfield</strong> hat ein Tool launcht, das aus einer einfachen Produkt-URL automatisch <strong>fertige Video-Werbekampagnen</strong> generiert &ndash; von der Produktseite bis zum auspielbaren Werbespot in einem Schritt. Das Tool analysiert Produktbilder, -beschreibungen und Zielgruppe, w&auml;hlt passende Stile und Musik und produziert mehrere Varianten f&uuml;r verschiedene Plattformen. Parallel hat <strong>Printfuls KI-Mockup-Generator</strong> aus unstrukturierten Medienbriefings automatisiert Daten extrahiert und Media-Buying-Systeme direkt bef&uuml;llt &ndash; manuelle Dateneingabe f&uuml;llt Mediakaufprozesse entf&auml;llt komplett. Beide Tools markieren eine neue Welle von End-to-End-Automatisierung im Marketing, die Agenturen und Kreative unter Druck setzt.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>Marketing vollautomatisch:</strong> URL → Werbespot ohne menschliche Kreation &ndash; Higgsfield zeigt, wo KI-Automatisierung in kreativen Berufen als n&auml;chstes angreift.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">martech.org / aiweekly.co (22. Okt. 2026)</span>
+      <a class="read-link" href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Microsoft KLS-Beweis + Agentic AI Markt -->
+  <article class="card" data-cat="forschung industrie modelle">
+    <div class="card-header">
+      <div class="card-icon">&#x1F9EE;</div>
+      <div class="card-meta">
+        <span class="tag tag-indigo">Wissenschaft</span>
+        <span class="tag tag-violet">Microsoft Research</span>
+        <span class="tag tag-amber">$227,8 Mrd. Markt</span>
+        <span class="tag tag-cyan">21. Okt. 2026</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h2>Microsoft Research beweist 30 Jahre alte Mathe-Vermutung per KI-Agenten &ndash; Agentic-AI-Markt soll auf $227,8 Mrd. bis 2031 wachsen</h2>
+      <p><strong>Microsoft Research</strong> hat mithilfe eines menschlich gesteuerten KI-Agentic-Workflows die <strong>Kannan&ndash;Lov&aacute;sz&ndash;Simonovits-Vermutung</strong> aus dem Jahr 1995 bewiesen. Das Team erkundete &uuml;ber 100 Kandidatenans&auml;tze und pr&auml;sentiert einen <strong>140-seitigen Beweis</strong> &ndash; die erste Kl&auml;rung dieses offenen Problems der algorithmischen Geometrie. Passend dazu prognostiziert ein GlobeNewsWire-Bericht, dass der <strong>Enterprise Agentic AI &amp; Automation Market</strong> von heute bis 2031 mit einem j&auml;hrlichen Wachstum von <strong>32,6&thinsp;%</strong> auf <strong>$227,8 Milliarden</strong> anw&auml;chst &ndash; Treiber sind autonome Workflows, Multi-Agenten-Koordination und KI-Prozessautomatisierung in Finance, Healthcare und Logistik.</p>
+    </div>
+    <div class="card-highlight">
+      <strong>KI als Grundlagenforscher:</strong> Ein 30 Jahre offenes Mathe-Problem gel&ouml;st und ein $227-Milliarden-Markt &ndash; agentic AI ist kein Buzzword mehr, sondern messbarer wirtschaftlicher und wissenschaftlicher Hebel.
+    </div>
+    <div class="card-footer">
+      <span class="source-name">Microsoft Research / GlobeNewsWire (21. Okt. 2026)</span>
+      <a class="read-link" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Lesen &rarr;</a>
+    </div>
+  </article>
+
 </div>
 
 <footer>
-  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 22. Oktober 2026 &nbsp;|&nbsp;
-  Quellen: macrumors.com, unite.ai, releasebot.io, anthropic.com, aiweekly.co, globenewswire.com, aiagentstore.ai, heise.de, handelsblatt.com, openai.com, gamestar.de, all-ai.de &nbsp;|&nbsp;
+  Recherchiert &amp; generiert mit Claude Code &nbsp;|&nbsp; Stand: 23. Oktober 2026 &nbsp;|&nbsp;
+  Quellen: anthropic.com, releasebot.io, platform.claude.com, borncity.com, handelsblatt.com, aiagentstore.ai, aiweekly.co, martech.org, cryptobriefing.com, datacenterdynamics.com &nbsp;|&nbsp;
   <a href="https://anthropic.com/news" target="_blank" rel="noopener">anthropic.com/news</a>
 </footer>
 
